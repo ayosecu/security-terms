@@ -28,7 +28,7 @@
   	- Network signatures
   		- Eg checking DNS records for attempts to contact C2 (command and control) servers. 
   
-  - [Anomaly or Behavior‐Based Detection](./Anomaly_or_Behavior‐Based_Detection.md)
+  - [Anomaly or Behavior Based Detection](./Anomaly_or_Behavior_Based_Detection.md)
   	- IDS learns model of “normal” behaviour, then can detect things that deviate too far from normal - eg unusual urls being accessed, user specific- login times / usual work hours, normal files accessed.  
   	- Can also look for things that a hacker might specifically do (eg, HISTFILE commands, accessing /proc).
   	- If someone is inside the network- If action could be suspicious, increase log verbosity for that user.
