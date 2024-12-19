@@ -1,3 +1,4 @@
+## Anomaly or Behavior-based Detection
 Anomaly or behavior-based detection focuses on identifying abnormal activities by comparing current actions against an established model of “normal” behavior. This method allows security systems to detect suspicious activity, even if it doesn’t match known attack signatures. By understanding the typical behavior of users, devices, or networks, anomaly-based detection can spot potential threats based on deviations from expected patterns.
 
 ## Key Concepts:
