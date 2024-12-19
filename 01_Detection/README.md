@@ -1,4 +1,4 @@
-- Detection
+## Detection
   - [IDS](./IDS.md)
   	- Intrusion Detection System (signature based (eg. snort) or behaviour based).
   	- Snort/Suricata/YARA rule writing
