@@ -1,3 +1,4 @@
+## Security Signals
 Here’s an explanation of the three categories you mentioned, focused on how different tools and systems generate, triage, and alert based on security signals:
 
 ## 1. Things That Create Signals:
