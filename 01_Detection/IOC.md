@@ -1,3 +1,4 @@
+## IOC (Indicator of Compromise)
 IOC (Indicator of Compromise) refers to pieces of forensic data that indicate a security breach or malicious activity has occurred within a network or system. IOCs are critical in cybersecurity as they help identify the presence of an attacker or a threat in an organization’s infrastructure, allowing for timely detection, mitigation, and response to security incidents.
 
 ## Key Points About IOCs:
