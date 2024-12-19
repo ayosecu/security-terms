@@ -1,3 +1,4 @@
+## Signatures
 Signatures in cybersecurity refer to predefined patterns or characteristics that are used to identify malicious activity or threats in a system. Signatures can be applied to both host-based and network-based environments to detect indicators of compromise (IOCs) or known malicious behavior.
 
 ## 1. Host-Based Signatures:
