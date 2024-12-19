@@ -1,4 +1,4 @@
-## Logs to Look at for Suspicious Activity Detection:
+## Logs to Look at for Suspicious Activity Detection
 When investigating potential security incidents, analyzing specific types of logs is crucial for identifying malicious activities. Logs can provide valuable insights into an attacker’s behavior, help detect anomalies, and reveal the full scope of a breach. Below are important logs to monitor and analyze:
 
 ## 1. DNS Queries to Suspicious Domains:
