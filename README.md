@@ -3,9 +3,6 @@
 - These terms are originated from [nolang's github](https://github.com/gracenolan/Notes/blob/master/interview-study-notes-for-security-engineering.md#learning-tips)
 - I searched meanings and explanations from the chatGPT
 
-## Wiki
-- https://github.com/secuguru/security-terms/wiki
-
 ## ToC
 - [01. Detection](./01_Detection/README.md)
 - [02. Threat Modeling](./02_Threat_Modeling/README.md)
@@ -21,3 +18,6 @@
 - [12. OS Implementation and Systems](./12_OS_Implementation_and_Systems/README.md)
 - [13. Malware & Reversing](./13_Malware_Reversing/README.md)
 - [Appendix](./Appendix.md)  
+
+## Wiki
+- https://github.com/secuguru/security-terms/wiki
