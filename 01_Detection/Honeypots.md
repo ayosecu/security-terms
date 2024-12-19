@@ -1,4 +1,4 @@
-## Honeypots:
+## Honeypots
 A honeypot is a decoy system or service designed to mimic a real system within a network to attract and detect attackers. The primary purpose of a honeypot is to monitor and record the activities of potential intruders, allowing security teams to understand attack methods, gather intelligence, and improve defenses without exposing critical systems. Honeypots do not contain real data or services but are configured to look authentic to attackers.
 
 ## Types of Honeypots:
