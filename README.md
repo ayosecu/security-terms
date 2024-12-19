@@ -20,6 +20,4 @@
 - [11. Cryptography, Authentication, Identity](./11_Cryptography_Authentication_Identity/README.md)
 - [12. OS Implementation and Systems](./12_OS_Implementation_and_Systems/README.md)
 - [13. Malware & Reversing](./13_Malware_Reversing/README.md)
-
-## Additional
-- 11 Strategies of a World Class Cybersecurity Operations Center
+- [Appendix](./Appendix.md)  
