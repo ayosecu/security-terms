@@ -1,3 +1,4 @@
+## Firewall Rules
 Firewall rules are critical components in network security, used to control incoming and outgoing traffic based on predefined security policies. These rules can be configured to detect and block suspicious activities like brute force attacks, port scanning, large data transfers, or other indicators of compromise (IOCs). Here’s how firewall rules can help with specific security concerns:
 
 ## 1. Brute Force Attacks (Detecting Multiple Failed Login Attempts):
