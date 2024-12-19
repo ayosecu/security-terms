@@ -1,4 +1,4 @@
-## Things to Know About Attackers:
+## Things to Know About Attackers
 Understanding attacker tactics, techniques, and procedures (TTPs) is crucial for defending against cyber threats. Attackers often use various methods to evade detection, confuse security systems, and hide their true identity. Here are some key things to know about attackers:
 
 ## 1. Slow Attacks Are Harder to Detect:
