@@ -1,3 +1,4 @@
+## Detection Related Tools
 In cybersecurity, detection tools are used to monitor, analyze, and alert on potential threats in real-time or during investigations. These tools help security teams detect anomalies, attacks, and breaches by analyzing logs, network traffic, and system behaviors. Below is an overview of some key detection-related tools and their functions:
 
 ## 1. Splunk:
