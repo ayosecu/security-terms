@@ -1,10 +1,10 @@
 ## Firewall Rules
-Firewall rules are critical components in network security, used to control incoming and outgoing traffic based on predefined security policies. These rules can be configured to detect and block suspicious activities like brute force attacks, port scanning, large data transfers, or other indicators of compromise (IOCs). Here’s how firewall rules can help with specific security concerns:
+Firewall rules are critical components in network security, **used to control incoming and outgoing traffic based on predefined security policies**. These rules can be configured to detect and block suspicious activities like brute force attacks, port scanning, large data transfers, or other indicators of compromise (IOCs). Here’s how firewall rules can help with specific security concerns:
 
 ## 1. Brute Force Attacks (Detecting Multiple Failed Login Attempts):
   - Brute force attacks involve repeated login attempts using different username-password combinations in an attempt to gain access to a system.
   - Firewall Rule Example:
-    - You can set up rules to detect multiple failed login attempts within a short period. If a certain threshold (e.g., 5 failed attempts within 1 minute) is reached, the firewall can block the IP address for a certain time to prevent further attempts.
+    - You can **set up rules to detect multiple failed login attempts within a short period**. If a certain threshold (e.g., 5 failed attempts within 1 minute) is reached, the firewall can block the IP address for a certain time to prevent further attempts.
     - Rule: If more than X failed login attempts are detected from a single IP address within Y minutes, block or throttle traffic from that IP.
       - Example:
 ```
@@ -14,7 +14,7 @@ Block traffic from IP 10.0.0.5 after 5 failed SSH login attempts within 2 minute
 ## 2. Detecting Port Scanning (Identifying TCP SYN Floods or Half-Open Connections):
   - Port scanning is a common reconnaissance technique used by attackers to discover open ports and services on a target system. One common method of port scanning is SYN scanning, where attackers send TCP SYN packets without completing the handshake (no SYN-ACK response).
   - Firewall Rule Example:
-    - A rule can be created to detect TCP SYN packets without corresponding SYN-ACK responses (half-open connections). This often indicates port scanning activity. Once detected, the firewall can block the source IP for a certain period or limit the connection rate from that IP.
+    - A rule **can be created to detect TCP SYN packets without corresponding SYN-ACK responses (half-open connections)**. This often indicates port scanning activity. Once detected, the firewall can block the source IP for a certain period or limit the connection rate from that IP.
     - Rule: If more than X half-open connections from a single IP are detected within Y seconds, block or drop further connections from that IP.
       - Example:
 ```
@@ -42,9 +42,9 @@ Limit upload traffic to 500 MB per minute. Block traffic from any IP that exceed
 ```
 
 ## Summary of Rules:
-1. Brute Force: Detect excessive failed login attempts and block the attacker’s IP after a threshold is reached to prevent further attempts.
-2. Port Scanning: Monitor for half-open TCP connections (SYN packets without SYN-ACK) to detect port scanning, and block the offending IP if suspicious scanning is detected.
-3. Antivirus Notifications: Automatically block traffic from a device that has triggered an antivirus alert to prevent the spread of malware.
-4. Large Upload Traffic: Monitor for abnormal upload activity that could indicate data exfiltration or malware, and block or limit traffic from the offending device.
+1. **Brute Force**: Detect excessive failed login attempts and block the attacker’s IP after a threshold is reached to prevent further attempts.
+2. **Port Scanning**: Monitor for half-open TCP connections (SYN packets without SYN-ACK) to detect port scanning, and block the offending IP if suspicious scanning is detected.
+3. **Antivirus Notifications**: Automatically block traffic from a device that has triggered an antivirus alert to prevent the spread of malware.
+4. **Large Upload Traffic**: Monitor for abnormal upload activity that could indicate data exfiltration or malware, and block or limit traffic from the offending device.
 
 > These rules can significantly enhance the security posture of a network by preventing common attack vectors and detecting unusual behavior that could indicate an ongoing attack.
