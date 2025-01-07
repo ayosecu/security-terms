@@ -4,14 +4,14 @@
 - I searched meanings and explanations from the chatGPT
 
 ## ToC
-- [01. Detection](./01_Detection/README.md)
-- [02. Threat Modeling](./02_Threat_Modeling/README.md)
-- [03. Incident Management](./03_Incident_Management/README.md)
-- [04. Infrastructure (Prod, Cloud) Virtualization](./04_Infrastructure_Virtualization/README.md)
-- [05. Digital Forensics](./05_Digital_Forensics/README.md)
-- [06. Attack Structure](./06_Attack_Structure/README.md)
-- [07. Exploits](./07_Exploits/README.md)
-- [08. Mitigations](./08_Mitigations/README.md)
+- [01. Threat Modeling](./01_Threat_Modeling/README.md)
+- [02. Attack Structure](./02_Attack_Structure/README.md)
+- [03. Exploits](./03_Exploits/README.md)
+- [04. Detection](./04_Detection/README.md)
+- [05. Incident Management](./05_Incident_Management/README.md)
+- [06. Digital Forensics](./06_Digital_Forensics/README.md)
+- [07. Mitigations](./07_Mitigations/README.md)
+- [08. Infrastructure (Prod, Cloud) Virtualization](./08_Infrastructure_Virtualization/README.md)
 - [09. Network Security](./09_Network_Security/README.md)
 - [10. Web Application](./10_Web_Application/README.md)
 - [11. Cryptography, Authentication, Identity](./11_Cryptography_Authentication_Identity/README.md)
