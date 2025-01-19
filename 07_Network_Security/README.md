@@ -24,7 +24,6 @@
 	- Sending data as subdomains. 
 	- 26856485f6476a567567c6576e678.badguy.com
 	- Doesn’t show up in http logs. 
-
 - [ARP (Address Resolution Protocol)](./ARP.md)
 	- Pair MAC address with IP Address for IP connections. 
 - [DHCP (Dynamic Host Configuration Protocol)](./DHCP.md)
