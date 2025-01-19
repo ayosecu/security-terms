@@ -76,9 +76,6 @@
 - [Telnet](./Telnet.md)
 	- (23, 992)
 	- Allows remote communication with hosts.
-- [ARP](./ARP.md)
-	- Who is 0.0.0.0? Tell 0.0.0.1.
-	- Linking IP address to MAC, Looks at cache first.
 - [IRC](./IRC.md)
 	- Understand use by hackers (botnets).
 - [FTP/SFTP](./FTP_SFTP.md)
