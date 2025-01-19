@@ -1,3 +1,5 @@
+## Broadcast Domain vs Collision Domain
+
 ## Broadcast Domain
 A broadcast domain refers to **a segment of a network where any device within that domain can directly receive broadcast messages from other devices in the same domain**. In a broadcast domain, a message sent to the broadcast address (such as 255.255.255.255 for IPv4) is delivered to all devices within that network segment.
 
