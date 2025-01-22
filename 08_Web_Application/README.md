@@ -30,7 +30,7 @@
 - [Directory Traversal](./Directory_Traversal.md)
 	- Find directories on the server you’re not meant to be able to see.
 	- There are tools that do this.
-- [APIs](./APIs.md)
+- [API Security](./API_Security.md)
 	- Think about what information they return. 
 	- And what can be sent.
 - [BeEF Hook](./BeEF_Hook.md)
