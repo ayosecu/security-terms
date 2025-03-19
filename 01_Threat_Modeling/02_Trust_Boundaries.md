@@ -36,4 +36,5 @@ In threat modeling, **defining trust boundaries helps identify where security ri
 <br>
 
 ## Summary
-Trust boundaries define the separation of areas with different trust levels within a system or network. They highlight sensitive areas where security controls are essential to prevent unauthorized access, data leakage, or privilege escalation. Properly managing trust boundaries is crucial for securing interactions in systems and networks, helping to prevent attackers from exploiting boundaries to gain unauthorized access to sensitive information or systems.
+Trust boundaries define the separation of areas with different trust levels within a system or network. They highlight sensitive areas where security controls are essential to prevent unauthorized access, data leakage, or privilege escalation. Properly managing trust boundaries is crucial for securing interactions in systems and networks, helping to prevent attackers from exploiting boundaries to gain unauthorized access to sensitive information or systems.  
+<br>

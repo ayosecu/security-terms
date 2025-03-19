@@ -33,4 +33,5 @@ The MITRE ATT&CK Matrix is a specific and widely adopted threat matrix framework
 <br>
 
 ## Summary
-A Threat Matrix is a vital tool in threat modeling that organizes and prioritizes potential security threats based on factors like attack vectors, threat actors, and the impact of successful attacks. It helps security teams understand, categorize, and mitigate risks systematically. Frameworks like the MITRE ATT&CK Matrix offer real-world examples of how threat matrices are used to map adversary techniques and tactics, providing valuable insights for defense and detection strategies.
+A Threat Matrix is a vital tool in threat modeling that organizes and prioritizes potential security threats based on factors like attack vectors, threat actors, and the impact of successful attacks. It helps security teams understand, categorize, and mitigate risks systematically. Frameworks like the MITRE ATT&CK Matrix offer real-world examples of how threat matrices are used to map adversary techniques and tactics, providing valuable insights for defense and detection strategies.  
+<br>

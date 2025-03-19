@@ -43,4 +43,4 @@ The STRIDE framework helps security teams systematically identify potential thre
 | Information Disclosure | Unauthorized access to sensitive information | Exposing PII via unsecured API | Encryption, access control |
 | Denial of Service | Making a system or service unavailable by overwhelming it | Sending excessive requests to exhaust server resources | Rate limiting, redundancy, DDoS protection |
 | Elevation of Privilege | Gaining unauthorized access to higher privileges | Exploiting a vulnerability to gain admin rights | Least privilege, regular patching |  
-
+<br>

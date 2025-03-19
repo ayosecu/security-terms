@@ -55,4 +55,5 @@ Security controls are **measures implemented to reduce risk, protect assets, and
 <br>
 
 ## Summary
-Security Controls are critical measures to protect information and systems from security threats. They can be **preventive, detective, corrective, deterrent, compensating, physical, or administrative**. Each type serves a unique role in securing an organization, and **together they provide a robust defense strategy to detect, prevent, and respond to potential security incidents**.
+Security Controls are critical measures to protect information and systems from security threats. They can be **preventive, detective, corrective, deterrent, compensating, physical, or administrative**. Each type serves a unique role in securing an organization, and **together they provide a robust defense strategy to detect, prevent, and respond to potential security incidents**.  
+<br>

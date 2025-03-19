@@ -61,4 +61,5 @@ This row shows how techniques and sub-techniques are mapped to the “Initial Ac
 <br>
 
 ## Summary
-The MITRE ATT&CK Framework is a widely used threat intelligence and defense framework that categorizes the tactics, techniques, and procedures (TTPs) used by attackers. The framework is structured into matrices that map tactics (the goals attackers aim to achieve) to techniques (the specific methods they use). It is used by cybersecurity professionals for threat detection, threat intelligence, incident response, and gap analysis, providing a common language and structured approach for understanding and defending against cyber threats.
+The MITRE ATT&CK Framework is a widely used threat intelligence and defense framework that categorizes the tactics, techniques, and procedures (TTPs) used by attackers. The framework is structured into matrices that map tactics (the goals attackers aim to achieve) to techniques (the specific methods they use). It is used by cybersecurity professionals for threat detection, threat intelligence, incident response, and gap analysis, providing a common language and structured approach for understanding and defending against cyber threats.  
+<br>
