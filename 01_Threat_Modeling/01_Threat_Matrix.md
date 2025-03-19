@@ -1,4 +1,4 @@
-## Threat Matrix
+# Threat Matrix
 A Threat Matrix is **a structured framework or table used to systematically assess, prioritize, and map various security threats to an organization, system, or specific asset**. It helps security teams categorize and understand potential risks based on different threat actors, attack vectors, and the potential impact on the organization. **The Threat Matrix is a valuable tool in threat modeling, which is the process of identifying and evaluating threats to systems and developing strategies to mitigate or respond to them**.  
 <br>
 

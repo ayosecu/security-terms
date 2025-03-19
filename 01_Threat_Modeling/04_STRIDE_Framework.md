@@ -1,4 +1,4 @@
-## STRIDE Framework
+# STRIDE Framework
 The STRIDE framework is **a threat modeling approach developed by Microsoft that helps identify potential security threats in a system**. It categorizes threats based on the types of attacks or vulnerabilities that could be exploited, providing a structured way to assess and mitigate risks. STRIDE stands for **Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege**. Each category represents a specific type of threat.  
 <br>
 

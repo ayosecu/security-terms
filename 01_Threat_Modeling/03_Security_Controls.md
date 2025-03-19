@@ -1,4 +1,4 @@
-## Security Controls
+# Security Controls
 Security controls are **measures implemented to reduce risk, protect assets, and ensure the integrity, confidentiality, and availability of information systems**. They are **used to prevent, detect, mitigate, and respond to threats and vulnerabilities** in a system or network. Security controls can be **technical, physical, or administrative in nature, and they work together to create a layered defense** that safeguards an organization’s data and resources.  
 <br>
 
