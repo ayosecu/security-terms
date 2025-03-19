@@ -1,0 +1,37 @@
+name: Convert Markdown to PDF per Folder
+
+on:
+  push:
+    paths:
+      - "**/*.md"
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y pandoc texlive-xetex
+
+      - name: Find Folders and Convert to PDF
+        run: |
+          for dir in $(find . -type d -not -path "*/.git*" -not -path "." ); do
+            if ls "$dir"/*.md > /dev/null 2>&1; then
+              folder_name=$(basename "$dir")
+              cat "$dir"/*.md > "$dir/combined.md"
+              pandoc "$dir/combined.md" -o "$dir/$folder_name.pdf" --pdf-engine=xelatex -V geometry:margin=1in
+            fi
+          done
+
+      - name: Upload PDF Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: generated-pdfs
+          path: "**/*.pdf"
