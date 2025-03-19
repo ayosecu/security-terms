@@ -1,3 +1,5 @@
+<br>
+
 # Trust Boundaries
 Trust boundaries are **conceptual lines within a system or network architecture that separate areas of different trust levels**. **Crossing a trust boundary generally requires authentication, authorization, or inspection to ensure that data and operations are permitted**. By defining trust boundaries, organizations **can identify where sensitive operations or data interactions occur and apply appropriate security controls to protect against unauthorized access or abuse**.  
 <br>
