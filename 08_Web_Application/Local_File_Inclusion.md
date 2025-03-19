@@ -134,7 +134,7 @@ $file = basename($_GET['file']);
   - Test with payloads like
 ```
 ../../../../etc/passwd
-..\..\..\..\windows\win.ini
+..\\..\\..\\..\\windows\\win.ini
 ```
 
 4. **Metasploit**
