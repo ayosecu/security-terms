@@ -5,6 +5,7 @@ Same-Origin Policy (SOP) is **a fundamental security mechanism in web browsers t
 
 ## 1. What Is an Origin?
 An origin is defined as a combination of the following components:  
+
   - Protocol: The scheme (e.g., http, https).
   - Host: The domain name (e.g., example.com).
   - Port: The port number (e.g., 80, 443).
@@ -40,6 +41,7 @@ By default, **SOP prevents scripts from accessing or interacting with resources 
 
 ## 3. Why Is SOP Important?
 The Same-Origin Policy **prevents malicious websites from performing unauthorized actions or stealing sensitive data from other origins**.  
+
   - **Preventing Cross-Site Scripting (XSS)**
     - SOP ensures that scripts from one origin cannot interact with sensitive data on another origin.
   - **Mitigating Cross-Site Request Forgery (CSRF)**
