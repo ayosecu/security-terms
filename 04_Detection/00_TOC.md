@@ -31,7 +31,7 @@
   - [Anomaly or Behavior Based Detection](./06_Anomaly_or_Behavior_Based_Detection.md)
     - IDS learns model of “normal” behaviour, then can detect things that deviate too far from normal
       - E.g. unusual urls being accessed, user specific
-      - login times / usual work hours, normal files accessed.  
+      - login times / usual work hours, normal files accessed.
     - Can also look for things that a hacker might specifically do (eg, HISTFILE commands, accessing /proc).
     - If someone is inside the network- If action could be suspicious, increase log verbosity for that user.
   

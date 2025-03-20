@@ -1,0 +1,35 @@
+# Digital Forensics
+ - [Evidence Volatility (network vs memory vs disk)](./01_Evidence_Volatility.md)
+ - [Network Forensics](./02_Network_Forensics.md)
+    - DNS logs / passive DNS
+    - Netflow
+    - Sampling rate
+ - [Disk Forensics](./03_Disk_Forensics.md)
+    - Disk imaging
+    - Filesystems (NTFS / ext2/3/4 / AFPS)
+    - Logs (Windows event logs, Unix system logs, application logs)
+    - Data recovery (carving)
+    - Tools
+    - plaso / log2timeline
+    - FTK imager
+    - encase
+ - [Memory Forensics](./04_Memory_Forensics.md)
+    - Memory acquisition (footprint, smear, hiberfiles)
+    - Virtual vs physical memory
+    - Life of an executable
+    - Memory structures
+    - Kernel space vs user space
+    - Tools
+    - Volatility
+    - Google Rapid Response (GRR) / Rekall
+    - WinDbg
+  - [Mobile Forensics](./05_Mobile_Forensics.md)
+    - Jailbreaking devices, implications
+    - Differences between mobile and computer forensics
+    - Android vs. iPhone
+  - [Anti Forensics](./06_Anti_Forensics.md)
+    - How does malware try to hide?
+    - Timestomping
+  - [Chain of Custody](./07_Chain_of_Custody.md)
+    - Handover notes  
+<br>
