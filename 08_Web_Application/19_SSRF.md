@@ -1,10 +1,13 @@
-## Server-Side Request Forgery (SSRF)
+<br>
+
+# Server-Side Request Forgery (SSRF)
 Server-Side Request Forgery (SSRF) is **a web security vulnerability that allows an attacker to manipulate a server to send unauthorized requests to other internal or external resources**. The attacker can exploit this to access internal systems, sensitive data, or services not directly exposed to the internet.
 
 ## 1. How SSRF Works
 In an SSRF attack, the attacker **tricks the server into making HTTP or other protocol-based requests to a target resource by supplying a malicious URL or payload**. Since the server initiates the request, it bypasses network restrictions and appears to originate from a trusted source.
 
-### Vulnerable Code Example
+### Vulnerable Code Example  
+
 ```
 <?php
     $url = $_GET['url'];
@@ -13,15 +16,18 @@ In an SSRF attack, the attacker **tricks the server into making HTTP or other pr
 ?>
 ```
 
-### Legitimate Input:
+### Legitimate Input  
+
 ```
 http://example.com/proxy?url=http://trusted-site.com
 ```
 
-### Malicious Input:
+### Malicious Input  
+
 ```
 http://example.com/proxy?url=http://internal-service.local/admin
 ```
+
   - Exploits the server’s ability to reach http://internal-service.local.
 
 
@@ -53,19 +59,22 @@ http://example.com/proxy?url=http://internal-service.local/admin
 ## 3. Exploitation Techniques
 
 ### a. Basic SSRF Exploitation
-1. **Access internal resources**
+1. **Access internal resources**  
+
 ```
 http://example.com/proxy?url=http://127.0.0.1:8080/admin
 ```
 
-2. **Extract cloud metadata**
+2. **Extract cloud metadata**  
+
 ```
 http://example.com/proxy?url=http://169.254.169.254/latest/meta-data/
 ```
 
 ### b. Advanced SSRF Techniques
 1. **Protocol Abuse**
-  - Use unconventional protocols like gopher:// for advanced attacks:
+  - Use unconventional protocols like gopher:// for advanced attacks:  
+
 ```
 gopher://127.0.0.1:3306/_SHOW%20DATABASES
 ```
@@ -83,7 +92,8 @@ gopher://127.0.0.1:3306/_SHOW%20DATABASES
 ### Target
   - AWS metadata service at http://169.254.169.254.
 
-### Malicious Input
+### Malicious Input  
+
 ```
 http://example.com/proxy?url=http://169.254.169.254/latest/meta-data/
 ```
@@ -129,23 +139,27 @@ http://example.com/proxy?url=http://169.254.169.254/latest/meta-data/
 ## 7. Common SSRF Payloads
 
 ### Basic Payloads
-1. Internal resources
+1. Internal resources  
+
 ```
 http://127.0.0.1/admin
 ```
 
-2. Cloud metadata
+2. Cloud metadata  
+
 ```
 http://169.254.169.254/latest/meta-data/
 ```
 
 ### Advanced Payloads:
-1. File access
+1. File access  
+
 ```
 file:///etc/passwd
 ```
 
-2. Protocol abuse
+2. Protocol abuse  
+
 ```
 gopher://127.0.0.1:6379/_PING
 ```
@@ -161,5 +175,5 @@ gopher://127.0.0.1:6379/_PING
 | Mitigation Techniques | Input validation, network restrictions, allowlists, monitoring. |
 | Tools | Burp Suite, OWASP ZAP, SSRFmap. |
 
-
-**SSRF is a critical vulnerability with the potential for severe consequences, particularly in environments like cloud infrastructure**. By **validating user input**, **restricting network access**, and **monitoring server behavior**, organizations can mitigate the risks associated with SSRF. Security teams must remain vigilant, as attackers continuously develop new techniques to exploit this vulnerability.
+**SSRF is a critical vulnerability with the potential for severe consequences, particularly in environments like cloud infrastructure**. By **validating user input**, **restricting network access**, and **monitoring server behavior**, organizations can mitigate the risks associated with SSRF. Security teams must remain vigilant, as attackers continuously develop new techniques to exploit this vulnerability.  
+<br>

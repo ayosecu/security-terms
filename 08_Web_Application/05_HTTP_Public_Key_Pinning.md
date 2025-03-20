@@ -1,4 +1,4 @@
-## HTTP Public Key Pinning (HPKP)
+# HTTP Public Key Pinning (HPKP)
 HTTP Public Key Pinning (HPKP) was **a web security mechanism that allowed website administrators to specify which public keys should be trusted for their domain**. It aimed to protect against attacks such as man-in-the-middle (MITM) or rogue certificate issuance by certificate authorities (CAs). However, HPKP has since been deprecated due to implementation challenges and potential risks.
 
 ## 1. How HPKP Worked
@@ -10,7 +10,8 @@ HPKP was **implemented via the Public-Key-Pins HTTP response header**. This head
       - A list of hashes of public keys that are allowed for the domain.
       - A max-age directive, specifying how long the pins should be cached.
       - An optional report-uri directive to report pin validation failures.
-  - Example HPKP Header
+  - Example HPKP Header  
+
 ```
 Public-Key-Pins: 
     pin-sha256="base64=="; 
@@ -47,17 +48,17 @@ Public-Key-Pins:
   - The report-uri directive was often underutilized, making it difficult for site owners to detect and address pinning failures.
 
 ## 4. Deprecation of HPKP
-Why HPKP Was Deprecated
-  - Adoption Challenges
-    - HPKP adoption was low due to its complexity and high risk of misconfiguration.
-  - Security Concerns
-    - Misuse and abuse of HPKP posed a greater risk than the attacks it aimed to mitigate.
-  - Better Alternatives
-    - Mechanisms like **Certificate Transparency (CT) and HSTS (HTTP Strict Transport Security)** were deemed more effective and safer.
+  - Why HPKP Was Deprecated
+    - Adoption Challenges
+      - HPKP adoption was low due to its complexity and high risk of misconfiguration.
+    - Security Concerns
+      - Misuse and abuse of HPKP posed a greater risk than the attacks it aimed to mitigate.
+    - Better Alternatives
+      - Mechanisms like **Certificate Transparency (CT) and HSTS (HTTP Strict Transport Security)** were deemed more effective and safer.
 
-Timeline of Deprecation
-  - Google Chrome deprecated HPKP in version 67 (May 2018).
-  - Other browsers followed suit, effectively making HPKP obsolete.
+  - Timeline of Deprecation
+    - Google Chrome deprecated HPKP in version 67 (May 2018).
+    - Other browsers followed suit, effectively making HPKP obsolete.
 
 ## 5. Alternatives to HPKP
 1. **Certificate Transparency (CT)**
@@ -73,7 +74,8 @@ Timeline of Deprecation
 
 ## 6. Example of Deprecated HPKP Implementation
 
-### Legacy Header (Not Recommended)
+### Legacy Header (Not Recommended)  
+
 ```
 Public-Key-Pins:
     pin-sha256="AbCdEfGhIjKlMnOpQrStUvWxYz1234567890abcDEF=";
@@ -84,12 +86,13 @@ Public-Key-Pins:
 ```
 
 ### Current Best Practices
-  - Use HSTS:
+  - Use HSTS  
+
 ```
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 ```
 
-  - Enable Certificate Transparency:
+  - Enable Certificate Transparency
     - Ensure certificates are logged in CT during issuance.
 
 ## 7. Summary
@@ -103,4 +106,5 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 | Deprecation | Deprecated in Chrome 67 (2018) due to risks and low adoption. |
 | Alternatives | Certificate Transparency (CT), HSTS, and Expect-CT. |
 
-While HPKP was a promising concept for enhancing HTTPS security, **its risks and complexities outweighed its benefits**. Modern web security practices now rely on safer and more robust mechanisms like Certificate Transparency and HSTS, which provide equivalent or superior protection with less risk to website administrators.
+While HPKP was a promising concept for enhancing HTTPS security, **its risks and complexities outweighed its benefits**. Modern web security practices now rely on safer and more robust mechanisms like Certificate Transparency and HSTS, which provide equivalent or superior protection with less risk to website administrators.  
+<br>

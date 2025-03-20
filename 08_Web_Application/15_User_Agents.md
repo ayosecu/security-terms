@@ -1,11 +1,14 @@
-## User Agent 
+<br>
+
+# User Agent 
 A User Agent is **a string sent in HTTP requests by clients (e.g., browsers, bots, or scripts) to identify themselves to servers**. The User Agent string includes details about the client’s software, operating system, and sometimes the version number.
 **Attackers often spoof User Agents** to disguise their activities, making it critical to analyze User Agents to determine if requests are coming from legitimate browsers or potentially malicious botnets.
 
 ## 1. What Is a User Agent?
 The User-Agent header is **included in HTTP requests**.
 
-### Example User-Agent for a Legitimate Browser
+### Example User-Agent for a Legitimate Browser  
+
 ```
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.171 Safari/537.36
 ```
@@ -44,14 +47,16 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 ### b. Characteristics of Suspicious User Agents (Botnets or Scripts)
 1. Missing or Generic Strings
   - Bots often use simplified or malformed User-Agent strings.
-  - Example
+  - Example  
+
 ```
 User-Agent: Python-urllib/3.7
 ```
 
 2. Outdated or Nonexistent Browsers
   - Requests claim to use very old or invalid browser versions.
-  - Example
+  - Example  
+
 ```
 User-Agent: Mozilla/3.0 (compatible; Win95)
 ```
@@ -67,8 +72,8 @@ User-Agent: Mozilla/3.0 (compatible; Win95)
 ## 4. Tools to Analyze User Agents
 1. Manual Analysis
   - Use tools like curl or browser dev tools to inspect User-Agent headers.
+  - Example curl command  
 
-Example curl command
 ```
 curl -A "User-Agent: Mozilla/5.0" https://example.com
 ```
@@ -98,7 +103,8 @@ curl -A "User-Agent: Mozilla/5.0" https://example.com
 
 ### c. User-Agent Blacklists
 - **Maintain a list of known bad User-Agent strings**.
-- Example of suspicious User-Agents
+- Example of suspicious User-Agents  
+
 ```
 User-Agent: curl/7.61.1
 User-Agent: Python-requests/2.25.1
@@ -146,4 +152,5 @@ User-Agent: Mozilla/5.0 (compatible; Bot/1.0)
 | Detection Methods | Manual analysis, log inspection, User-Agent parsing tools, WAF. |
 | Mitigation | Validate strings, rate limit, implement behavioral analysis, use CAPTCHAs. |
 
-While User-Agent strings are useful for identifying clients, they can be **easily spoofed**. To reliably differentiate legitimate browsers from botnets or scripts, **combine User-Agent validation with behavior-based analysis, rate limiting, and tools like web application firewalls**. Regularly updating detection techniques and leveraging threat intelligence ensures your systems stay protected.
+While User-Agent strings are useful for identifying clients, they can be **easily spoofed**. To reliably differentiate legitimate browsers from botnets or scripts, **combine User-Agent validation with behavior-based analysis, rate limiting, and tools like web application firewalls**. Regularly updating detection techniques and leveraging threat intelligence ensures your systems stay protected.  
+<br>

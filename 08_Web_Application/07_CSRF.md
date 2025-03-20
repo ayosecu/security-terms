@@ -1,4 +1,6 @@
-## Cross-Site Request Forgery (CSRF)
+<br>
+
+# Cross-Site Request Forgery (CSRF)
 Cross-Site Request Forgery (CSRF) is **a web security vulnerability that allows an attacker to trick a user into performing unwanted actions on a trusted website where the user is authenticated**. CSRF exploits the trust that a website has in a user’s browser, primarily **through the misuse of cookies for authentication**.
 
 ## 1. How CSRF Works
@@ -20,7 +22,8 @@ Cross-Site Request Forgery (CSRF) is **a web security vulnerability that allows 
   - The victim is logged into bank.com and has an active session authenticated via cookies.
 
 ### b. Attacker’s Malicious Request
-  - The attacker hosts a page with the following code:
+  - The attacker hosts a page with the following code:  
+
 ```
 <form action="https://bank.com/transfer" method="POST">
   <input type="hidden" name="to" value="attacker_account">
@@ -37,9 +40,10 @@ Cross-Site Request Forgery (CSRF) is **a web security vulnerability that allows 
 
 ### a. Use of CSRF Tokens
   - **Include a unique CSRF token in each form or request that is validated by the server**.
-  - Example:
+  - Example
     - The server generates a token and embeds it in a form
-    - The server validates the token when processing the form submission.
+    - The server validates the token when processing the form submission.  
+
 ```
 <input type="hidden" name="csrf_token" value="random_token123">
 ```  
@@ -48,7 +52,8 @@ Cross-Site Request Forgery (CSRF) is **a web security vulnerability that allows 
   - Use the **SameSite** attribute to restrict cookies from being sent with cross-site requests
     - Strict: Cookies are sent only for requests originating from the same site.
     - Lax: Cookies are sent for top-level navigation but not for background requests.
-    - Example:
+    - Example  
+
 ```
 Set-Cookie: sessionId=abc123; SameSite=Strict
 ```
@@ -66,7 +71,8 @@ Set-Cookie: sessionId=abc123; SameSite=Strict
 ## 5. Examples of Mitigation
 
 ### a. Using CSRF Tokens in a Web App
-  - Backend (Python Flask Example):
+  - Backend (Python Flask Example)  
+
 ```
 from flask import Flask, request, render_template_string, session
 import secrets
@@ -94,7 +100,8 @@ def submit():
 ```
 
 ### b. Setting SameSite Cookies
-  - Example in Express.js (Node.js):
+  - Example in Express.js (Node.js)  
+
 ```
 app.use(cookieSession({
   name: 'session',
@@ -134,4 +141,5 @@ app.use(cookieSession({
 | Why It’s Dangerous | Can lead to unauthorized actions, data theft, or account compromise. |
 | Best Practices | Use CSRF tokens, restrict cookies with SameSite, and implement multi-factor authentication. |
 
-**CSRF is a critical vulnerability that exploits the way cookies are automatically sent with requests**. Implementing robust defenses, such as **CSRF tokens and SameSite cookies, is essential to secure web applications from this threat**. By understanding how CSRF works and its interaction with cookies, developers can build safer and more secure web applications.
+**CSRF is a critical vulnerability that exploits the way cookies are automatically sent with requests**. Implementing robust defenses, such as **CSRF tokens and SameSite cookies, is essential to secure web applications from this threat**. By understanding how CSRF works and its interaction with cookies, developers can build safer and more secure web applications.  
+<br>

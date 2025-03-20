@@ -1,4 +1,6 @@
-## Malicious Redirects
+<br>
+
+# Malicious Redirects
 Malicious redirects are **a type of cyberattack where users are forcibly redirected from a legitimate website to a malicious one**. These redirections are often employed to deliver malware, steal credentials, engage in phishing, or generate fraudulent ad revenue.
 
 ## 1. How Malicious Redirects Work
@@ -7,7 +9,8 @@ Malicious redirects exploit vulnerabilities in websites, browsers, or plugins to
   - **Compromised servers are configured to redirect** incoming traffic to malicious URLs.
 2. **Client-Side Redirects**
   - **Scripts injected into a website’s frontend (e.g., JavaScript) redirect** users.
-  - Example
+  - Example  
+
 ```
 window.location = "http://malicious-site.com";
 ```
@@ -22,7 +25,8 @@ window.location = "http://malicious-site.com";
 
 ### a. Code Injection
   - Attackers inject malicious scripts into a vulnerable website.
-  - Example
+  - Example  
+
 ```
 <script>
   window.location.href = "http://malicious-site.com";
@@ -34,7 +38,8 @@ window.location = "http://malicious-site.com";
 
 ### c. .htaccess File Exploitation
   - In Apache servers, attackers modify the .htaccess file to redirect traffic.
-  - Example
+  - Example  
+
 ```
 RewriteEngine On
 RewriteCond %{REQUEST_URI} ^.*$
@@ -43,7 +48,8 @@ RewriteRule ^.*$ http://malicious-site.com [R=301,L]
 
 ### d. URL Query Parameters
   - URLs are crafted with malicious parameters to trigger redirects.
-  - Example
+  - Example  
+
 ```
 http://example.com/?redirect=http://malicious-site.com
 ```
@@ -60,10 +66,12 @@ http://example.com/?redirect=http://malicious-site.com
   - Redirect users to sites hosting malicious payloads (e.g., ransomware, spyware).
 2. **Phishing**
   - Send users to fake login pages to steal credentials.
-  - Example
+  - Example  
+
 ```
 http://bank-login-example.com
 ```
+
 3. **Ad Fraud**
   - Redirect traffic to fraudulent ad networks to generate revenue.
 4. **Traffic Redirection**
@@ -101,7 +109,8 @@ http://bank-login-example.com
 ## 6. Mitigation Techniques
 1. **Sanitize and Validate Input**
   - Prevent attackers from injecting scripts or redirect parameters.
-  - Example (PHP)
+  - Example (PHP)  
+
 ```
 $url = filter_var($_GET['url'], FILTER_VALIDATE_URL);
 if (!$url || !in_array(parse_url($url, PHP_URL_HOST), $allowed_domains)) {
@@ -112,7 +121,8 @@ if (!$url || !in_array(parse_url($url, PHP_URL_HOST), $allowed_domains)) {
 2. **Secure .htaccess Files**
   - Restrict access and monitor for unauthorized changes.
 3. **Content Security Policy (CSP)**
-  - Prevent unauthorized scripts from executing redirects:
+  - Prevent unauthorized scripts from executing redirects:  
+
 ```
 Content-Security-Policy: default-src 'self'; script-src 'self'
 ```
@@ -133,7 +143,8 @@ Content-Security-Policy: default-src 'self'; script-src 'self'
 
 ### WordPress .htaccess Exploit
   - Attackers exploited a WordPress vulnerability to modify .htaccess files.
-  - Redirected users to:
+  - Redirected users to:  
+
 ```
 http://malicious-ads-site.com
 ```
@@ -156,5 +167,5 @@ http://malicious-ads-site.com
 | Detection Tools | Burp Suite, OWASP ZAP, Sucuri, browser developer tools. |
 | Mitigation Techniques | Input sanitization, secure .htaccess, CSP, regular updates, WAFs. |
 
-
-Malicious redirects pose significant risks to users and organizations, enabling attackers to **deliver malware, steal credentials, and generate fraudulent revenue**. Implementing robust security measures like **input validation, securing .htaccess files, deploying CSP headers, and using WAFs can effectively mitigate the threat of malicious redirects**. **Regular monitoring and updates** are crucial for maintaining security.
+Malicious redirects pose significant risks to users and organizations, enabling attackers to **deliver malware, steal credentials, and generate fraudulent revenue**. Implementing robust security measures like **input validation, securing .htaccess files, deploying CSP headers, and using WAFs can effectively mitigate the threat of malicious redirects**. **Regular monitoring and updates** are crucial for maintaining security.  
+<br>

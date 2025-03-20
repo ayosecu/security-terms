@@ -1,4 +1,6 @@
-## Same Origin Policy (SOP)
+<br>
+
+# Same Origin Policy (SOP)
 Same-Origin Policy (SOP) is **a fundamental security mechanism in web browsers that restricts how resources and data can be shared across different origins**. It **ensures that web pages from one origin cannot access data or execute scripts from another origin without explicit permission**.
 
 ## 1. What Is an Origin?
@@ -19,23 +21,23 @@ Example:
 If any of the components differ, the origin is considered different.
 
 ## 2. What Does Same-Origin Policy Restrict?
-By default, **SOP prevents scripts from accessing or interacting with resources across different origins**. Common restrictions include:
+By default, **SOP prevents scripts from accessing or interacting with resources across different origins**.
 
 ### a. Cross-Origin Requests
   - JavaScript on one origin cannot make requests to a different origin and read the response.
-  - Example:
+  - Example
     - A script from https://example.com cannot fetch data from https://api.otherdomain.com.
 
 ### b. DOM (Document Object Model) Access
   - Scripts on one origin cannot interact with the DOM of a document from another origin.
-  - Example:
+  - Example
     - A page on https://example.com cannot manipulate or read the DOM of https://sub.example.com.
 
 ### c. Cookies and Storage
   - Cookies, localStorage, and sessionStorage are scoped to an origin and cannot be accessed by other origins.
 
 ## 3. Why Is SOP Important?
-The Same-Origin Policy **prevents malicious websites from performing unauthorized actions or stealing sensitive data from other origins**. This is particularly crucial for:
+The Same-Origin Policy **prevents malicious websites from performing unauthorized actions or stealing sensitive data from other origins**.
 1. **Preventing Cross-Site Scripting (XSS)**
   - SOP ensures that scripts from one origin cannot interact with sensitive data on another origin.
 2. **Mitigating Cross-Site Request Forgery (CSRF)**
@@ -44,28 +46,32 @@ The Same-Origin Policy **prevents malicious websites from performing unauthorize
   - Ensures that sensitive resources like cookies, tokens, and credentials are accessible only to the intended origin.
 
 ## 4. Exceptions to Same-Origin Policy
-In some cases, SOP restrictions can be intentionally relaxed:
+In some cases, SOP restrictions can be intentionally relaxed.
 
 ### a. Cross-Origin Resource Sharing (CORS)
   - Definition: A mechanism that allows servers to specify which origins are permitted to access their resources.
-  - Example:
-    - A server at https://api.otherdomain.com adds the following HTTP header:
+  - Example
+    - A server at https://api.otherdomain.com adds the following HTTP header:  
+
 ```
 Access-Control-Allow-Origin: https://example.com
 ```
+
   - This allows https://example.com to access the server’s resources.
 
 ### b. JSONP
   - A legacy technique for making cross-origin requests by embedding scripts in the document.
-  - Example:
-    - Loading a script from https://api.otherdomain.com that returns JSON wrapped in a function call:
+  - Example
+    - Loading a script from https://api.otherdomain.com that returns JSON wrapped in a function call:  
+
 ```
 <script src="https://api.otherdomain.com/data?callback=handleData"></script>
 ```
 
 ### c. Window and Frame Communication
   - Pages can communicate using postMessage to exchange data safely across origins.
-  - Example:
+  - Example  
+
 ```
 targetWindow.postMessage('Hello, other origin!', 'https://otherdomain.com');
 ```
@@ -105,4 +111,5 @@ targetWindow.postMessage('Hello, other origin!', 'https://otherdomain.com');
 | Exceptions | CORS, JSONP, postMessage, proxy servers, and resource-specific policies. |
 | Best Practices | Secure CORS policies, validate origins, enforce HttpOnly cookies. |
 
-The **Same-Origin Policy is a cornerstone of web security, preventing unauthorized interactions between different origins**. While necessary for securing web applications, exceptions like CORS must be configured carefully to balance functionality and security. Understanding and adhering to SOP principles is essential for protecting both users and applications from cross-origin attacks.
+The **Same-Origin Policy is a cornerstone of web security, preventing unauthorized interactions between different origins**. While necessary for securing web applications, exceptions like CORS must be configured carefully to balance functionality and security. Understanding and adhering to SOP principles is essential for protecting both users and applications from cross-origin attacks.  
+<br>

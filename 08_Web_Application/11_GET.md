@@ -1,4 +1,6 @@
-## HTTP GET
+<br>
+
+# HTTP GET
 The HTTP GET method is **used to retrieve resources from a server**. It is the most common HTTP method and is primarily used for sending queries in the form of URL parameters to the server.
 
 ## 1. Characteristics of GET
@@ -17,12 +19,14 @@ The HTTP GET method is **used to retrieve resources from a server**. It is the m
 ## 2. GET Request Format
 
 ### Basic GET Request Example
-  - URL:
+  - URL  
+
 ```
 https://example.com/search?query=books&category=fiction
 ```
 
-  - Request Headers
+  - Request Headers  
+
 ```
 GET /search?query=books&category=fiction HTTP/1.1
 Host: example.com
@@ -36,7 +40,8 @@ Host: example.com
 ### Structure
   - Query strings **start with a ?** after the base URL.
   - Multiple **key-value pairs** are separated by &.
-  - Example
+  - Example  
+
 ```
 https://example.com/products?item=laptop&price=1000&sort=asc
 ```
@@ -64,7 +69,8 @@ https://example.com/products?item=laptop&price=1000&sort=asc
     - URL logs on servers.
     - Bookmarks.
     - Proxy or analytics logs.
-  - Example (Unsafe)
+  - Example (Unsafe)  
+
 ```
 https://example.com/login?username=admin&password=1234
 ```
@@ -79,18 +85,21 @@ https://example.com/login?username=admin&password=1234
 
 ## 6. Example of GET Request with Queries
 
-### URL with Parameters
+### URL with Parameters  
+
 ```
 https://example.com/weather?city=seattle&unit=metric
 ```
 
-### HTTP Request
+### HTTP Request  
+
 ```
 GET /weather?city=seattle&unit=metric HTTP/1.1
 Host: example.com
 ```
 
-### Server Response
+### Server Response  
+
 ```
 {
   "city": "Seattle",
@@ -121,11 +130,13 @@ Host: example.com
 2. **URL Length**
   - Keep URLs short and manageable to avoid truncation.
 3. **Proper Query Parameter Encoding**
-  - Encode special characters to avoid malformed URLs
+  - Encode special characters to avoid malformed URLs  
+
 ```
 const query = encodeURIComponent("hello world");
 console.log(query); // hello%20world
 ```
+
 4. **Caching Awareness**
   - Understand that GET requests may be cached, and stale data could be served.
 5. **Use HTTPS**
@@ -143,4 +154,5 @@ console.log(query); // hello%20world
 | Risks | Data exposure, caching risks, and URL length limits. |
 | Best Practices | Avoid sensitive data, encode URLs, and use HTTPS for secure transmission. |
 
-The GET method is ideal for retrieving and querying data in a web application. Its visibility in URLs makes it **easy to share and bookmark, but it requires careful handling to avoid exposing sensitive information**. By following best practices like **encoding query parameters and using HTTPS**, developers can use GET securely and efficiently.
+The GET method is ideal for retrieving and querying data in a web application. Its visibility in URLs makes it **easy to share and bookmark, but it requires careful handling to avoid exposing sensitive information**. By following best practices like **encoding query parameters and using HTTPS**, developers can use GET securely and efficiently.  
+<br>

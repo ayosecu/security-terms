@@ -1,0 +1,50 @@
+# Web Application
+- [Same Origin Policy](./01_Same_Origin_Policy.md)
+    - Only accept requests from the same origin domain.  
+- [CORS](./02_CORS.md)
+    - Cross-Origin Resource Sharing. Can specify allowed origins in HTTP headers. Sends a preflight request with options set asking if the server approves, and if the server approves, then the actual request is sent (eg. should client send auth cookies).
+- [HSTS](./03_HSTS.md)
+    - Policies, eg what websites use HTTPS.
+- [Cert Transparency](./04_Cert_Transparency.md)
+    - Can verify certificates against public logs 	
+- [HTTP Public Key Pinning](./05_HTTP_Public_Key_Pinning.md)
+    - Deprecated by Google Chrome
+- [Cookies](./06_Cookies.md)
+    - httponly - cannot be accessed by javascript.
+- [CSRF](./07_CSRF.md)
+    - Cross-Site Request Forgery.
+    - Cookies.
+- [XSS](./08_XSS.md)
+    - Reflected XSS.
+    - Persistent XSS.
+    - DOM based /client-side XSS.
+    - `<img scr=””>` will often load content from other websites, making a cross-origin HTTP request. 
+- [SQLi](./09_SQLi.md)
+    - Person-in-the-browser (flash / java applets) (malware).
+    - Validation / sanitisation of webforms.
+- [POST](./10_POST.md)
+    - Form data. 
+- [GET](./11_GET.md)
+    - Queries. 
+    - Visible from URL.
+- [Directory Traversal](./12_Directory_Traversal.md)
+    - Find directories on the server you’re not meant to be able to see.
+    - There are tools that do this.
+- [API Security](./13_API_Security.md)
+    - Think about what information they return. 
+    - And what can be sent.
+- [BeEF Hook](./14_BeEF_Hook.md)
+    - Get info about Chrome extensions.
+- [User Agents](./15_User_Agents.md)
+    - Is this a legitimate browser? Or a botnet?
+- [Browser Extension Takeovers](./16_Browser_Extension_Takeovers.md)
+    - Miners, cred stealers, adware.
+- [Local File Inclusion](./17_Local_File_Inclusion.md)
+- [Remote File Inclusion](./18_Remote_File_Inclusion.md)
+    - Not as common these days
+- [SSRF](./19_SSRF.md)
+    - Server Side Request Forgery.
+- [Web Vuln Scanners](./20_Web_Vuln_Scanners.md)
+- [SQLmap](./21_SQLmap.md)
+- [Malicious Redirects](./22_Malicious_Redirects.md)  
+<br>

@@ -1,4 +1,6 @@
-## HTTP POST
+<br>
+
+# HTTP POST
 The HTTP POST method is **used to send data to the server to create or update a resource**. It is commonly used in web applications for submitting form data or transmitting large amounts of information securely.
 
 ## 1. Characteristics of the POST Method
@@ -17,7 +19,8 @@ When **submitting a form, the data is typically sent in the request body**, enco
 ### a. Form Encodings
 1. application/x-www-form-urlencoded (default)
   - Data is encoded as **key1=value1&key2=value2 (URL-encoded)**.
-  - Example
+  - Example  
+
 ```
 <form action="/submit" method="POST">
     <input type="text" name="username" value="john_doe">
@@ -25,7 +28,9 @@ When **submitting a form, the data is typically sent in the request body**, enco
     <button type="submit">Submit</button>
 </form>
 ```
-  - Request Body
+
+  - Request Body  
+
 ```
 username=john_doe&password=123456
 ```
@@ -33,14 +38,17 @@ username=john_doe&password=123456
 2. multipart/form-data
   - Used for **uploading files**.
   - Each field, including files, is sent as a separate part.
-  - Example
+  - Example  
+
 ```
 <form action="/upload" method="POST" enctype="multipart/form-data">
     <input type="file" name="file">
     <button type="submit">Upload</button>
 </form>
-```
-  - Request Body
+```  
+
+  - Request Body  
+
 ```
 Content-Disposition: form-data; name="file"; filename="example.txt"
 Content-Type: text/plain
@@ -48,7 +56,8 @@ Content-Type: text/plain
 
 3. application/json
   - Data is sent in JSON format.
-  - Example
+  - Example  
+
 ```
 fetch('/api/login', {
     method: 'POST',
@@ -58,7 +67,9 @@ fetch('/api/login', {
     body: JSON.stringify({ username: "john_doe", password: "123456" })
 });
 ```
-  - Request Body
+
+  - Request Body  
+
 ```
 {
     "username": "john_doe",
@@ -92,7 +103,8 @@ fetch('/api/login', {
 
 ## 5. Example POST Request
 
-### a. Request
+### a. Request  
+
 ```
 POST /submit HTTP/1.1
 Host: example.com
@@ -102,7 +114,8 @@ Content-Length: 35
 username=john_doe&password=123456
 ```
 
-### b. Response
+### b. Response  
+
 ```
 HTTP/1.1 200 OK
 Content-Type: text/html
@@ -133,4 +146,5 @@ Content-Type: text/html
 | Common Use Cases | Form submissions, file uploads, and API requests. |
 | Security Considerations | Use HTTPS, CSRF protection, input validation, and rate limiting. |
 
-The POST method is a critical part of web applications for securely transmitting user data and creating resources. **Proper handling of form data, combined with input validation, CSRF protection, and encryption (HTTPS), ensures that POST requests remain secure and reliable**.
+The POST method is a critical part of web applications for securely transmitting user data and creating resources. **Proper handling of form data, combined with input validation, CSRF protection, and encryption (HTTPS), ensures that POST requests remain secure and reliable**.  
+<br>

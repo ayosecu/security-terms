@@ -1,4 +1,6 @@
-## API (Application Programming Interfaces) Security
+<br>
+
+# API (Application Programming Interfaces) Security
 APIs (Application Programming Interfaces) **allow communication between clients (like web or mobile applications) and servers**. While APIs streamline data exchange and functionality, they can expose vulnerabilities if not properly secured. Understanding what information APIs return and what can be sent is critical for ensuring their security.
 
 ## 1. Key Areas to Consider for API Security
@@ -8,7 +10,8 @@ APIs (Application Programming Interfaces) **allow communication between clients 
 #### Common Risks:
   1. **Excessive Data Exposure**
     - Returning more data than needed, such as user details, internal IDs, or debug information.  
-    - Example:
+    - Example  
+
 ```
 {
   "username": "johndoe",
@@ -20,7 +23,8 @@ APIs (Application Programming Interfaces) **allow communication between clients 
 
   2. **Error Messages**  
     - Detailed error messages can leak information about the backend, such as database names, server configurations, or stack traces.  
-    - Example of a bad error message
+    - Example of a bad error message  
+
 ```
 {
   "error": "SQL Error: SELECT * FROM users WHERE id=1"
@@ -30,6 +34,7 @@ APIs (Application Programming Interfaces) **allow communication between clients 
   3. **Information Disclosure in Responses**  
     - APIs may expose fields like internal server IPs, timestamps, or PII (personally identifiable information).  
     - Example  
+
 ```
 {
   "user": {
@@ -46,6 +51,7 @@ APIs (Application Programming Interfaces) **allow communication between clients 
   1. **Injection Attacks**  
     - Input like SQL queries, NoSQL commands, or scripts can compromise the database or application.  
     - Example  
+
 ```
 GET /api/user?id=1;DROP TABLE users;
 ```
@@ -53,6 +59,7 @@ GET /api/user?id=1;DROP TABLE users;
   2. **Unvalidated Input**  
     - Accepting any input without validation allows malicious payloads.  
     - Example  
+
 ```
 {
   "username": "<script>alert('XSS')</script>"
@@ -66,14 +73,17 @@ GET /api/user?id=1;DROP TABLE users;
   4. **Insecure Authentication**  
     - Sending invalid or missing credentials may allow unauthorized access.  
     - Example  
+
 ```
 POST /api/login
 {"username": "admin", "password": "wrongpass"}
 ```
+
   5. **Improper Access Control**
     - APIs may expose endpoints that allow users to access or modify data they shouldn’t.
     - If not validated, a regular user might delete another user’s account.  
     - Example  
+
 ```
 DELETE /api/user/123
 ```
@@ -88,7 +98,8 @@ DELETE /api/user/123
 ### b. Control API Responses
 1. Minimize Data Exposure
   - Return only what is necessary.
-  - Example of better practice
+  - Example of better practice  
+
 ```
 {
   "user": {
@@ -96,9 +107,11 @@ DELETE /api/user/123
   }
 }
 ```
+
 2. Standardize Error Messages
   - Avoid leaking implementation details.
-  - Use generic error responses like
+  - Use generic error responses like  
+
 ```
 {
   "error": "Invalid request."
@@ -109,14 +122,16 @@ DELETE /api/user/123
 - Use secure authentication methods such as:
   - OAuth 2.0 for token-based authentication.
   - API keys or JSON Web Tokens (JWTs).
-- Example (Bearer Token)
+- Example (Bearer Token)  
+
 ```
 Authorization: Bearer <your_token_here>
 ```
 
 ### d. Enforce Rate Limiting
 - Prevent abuse with **rate limiting** (e.g., 100 requests per minute per user).
-- Example response when exceeding limits
+- Example response when exceeding limits  
+
 ```
 HTTP/1.1 429 Too Many Requests
 ```
@@ -151,7 +166,8 @@ HTTP/1.1 429 Too Many Requests
 
 ## 4. Example of a Secure API Request and Response
 
-### Request
+### Request  
+
 ```
 POST /api/login HTTP/1.1
 Host: example.com
@@ -164,7 +180,8 @@ Authorization: Bearer <token>
 }
 ```
 
-### Response
+### Response  
+
 ```
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -189,4 +206,5 @@ Content-Type: application/json
 | Best Practices | Input validation, rate limiting, HTTPS, access controls, and logging. |
 | Common Tools | Burp Suite, Postman, OWASP ZAP, Insomnia. |
 
-APIs are critical components of modern web applications but **can expose sensitive data and become attack vectors if not secured**. **Developers must carefully control what APIs return and validate what is sent to prevent common vulnerabilities like data exposure, injection attacks, and unauthorized access**. Following API security best practices ensures robust protection and reliability.
+APIs are critical components of modern web applications but **can expose sensitive data and become attack vectors if not secured**. **Developers must carefully control what APIs return and validate what is sent to prevent common vulnerabilities like data exposure, injection attacks, and unauthorized access**. Following API security best practices ensures robust protection and reliability.  
+<br>

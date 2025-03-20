@@ -1,23 +1,31 @@
-## SQL Injection (SQLi)
+<br>
+
+# SQL Injection (SQLi)
 SQL Injection (SQLi) is **a web security vulnerability that allows attackers to manipulate an application’s SQL queries by injecting malicious input**. This can result in unauthorized access, data leaks, and even complete compromise of the database.
 
 ## 1. How SQL Injection Works
 
 ### a. Vulnerable Query
 When user input is directly incorporated into an SQL query without proper validation or sanitization, it creates a vulnerability.
-  - Example of Vulnerable Code
+  - Example of Vulnerable Code  
+
 ```
 SELECT * FROM users WHERE username = 'user' AND password = 'pass';
 ```
-  - If input is
+
+  - If input is  
+
 ```
 username: ' OR 1=1 --
 password: anything
-```
-  - The resulting query becomes
+```  
+
+  - The resulting query becomes  
+
 ``
 SELECT * FROM users WHERE username = '' OR 1=1 -- ' AND password = 'anything';
-``
+``  
+
   - The condition OR 1=1 always evaluates as true, bypassing authentication.
 
 
@@ -25,22 +33,28 @@ SELECT * FROM users WHERE username = '' OR 1=1 -- ' AND password = 'anything';
 
 ### a. Common Exploits
 1. **Authentication Bypass**
-  - Using inputs like
+  - Using inputs like  
+
 ```
 ' OR '1'='1' --
 ```
+
   - Allows attackers to bypass login pages.
 
 2. **Data Extraction**
-  - Exploiting vulnerable forms to retrieve sensitive data
+  - Exploiting vulnerable forms to retrieve sensitive data  
+
 ```
 UNION SELECT username, password FROM users;
 ```
+
 3. **Database Enumeration**
-  - Attackers identify database structure (tables, columns) using:
+  - Attackers identify database structure (tables, columns) using:  
+
 ```
 UNION SELECT table_name FROM information_schema.tables;
 ```
+
 4. **Remote Code Execution**
   - Advanced SQLi can execute OS-level commands (e.g., with MySQL’s xp_cmdshell).
 
@@ -78,7 +92,8 @@ Attackers can use person-in-the-browser (PITB) malware to facilitate SQLi by inj
 ### a. Best Practices
 1. **Parameterized Queries/Prepared Statements**
   - Use placeholders for user input to prevent injection.
-  - Example (in Python with SQLite)
+  - Example (in Python with SQLite)  
+
 ```
 cursor.execute("SELECT * FROM users WHERE username = ? AND password = ?", (username, password))
 ```
@@ -86,7 +101,8 @@ cursor.execute("SELECT * FROM users WHERE username = ? AND password = ?", (usern
 2. **Input Validation**
   - Allow only expected input formats (e.g., reject special characters in usernames).
   - Example
-    - Regex for usernames
+    - Regex for usernames  
+
 ```
 ^[a-zA-Z0-9_]{3,20}$
 ```
@@ -98,20 +114,23 @@ cursor.execute("SELECT * FROM users WHERE username = ? AND password = ?", (usern
 5. **Web Application Firewalls (WAFs)**
   - Deploy WAFs to detect and block SQLi attempts in HTTP traffic.
 6. **Sanitize User Input**
-  - Remove or escape dangerous characters like:
+  - Remove or escape dangerous characters like:  
+
 ```
 '
 "
 --
 ;
 ```
+
   - Avoid relying solely on escaping as it can be bypassed.
 
 ### b. Examples of Poor Validation
   - Unvalidated Input
     - Accepting any characters in a form field, allowing SQL injection payloads.
   - Improper Escaping
-    - Simply escaping single quotes without using parameterized queries:
+    - Simply escaping single quotes without using parameterized queries:  
+
 ```
 SELECT * FROM users WHERE username = 'O\'Reilly'; -- Vulnerable to bypass techniques.
 ```
@@ -121,14 +140,16 @@ SELECT * FROM users WHERE username = 'O\'Reilly'; -- Vulnerable to bypass techni
 
 ### a. Classic SQLi
   - Directly injecting malicious SQL code into input fields.
-  - Example
+  - Example  
+
 ```
 ' OR 1=1 --
 ```
 
 ### b. Blind SQLi
   - The server doesn’t display errors but responds differently based on injected conditions.
-  - Example
+  - Example  
+
 ```
 ' AND 1=1 --
 ' AND 1=0 --
@@ -136,14 +157,16 @@ SELECT * FROM users WHERE username = 'O\'Reilly'; -- Vulnerable to bypass techni
 
 ### c. Time-Based Blind SQLi
   - Uses time delays to infer information.
-  - Example (MySQL)
+  - Example (MySQL)  
+
 ```
 ' OR IF(1=1, SLEEP(5), 0) --
 ```
 
 ### d. Error-Based SQLi
   - Relies on error messages to extract data.
-  - Example
+  - Example  
+
 ```
 ' UNION SELECT NULL, table_name FROM information_schema.tables --
 ```
@@ -155,7 +178,8 @@ SELECT * FROM users WHERE username = 'O\'Reilly'; -- Vulnerable to bypass techni
   - [Object-Relational Mappers (ORMs)](https://en.wikipedia.org/wiki/Object–relational_mapping) like SQLAlchemy or Hibernate abstract SQL queries, reducing the risk of manual query injection.
 
 ### b. Avoid Dynamic SQL
-  - Avoid concatenating user input directly into queries
+  - Avoid concatenating user input directly into queries  
+
 ```
 SELECT * FROM users WHERE username = '" + user_input + "';
 ```
@@ -178,4 +202,5 @@ SELECT * FROM users WHERE username = '" + user_input + "';
 | Primary Defense | Use parameterized queries and input validation. |
 | Advanced Mitigations | WAFs, ORMs, and database user privilege restrictions. |
 
-SQL Injection remains one of the most critical and prevalent web vulnerabilities. **Proper implementation of validation, sanitization, and parameterized queries can effectively mitigate this threat**. Additionally, awareness of emerging attack vectors like person-in-the-browser (PITB) malware underscores the need for comprehensive security measures at both the client and server levels.
+SQL Injection remains one of the most critical and prevalent web vulnerabilities. **Proper implementation of validation, sanitization, and parameterized queries can effectively mitigate this threat**. Additionally, awareness of emerging attack vectors like person-in-the-browser (PITB) malware underscores the need for comprehensive security measures at both the client and server levels.  
+<br>

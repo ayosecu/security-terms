@@ -1,4 +1,6 @@
-## Certificate Transparency (CT)
+<br>
+
+# Certificate Transparency (CT)
 Certificate Transparency (CT) is **an open framework and security standard designed to detect and prevent the issuance of rogue or misused SSL/TLS certificates by maintaining publicly auditable logs of certificates**. It helps ensure the integrity and trustworthiness of the public key infrastructure (PKI).
 
 ## 1. Purpose of Certificate Transparency
@@ -10,7 +12,7 @@ Certificate Transparency (CT) is **an open framework and security standard desig
     - Allow anyone (e.g., website owners, security researchers) to monitor and audit certificate issuance in near real-time.
 
 ## 2. How Certificate Transparency Works
-CT introduces three main components:
+CT introduces three main components.
 
 ### a. Public Logs
   - **Logs are append-only and publicly accessible**, listing all certificates issued by participating CAs.
@@ -60,7 +62,7 @@ CT introduces three main components:
       - CAs must log certificates in public CT logs to remain trusted by browsers.
 
 ## 6. Verifying Certificates Using CT Logs
-You can verify a certificate’s transparency by checking it against public CT logs:
+You can verify a certificate’s transparency by checking it against public CT logs.
 
 ### a. Tools for Verification
   - crt.sh
@@ -117,5 +119,5 @@ You can verify a certificate’s transparency by checking it against public CT l
 | Browser Enforcement | Required by browsers like Chrome and Safari for certificate validation. |
 | Verification Tools | crt.sh, Google Transparency Report, OpenSSL. |
 
-## 11. Conclusion
-**Certificate Transparency is a critical component of modern web security, offering transparency, accountability, and early detection of misissued or malicious SSL/TLS certificates**. By leveraging CT logs and tools, organizations and individuals can enhance trust in the internet’s public key infrastructure and prevent security breaches caused by rogue certificates.
+**Certificate Transparency is a critical component of modern web security, offering transparency, accountability, and early detection of misissued or malicious SSL/TLS certificates**. By leveraging CT logs and tools, organizations and individuals can enhance trust in the internet’s public key infrastructure and prevent security breaches caused by rogue certificates.  
+<br>

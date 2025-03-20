@@ -1,4 +1,6 @@
-## CORS (Cross-Origin Resource Sharing)
+<br>
+
+# CORS (Cross-Origin Resource Sharing)
 CORS (Cross-Origin Resource Sharing) is **a security mechanism that allows servers to specify which origins are permitted to access their resources**. It is implemented through HTTP headers and ensures that only authorized clients from allowed origins can interact with the server.
 
 ## 1. Why Is CORS Needed?
@@ -34,7 +36,8 @@ When a web browser initiates a cross-origin request, it follows this process:
 ## 3. Example Flow
 
 ### Preflight Request
-  - Client Request:
+  - Client Request:  
+
 ```
 OPTIONS /api/data HTTP/1.1
 Origin: https://example-client.com
@@ -42,7 +45,8 @@ Access-Control-Request-Method: POST
 Access-Control-Request-Headers: Authorization
 ```
 
-  - Server Response:
+  - Server Response:  
+
 ```
 HTTP/1.1 200 OK
 Access-Control-Allow-Origin: https://example-client.com
@@ -52,13 +56,16 @@ Access-Control-Allow-Credentials: true
 ```
 
 ### Actual Request
-  - Client Request:
+  - Client Request:  
+
 ```
 POST /api/data HTTP/1.1
 Origin: https://example-client.com
 Authorization: Bearer token123
 ```
-  - Server Response:
+
+  - Server Response:  
+
 ```
 HTTP/1.1 200 OK
 Access-Control-Allow-Origin: https://example-client.com
@@ -97,7 +104,8 @@ Content-Type: application/json
 ### b. Fixes
 1. Server-Side Configuration
   - Add proper CORS headers.
-  - Example for an Express.js server:
+  - Example for an Express.js server:  
+
 ```
 const cors = require('cors');
 app.use(cors({
@@ -108,7 +116,8 @@ app.use(cors({
 
 2. Avoid Wildcards with Credentials
   - Use specific origins when Access-Control-Allow-Credentials is true.
-  - Example:
+  - Example  
+
 ```
 Access-Control-Allow-Origin: https://example.com
 ```
@@ -118,7 +127,7 @@ Access-Control-Allow-Origin: https://example.com
 
 ## 7. Security Considerations
   - **Misconfigured CORS Headers**
-    - 	Allowing all origins (Access-Control-Allow-Origin: *) can expose sensitive resources to attackers.
+    - Allowing all origins (Access-Control-Allow-Origin: *) can expose sensitive resources to attackers.
   - **Credential Leakage**
     - Be cautious when enabling Access-Control-Allow-Credentials, as it allows cookies or tokens to be sent.
   - **Content Security Policy (CSP)**
@@ -135,4 +144,5 @@ Access-Control-Allow-Origin: https://example.com
 | Common Issues | Missing headers, incorrect configurations, preflight failures. |
 | Best Practices | Use specific origins, restrict allowed methods/headers, and secure credentials. |
 
-**CORS enables secure and controlled communication between different origins, facilitating modern web application workflows**. Proper server configuration and understanding of CORS headers are critical for ensuring functionality and security. Misconfigurations can lead to significant vulnerabilities, so always adhere to best practices when enabling CORS in your applications.
+**CORS enables secure and controlled communication between different origins, facilitating modern web application workflows**. Proper server configuration and understanding of CORS headers are critical for ensuring functionality and security. Misconfigurations can lead to significant vulnerabilities, so always adhere to best practices when enabling CORS in your applications.  
+<br>

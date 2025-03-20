@@ -1,4 +1,6 @@
-## Directory traversal
+<br>
+
+# Directory traversal
 Directory traversal, also known as path traversal, is **a type of security vulnerability where an attacker manipulates file paths to access files and directories outside the intended scope of the application**. If exploited, it can lead to unauthorized access to sensitive files, source code, or system configurations.
 
 ## 1. How Directory Traversal Works
@@ -7,7 +9,8 @@ Directory traversal, also known as path traversal, is **a type of security vulne
     - Attackers use special characters like ../ or ..\ to navigate up the directory structure.
   - Example
     - Vulnerable code
-      - An attacker supplies ../../etc/passwd as the filename, accessing sensitive system files.
+      - An attacker supplies ../../etc/passwd as the filename, accessing sensitive system files.  
+
 ```
 def read_file(filename):
     with open(f"/app/data/{filename}", "r") as f:
@@ -23,7 +26,7 @@ def read_file(filename):
     - Using ../ to navigate to parent directories
       - Example: GET /file?name=../../etc/passwd
   - **Encoded Path**
-    - Encoding traversal characters to bypass basic filtering:
+    - Encoding traversal characters to bypass basic filtering
       - Example: GET /file?name=%2e%2e%2f%2e%2e%2fetc/passwd
   - **Mixed Path**
     - Combining traversal with valid paths:
@@ -44,7 +47,8 @@ def read_file(filename):
     - **Normalize file paths** to remove traversal characters and resolve the final path.
   - How
     - **Use system APIs to normalize paths** and ensure they fall within allowed directories.
-    - Example in Python
+    - Example in Python  
+
 ```
 import os
 
@@ -81,7 +85,8 @@ def secure_read_file(filename):
   - **Hardcoded Paths**
     - Avoid constructing file paths dynamically based on user input.
   - **Predefined Mapping**
-    - Use a mapping of user inputs to predefined file paths:
+    - Use a mapping of user inputs to predefined file paths  
+
 ```
 valid_files = {
     "file1": "/app/data/file1.txt",
@@ -123,4 +128,5 @@ def read_file(file_key):
 | Prevention Techniques | Input validation, path normalization, access controls, and file API usage. |
 | Tools | Static analysis tools, WAFs, fuzzers, dynamic analysis tools. |
 
-Directory traversal vulnerabilities are **preventable with robust input validation, proper path handling, and secure configurations**. By adhering to best practices such as **restricting file access, normalizing paths, and leveraging security frameworks**, developers can protect applications from exploitation while ensuring a secure user experience.
+Directory traversal vulnerabilities are **preventable with robust input validation, proper path handling, and secure configurations**. By adhering to best practices such as **restricting file access, normalizing paths, and leveraging security frameworks**, developers can protect applications from exploitation while ensuring a secure user experience.  
+<br>

