@@ -33,5 +33,5 @@ jobs:
       - name: Upload PDF Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: generated-pdfs
+          name: security-terms-pdfs
           path: "**/*.pdf"
