@@ -33,7 +33,7 @@ traceroute to example.com (93.184.216.34), 30 hops max, 60 byte packets
  4  93.184.216.34 (93.184.216.34)  15.010 ms  15.011 ms  15.012 ms
 ```
 
-In this example
+In this example:  
   - The packet takes 4 hops to reach its destination (IP: 93.184.216.34).
   - The RTT for each hop is shown in milliseconds.
 

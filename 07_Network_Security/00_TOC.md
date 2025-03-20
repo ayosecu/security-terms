@@ -4,9 +4,9 @@
     - Transport; layer 4 (TCP/UDP).
     - Network; layer 3 (Routing).
     - Datalink; layer 2 (Error checking and frame synchronisation).
-    - Physical; layer 1 (Bits over fibre).	
+    - Physical; layer 1 (Bits over fibre).
 - [Firewall](./02_Firewall.md)
-    - Rules to prevent incoming and outgoing connections.	
+    - Rules to prevent incoming and outgoing connections.
 - [NAT (Network Address Translation)](./03_NAT.md)
     - Useful to understand IPv4 vs IPv6.
 - [DNS (Domain Name System)](./04_DNS.md)

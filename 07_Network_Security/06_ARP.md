@@ -18,7 +18,8 @@ When a device wants to communicate with another device **on the same local netwo
   - Device A can now send Ethernet frames to Device B using its MAC address.
 
 ## Example of ARP
-Assume Device A (192.168.1.1) wants to send data to Device B (192.168.1.2) on the same LAN.
+Assume Device A (192.168.1.1) wants to send data to Device B (192.168.1.2) on the same LAN.  
+
 - Device A sends an ARP request  
 
 ```
