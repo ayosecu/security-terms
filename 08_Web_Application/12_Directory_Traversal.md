@@ -114,6 +114,7 @@ def read_file(file_key):
 | Web Application Firewalls (WAFs) | Block directory traversal patterns in requests. |
 | Fuzzers | Test applications for traversal vulnerabilities. |
 | Dynamic Analysis Tools | Detect runtime vulnerabilities. |  
+
 <br>
 
 ## 5. Best Practices

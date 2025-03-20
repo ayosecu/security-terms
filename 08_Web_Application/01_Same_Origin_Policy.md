@@ -39,7 +39,7 @@ By default, **SOP prevents scripts from accessing or interacting with resources 
 <br>
 
 ## 3. Why Is SOP Important?
-The Same-Origin Policy **prevents malicious websites from performing unauthorized actions or stealing sensitive data from other origins**.
+The Same-Origin Policy **prevents malicious websites from performing unauthorized actions or stealing sensitive data from other origins**.  
   - **Preventing Cross-Site Scripting (XSS)**
     - SOP ensures that scripts from one origin cannot interact with sensitive data on another origin.
   - **Mitigating Cross-Site Request Forgery (CSRF)**

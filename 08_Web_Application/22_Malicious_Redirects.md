@@ -5,6 +5,7 @@ Malicious redirects are **a type of cyberattack where users are forcibly redirec
 
 ## 1. How Malicious Redirects Work
 Malicious redirects exploit vulnerabilities in websites, browsers, or plugins to forcibly reroute users to harmful destinations. These redirections can occur in multiple layers, including:  
+
   - **Server-Side Redirects**
     - **Compromised servers are configured to redirect** incoming traffic to malicious URLs.
   - **Client-Side Redirects**

@@ -137,6 +137,7 @@ Web vulnerability scanners are **automated tools designed to identify security v
 | Environment | Internal network vs. external-facing applications. |
 | Scalability | Enterprise needs (Netsparker, Qualys) vs. individual testing. |
 | Integration | CI/CD pipeline compatibility for automated testing. |  
+
 <br>
 
 ## 4. Best Practices When Using Web Vulnerability Scanners

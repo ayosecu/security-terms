@@ -87,6 +87,7 @@ POST /api/login
 ```
 DELETE /api/user/123
 ```  
+
 <br>
 
 ## 2. API Security Best Practices
@@ -194,6 +195,7 @@ Content-Type: application/json
   }
 }
 ```  
+
 <br>
 
 ## 5. Summary

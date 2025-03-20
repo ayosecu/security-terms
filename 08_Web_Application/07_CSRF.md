@@ -116,6 +116,7 @@ app.use(cookieSession({
   }
 }));
 ```  
+
 <br>
 
 ## 6. Why CSRF Is Dangerous

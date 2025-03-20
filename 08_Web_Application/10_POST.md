@@ -77,6 +77,7 @@ fetch('/api/login', {
     "password": "123456"
 }
 ```  
+
 <br>
 
 ## 3. Differences Between POST and GET
@@ -88,6 +89,7 @@ fetch('/api/login', {
 | Length Limit | No limit on data size (theoretically). | Limited by URL length. |
 | Use Case | Submitting forms, file uploads, APIs. | Retrieving data, search queries. |
 | Security | More secure for sensitive data. | Less secure; data can be cached or logged. |  
+
 <br>
 
 ## 4. Security Considerations for POST Data
@@ -128,6 +130,7 @@ Content-Type: text/html
     <body>Form submitted successfully!</body>
 </html>
 ```  
+
 <br>
 
 ## 6. Use Cases for POST

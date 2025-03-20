@@ -103,6 +103,7 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 ```
 curl -I https://example.com
 ```  
+
 <br>
 
 ## 9. Best Practices

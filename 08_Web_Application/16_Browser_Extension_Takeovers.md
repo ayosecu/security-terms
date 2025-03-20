@@ -69,6 +69,7 @@ document.addEventListener('submit', (e) => {
 ```
 document.body.innerHTML = document.body.innerHTML.replace(/adnetwork\.com/g, 'attacker-ads.com');
 ```  
+
 <br>
 
 ## 3. Indicators of Compromised Extensions

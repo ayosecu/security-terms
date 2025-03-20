@@ -134,6 +134,7 @@ cursor.execute("SELECT * FROM users WHERE username = ? AND password = ?", (usern
 ```
 SELECT * FROM users WHERE username = 'O\'Reilly'; -- Vulnerable to bypass techniques.
 ```  
+
 <br>
 
 ## 5. SQL Injection Types
@@ -170,6 +171,7 @@ SELECT * FROM users WHERE username = 'O\'Reilly'; -- Vulnerable to bypass techni
 ```
 ' UNION SELECT NULL, table_name FROM information_schema.tables --
 ```  
+
 <br>
 
 ## 6. Preventing SQL Injection

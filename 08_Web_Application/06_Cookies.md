@@ -129,6 +129,7 @@ A robust cookie configuration includes multiple attributes to enhance security.
 ```
 Set-Cookie: sessionId=abc123; HttpOnly; Secure; SameSite=Strict; Path=/; Max-Age=3600
 ```  
+
 <br>
 
 ## 8. Common Security Threats and Mitigations
@@ -138,6 +139,7 @@ Set-Cookie: sessionId=abc123; HttpOnly; Secure; SameSite=Strict; Path=/; Max-Age
 | XSS (Cross-Site Scripting) | Malicious scripts stealing cookies. | Use HttpOnly to protect sensitive cookies. |
 | CSRF (Cross-Site Request Forgery) | Attacker forces the browser to send authenticated requests to another site. | Use SameSite=Strict or Lax. |
 | Session | Hijacking | Intercepting cookies over unencrypted HTTP connections.	| Use Secure to send cookies only over HTTPS. |  
+
 <br>
 
 ## 9. Practical Examples
@@ -154,6 +156,7 @@ Set-Cookie: userId=12345; HttpOnly; Secure; SameSite=Lax; Max-Age=3600
 ```
 document.cookie = "theme=dark; Max-Age=3600; Secure; SameSite=Lax";
 ```  
+
 <br>
 
 ## 10. Best Practices

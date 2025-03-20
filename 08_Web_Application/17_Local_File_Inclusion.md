@@ -139,6 +139,7 @@ $file = basename($_GET['file']);
     php_flag engine off
 </Directory>
 ```  
+
 <br>
 
 ## 5. Tools to Detect LFI
