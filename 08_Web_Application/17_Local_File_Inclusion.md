@@ -42,8 +42,8 @@ LFI can be used to
       - /etc/passwd (user account info)
       - /var/log/apache2/access.log (web server logs)
     - Windows
-      - C:\windows\win.ini
-      - C:\xampp\apache\logs\access.log
+      - C:\\windows\\win.ini
+      - C:\\xampp\\apache\\logs\\access.log
 2. **Code Execution**
   - Include files containing malicious PHP code or scripts uploaded to the server.
   - Example  
@@ -167,8 +167,8 @@ $file = basename($_GET['file']);
 - /proc/self/environ
 
 ### Windows Payloads
-- C:\windows\win.ini
-- C:\xampp\apache\logs\access.log
+- C:\\windows\\win.ini
+- C:\\xampp\\apache\\logs\\access.log
 
 ### Other Common Payloads
 - ../../../../../etc/hosts
