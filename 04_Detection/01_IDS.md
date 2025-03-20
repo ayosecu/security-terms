@@ -18,16 +18,19 @@ For IDS tools like Snort and Suricata, creating detection rules is essential for
 
   - Snort/Suricata Rule Writing
     - Snort and Suricata are signature-based network IDS tools. Rules written for these systems define patterns to be detected in network packets, such as **certain strings, ports, or protocols**.
-    - Example rule
+    - Example rule  
+    
 ```
 alert tcp any any -> 192.168.1.100 80 (msg:"Possible HTTP Attack"; content:"/cmd.exe"; sid:1001;)
 ```  
+
 This rule triggers an alert if any packet directed to IP 192.168.1.100 on port 80 contains the string /cmd.exe, which is common in certain attack types.
 Writing effective rules **requires a solid understanding of attack scenarios** and how to define the signatures of these attacks.
 
   - YARA Rule Writing
     - YARA is a tool designed to identify malware by writing rules that look for **specific patterns in files, processes, or memory**. These rules can include strings, byte patterns, and other conditions.
-    - Example rule
+    - Example rule  
+
 ```
 rule MyMalware
 {
@@ -38,7 +41,8 @@ rule MyMalware
   condition:
     $a or $b
 }
-```
+```  
+
 This rule detects a file or memory pattern containing the defined string or byte sequence, identifying potential malware.
 
 ## Host-based Intrusion Detection System (HIDS)
