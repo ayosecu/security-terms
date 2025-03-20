@@ -26,7 +26,7 @@ jobs:
             if ls "$dir"/*.md > /dev/null 2>&1; then
               folder_name=$(basename "$dir")
               cat "$dir"/*.md > "$dir/combined.md"
-              pandoc "$dir/combined.md" -o "$dir/$folder_name.pdf" --pdf-engine=xelatex -V geometry:margin=1in
+              pandoc "$dir/combined.md" -o "$folder_name.pdf" --pdf-engine=xelatex -V geometry:margin=1in
             fi
           done
 
