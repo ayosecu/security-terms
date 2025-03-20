@@ -30,8 +30,8 @@ An attacker can manipulate the file parameter to traverse directories:
 http://example.com/index.php?file=../../../../etc/passwd
 ```
 
-- This includes the /etc/passwd file on a Linux system, leaking user account information.
-
+- This includes the /etc/passwd file on a Linux system, leaking user account information.  
+<br>
 
 ## 2. Exploiting LFI
 LFI can be used to
@@ -71,8 +71,8 @@ http://example.com/index.php?file=../../../../var/log/apache2/access.log&cmd=id
 
 4. **Access Configuration Files**
   - Retrieve sensitive server configurations like:
-    - wp-config.php in WordPress (database credentials).
-
+    - wp-config.php in WordPress (database credentials).  
+<br>
 
 ## 3. Real-World LFI Example
 A vulnerable web application might accept a page parameter like this  
@@ -88,8 +88,8 @@ http://example.com/index.php?page=../../../../etc/passwd
 ```
 
 ### Result
-The content of /etc/passwd is displayed, leaking usernames and system information.
-
+The content of /etc/passwd is displayed, leaking usernames and system information.  
+<br>
 
 ## 4. Mitigation Techniques
 1. **Input Validation**
@@ -138,8 +138,8 @@ $file = basename($_GET['file']);
 <Directory "/var/www/html/uploads">
     php_flag engine off
 </Directory>
-```
-
+```  
+<br>
 
 ## 5. Tools to Detect LFI
 1. **Burp Suite**
@@ -155,8 +155,8 @@ $file = basename($_GET['file']);
 ```
 
 4. **Metasploit**
-  - Exploits LFI vulnerabilities and automates tests.
-
+  - Exploits LFI vulnerabilities and automates tests.  
+<br>
 
 ## 6. Common LFI Payloads
 
@@ -172,8 +172,8 @@ $file = basename($_GET['file']);
 
 ### Other Common Payloads
 - ../../../../../etc/hosts
-- ../../../../var/log/nginx/error.log
-
+- ../../../../var/log/nginx/error.log  
+<br>
 
 ## 7. Summary
 

@@ -26,37 +26,37 @@ password: anything
 SELECT * FROM users WHERE username = '' OR 1=1 -- ' AND password = 'anything';
 ``  
 
-  - The condition OR 1=1 always evaluates as true, bypassing authentication.
-
+  - The condition OR 1=1 always evaluates as true, bypassing authentication.  
+<br>
 
 ## 2. Exploitation and Impact
 
 ### a. Common Exploits
-1. **Authentication Bypass**
-  - Using inputs like  
+  - **Authentication Bypass**
+    - Using inputs like  
 
 ```
 ' OR '1'='1' --
 ```
 
-  - Allows attackers to bypass login pages.
+    - Allows attackers to bypass login pages.
 
-2. **Data Extraction**
-  - Exploiting vulnerable forms to retrieve sensitive data  
+  - **Data Extraction**
+    - Exploiting vulnerable forms to retrieve sensitive data  
 
 ```
 UNION SELECT username, password FROM users;
 ```
 
-3. **Database Enumeration**
-  - Attackers identify database structure (tables, columns) using:  
+  - **Database Enumeration**
+    - Attackers identify database structure (tables, columns) using:  
 
 ```
 UNION SELECT table_name FROM information_schema.tables;
 ```
 
-4. **Remote Code Execution**
-  - Advanced SQLi can execute OS-level commands (e.g., with MySQL’s xp_cmdshell).
+  - **Remote Code Execution**
+    - Advanced SQLi can execute OS-level commands (e.g., with MySQL’s xp_cmdshell).
 
 ### b. Impact
   - **Data Breach**
@@ -66,8 +66,8 @@ UNION SELECT table_name FROM information_schema.tables;
   - **Privilege Escalation**
     - Exploiting SQLi in administrative interfaces.
   - **System Compromise**
-    - Leveraging SQLi to execute shell commands and take control of servers.
-
+    - Leveraging SQLi to execute shell commands and take control of servers.  
+<br>
 
 ## 3. Person-in-the-Browser (Malware)
 Attackers can use person-in-the-browser (PITB) malware to facilitate SQLi by injecting malicious scripts into web sessions.
@@ -83,38 +83,38 @@ Attackers can use person-in-the-browser (PITB) malware to facilitate SQLi by inj
 
 ### Examples
   - A compromised Flash-based ad runs malicious JavaScript in the browser.
-  - The applet intercepts form submissions, adding SQLi payloads.
-
+  - The applet intercepts form submissions, adding SQLi payloads.  
+<br>
 
 ## 4. Validation and Sanitization of Web Forms
 **Proper validation and sanitization of user input is the primary defense against SQLi.**
 
 ### a. Best Practices
-1. **Parameterized Queries/Prepared Statements**
-  - Use placeholders for user input to prevent injection.
-  - Example (in Python with SQLite)  
+  - **Parameterized Queries/Prepared Statements**
+    - Use placeholders for user input to prevent injection.
+    - Example (in Python with SQLite)  
 
 ```
 cursor.execute("SELECT * FROM users WHERE username = ? AND password = ?", (username, password))
 ```
 
-2. **Input Validation**
-  - Allow only expected input formats (e.g., reject special characters in usernames).
-  - Example
-    - Regex for usernames  
+  - **Input Validation**
+    - Allow only expected input formats (e.g., reject special characters in usernames).
+    - Example
+      - Regex for usernames  
 
 ```
 ^[a-zA-Z0-9_]{3,20}$
 ```
 
-3. **Output Encoding**
-  - Encode dynamic data before displaying it to prevent script execution in cases where injection leads to stored scripts.
-4. **Limit Permissions**
-  - Restrict database user privileges to minimize the impact of SQLi (e.g., use read-only accounts where possible).
-5. **Web Application Firewalls (WAFs)**
-  - Deploy WAFs to detect and block SQLi attempts in HTTP traffic.
-6. **Sanitize User Input**
-  - Remove or escape dangerous characters like:  
+  - **Output Encoding**
+    - Encode dynamic data before displaying it to prevent script execution in cases where injection leads to stored scripts.
+  - **Limit Permissions**
+    - Restrict database user privileges to minimize the impact of SQLi (e.g., use read-only accounts where possible).
+  - **Web Application Firewalls (WAFs)**
+    - Deploy WAFs to detect and block SQLi attempts in HTTP traffic.
+  - **Sanitize User Input**
+    - Remove or escape dangerous characters like:  
 
 ```
 '
@@ -133,8 +133,8 @@ cursor.execute("SELECT * FROM users WHERE username = ? AND password = ?", (usern
 
 ```
 SELECT * FROM users WHERE username = 'O\'Reilly'; -- Vulnerable to bypass techniques.
-```
-
+```  
+<br>
 
 ## 5. SQL Injection Types
 
@@ -169,8 +169,8 @@ SELECT * FROM users WHERE username = 'O\'Reilly'; -- Vulnerable to bypass techni
 
 ```
 ' UNION SELECT NULL, table_name FROM information_schema.tables --
-```
-
+```  
+<br>
 
 ## 6. Preventing SQL Injection
 
@@ -190,7 +190,8 @@ SELECT * FROM users WHERE username = '" + user_input + "';
 ### d. Regular Security Audits
   - Use automated tools to scan for SQLi vulnerabilities
     - **SQLMap**: Automates SQL injection detection and exploitation.
-    - **Burp Suite**: Identifies SQLi vulnerabilities in web applications.
+    - **Burp Suite**: Identifies SQLi vulnerabilities in web applications.  
+<br>
 
 ## 7. Summary
 

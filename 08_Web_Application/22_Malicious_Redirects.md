@@ -4,22 +4,22 @@
 Malicious redirects are **a type of cyberattack where users are forcibly redirected from a legitimate website to a malicious one**. These redirections are often employed to deliver malware, steal credentials, engage in phishing, or generate fraudulent ad revenue.
 
 ## 1. How Malicious Redirects Work
-Malicious redirects exploit vulnerabilities in websites, browsers, or plugins to forcibly reroute users to harmful destinations. These redirections can occur in multiple layers, including:
-1. **Server-Side Redirects**
-  - **Compromised servers are configured to redirect** incoming traffic to malicious URLs.
-2. **Client-Side Redirects**
-  - **Scripts injected into a website’s frontend (e.g., JavaScript) redirect** users.
-  - Example  
+Malicious redirects exploit vulnerabilities in websites, browsers, or plugins to forcibly reroute users to harmful destinations. These redirections can occur in multiple layers, including:  
+  - **Server-Side Redirects**
+    - **Compromised servers are configured to redirect** incoming traffic to malicious URLs.
+  - **Client-Side Redirects**
+    - **Scripts injected into a website’s frontend (e.g., JavaScript) redirect** users.
+    - Example  
 
 ```
 window.location = "http://malicious-site.com";
 ```
 
-3. **Man-in-the-Middle (MITM)**
-  - Attackers intercept traffic and inject malicious redirects.
-4. **Malicious Ads (Malvertising)**
-  - Fake ads displayed on legitimate websites redirect users to malicious sites.
-
+  - **Man-in-the-Middle (MITM)**
+    - Attackers intercept traffic and inject malicious redirects.
+  - **Malicious Ads (Malvertising)**
+    - Fake ads displayed on legitimate websites redirect users to malicious sites.  
+<br>
 
 ## 2. Common Techniques for Malicious Redirects
 
@@ -58,8 +58,8 @@ http://example.com/?redirect=http://malicious-site.com
   - Exploiting outdated browsers or plugins to force redirects.
 
 ### f. DNS Hijacking
-  - Attackers **modify DNS records to redirect** legitimate domain traffic to malicious servers.
-
+  - Attackers **modify DNS records to redirect** legitimate domain traffic to malicious servers.  
+<br>
 
 ## 3. Goals of Malicious Redirects
 1. **Deliver Malware**
@@ -77,8 +77,8 @@ http://bank-login-example.com
 4. **Traffic Redirection**
   - Divert traffic to competitor websites or black-hat SEO pages.
 5. **Credential Theft**
-  - Steal sensitive information like passwords, credit card numbers, or personal details.
-
+  - Steal sensitive information like passwords, credit card numbers, or personal details.  
+<br>
 
 ## 4. Indicators of Malicious Redirects
 1. **Unexpected Behavior**
@@ -90,8 +90,8 @@ http://bank-login-example.com
 4. **Changes in .htaccess**
   - Unintended modifications to .htaccess files in website directories.
 5. **Suspicious Query Parameters**
-  - URLs containing redirect, next, or url parameters leading to external domains.
-
+  - URLs containing redirect, next, or url parameters leading to external domains.  
+<br>
 
 ## 5. Tools to Detect Malicious Redirects
 1. **Burp Suite**
@@ -103,8 +103,8 @@ http://bank-login-example.com
 4. **Website Monitoring Tools**
   - Tools like Sucuri and SiteLock monitor for malicious scripts and .htaccess changes.
 5. **Browser Developer Tools**
-  - Inspect network activity and JavaScript for unauthorized redirects.
-
+  - Inspect network activity and JavaScript for unauthorized redirects.  
+<br>
 
 ## 6. Mitigation Techniques
 1. **Sanitize and Validate Input**
@@ -136,8 +136,8 @@ Content-Security-Policy: default-src 'self'; script-src 'self'
 7. **Monitor Server Logs**
   - Look for unusual patterns indicating redirect activity.
 8. **Remove Malicious Ads**
-  - Use ad blockers or configure your site to block third-party scripts.
-
+  - Use ad blockers or configure your site to block third-party scripts.  
+<br>
 
 ## 7. Real-World Example
 
@@ -154,8 +154,8 @@ http://malicious-ads-site.com
 
 ### Mitigation
   - Regularly update WordPress and plugins.
-  - Restrict access to .htaccess files.
-
+  - Restrict access to .htaccess files.  
+<br>
 
 ## 8. Summary
 

@@ -28,8 +28,8 @@ http://example.com/proxy?url=http://trusted-site.com
 http://example.com/proxy?url=http://internal-service.local/admin
 ```
 
-  - Exploits the server’s ability to reach http://internal-service.local.
-
+  - Exploits the server’s ability to reach http://internal-service.local.  
+<br>
 
 ## 2. Common Targets and Impacts of SSRF
 
@@ -53,8 +53,8 @@ http://example.com/proxy?url=http://internal-service.local/admin
 3. **Bypass Firewall Rules**
   - Exploit the server’s ability to access restricted resources.
 4. **Remote Code Execution (RCE)**
-  - Chain SSRF with other vulnerabilities to achieve RCE.
-
+  - Chain SSRF with other vulnerabilities to achieve RCE.  
+<br>
 
 ## 3. Exploitation Techniques
 
@@ -82,8 +82,8 @@ gopher://127.0.0.1:3306/_SHOW%20DATABASES
 2. **Chaining Attacks**
   - Combine SSRF with Remote File Inclusion (RFI) or deserialization vulnerabilities.
 3. **DNS Rebinding**
-  - Trick the server into resolving an external domain to an internal IP.
-
+  - Trick the server into resolving an external domain to an internal IP.  
+<br>
 
 ## 4. Example Scenarios
 
@@ -99,8 +99,8 @@ http://example.com/proxy?url=http://169.254.169.254/latest/meta-data/
 ```
 
 ### Impact
-  - Extract AWS credentials, tokens, or configuration.
-
+  - Extract AWS credentials, tokens, or configuration.  
+<br>
 
 ## 5. Mitigation Techniques
 
@@ -122,8 +122,8 @@ http://example.com/proxy?url=http://169.254.169.254/latest/meta-data/
   - Restrict the server from accessing non-HTTP protocols like file://, gopher://, or ftp://.
 
 ### f. Monitor and Log Outgoing Requests
-  - Track and analyze unusual patterns in outgoing requests.
-
+  - Track and analyze unusual patterns in outgoing requests.  
+<br>
 
 ## 6. Tools for Detection
 1. **Burp Suite**
@@ -133,8 +133,8 @@ http://example.com/proxy?url=http://169.254.169.254/latest/meta-data/
 3. **SSRFmap**
   - A specialized tool for automating SSRF payload testing.
 4. Manual Testing
-  - Craft custom payloads for vulnerable endpoints.
-
+  - Craft custom payloads for vulnerable endpoints.  
+<br>
 
 ## 7. Common SSRF Payloads
 
@@ -162,8 +162,8 @@ file:///etc/passwd
 
 ```
 gopher://127.0.0.1:6379/_PING
-```
-
+```  
+<br>
 
 ## 8. Summary
 

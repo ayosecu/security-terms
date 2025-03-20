@@ -10,11 +10,13 @@ Cross-Site Request Forgery (CSRF) is **a web security vulnerability that allows 
   - **The attacker crafts a malicious link or form on their own website (or a compromised site) that sends a request to the trusted website**.
 3. **Unintentional Action**
   - The victim clicks the malicious link or visits the attacker’s page, which **triggers a request to the trusted website**.
-  - Since the victim’s browser automatically includes the authentication cookie with the request, **the trusted website processes it as if it came from the authenticated user**.
+  - Since the victim’s browser automatically includes the authentication cookie with the request, **the trusted website processes it as if it came from the authenticated user**.  
+<br>
 
 ## 2. Why Cookies Are Involved
   - Cookies are automatically sent with requests to the domain that set them, regardless of where the request originates.
-  - CSRF attacks exploit this behavior to send authenticated requests on behalf of the user without their knowledge.
+  - CSRF attacks exploit this behavior to send authenticated requests on behalf of the user without their knowledge.  
+<br>
 
 ## 3. Example of a CSRF Attack
 
@@ -34,7 +36,8 @@ Cross-Site Request Forgery (CSRF) is **a web security vulnerability that allows 
 
 ### c. Victim Interaction
   - The victim, while still logged into bank.com, visits the attacker’s page and clicks the form submission button (or the form is submitted automatically via JavaScript).
-  - The request to https://bank.com/transfer includes the victim’s valid cookies, and the server processes the transfer.
+  - The request to https://bank.com/transfer includes the victim’s valid cookies, and the server processes the transfer.  
+<br>
 
 ## 4. Mitigating CSRF
 
@@ -65,8 +68,8 @@ Set-Cookie: sessionId=abc123; SameSite=Strict
   - Configure servers to **only accept cross-origin requests from trusted origins**.
 
 ### e. Verify HTTP Referer Header
-  - **Validate that the Referer header of incoming requests matches the trusted domain**.
-
+  - **Validate that the Referer header of incoming requests matches the trusted domain**.  
+<br>
 
 ## 5. Examples of Mitigation
 
@@ -112,7 +115,8 @@ app.use(cookieSession({
     sameSite: 'Strict'
   }
 }));
-```
+```  
+<br>
 
 ## 6. Why CSRF Is Dangerous
   - **Exploitation of Trust**
@@ -120,7 +124,8 @@ app.use(cookieSession({
   - **Silent Execution**
     - The victim often has no idea their session has been hijacked or actions have been performed.
   - **Broad Impact**
-    - Any application that relies on cookies for authentication is susceptible if not properly protected.
+    - Any application that relies on cookies for authentication is susceptible if not properly protected.  
+<br>
 
 ## 7. Key Differences Between CSRF and XSS
 
@@ -129,7 +134,8 @@ app.use(cookieSession({
 | Attack Vector | Exploits user trust in a website. | Exploits website trust in user input. |
 | Exploited Mechanism | Relies on automatic cookie sending. | Injects and executes malicious scripts. |
 | Primary Goal | Force unauthorized actions. | Steal data or execute malicious actions. |
-| Mitigation | CSRF tokens, SameSite cookies. | Input validation, Content Security Policy (CSP). |
+| Mitigation | CSRF tokens, SameSite cookies. | Input validation, Content Security Policy (CSP). |  
+<br>
 
 ## 8. Summary
 

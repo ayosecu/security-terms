@@ -19,7 +19,8 @@ def read_file(filename):
 
   - Impact
     - Exposure of sensitive files such as configuration files, password hashes (/etc/passwd), and source code.
-    - Gaining further access to execute or modify files.
+    - Gaining further access to execute or modify files.  
+<br>
 
 ## 2. Common Attack Patterns
   - **Relative Path**
@@ -30,7 +31,8 @@ def read_file(filename):
       - Example: GET /file?name=%2e%2e%2f%2e%2e%2fetc/passwd
   - **Mixed Path**
     - Combining traversal with valid paths:
-      - Example: GET /file?name=/var/www/html/../../etc/shadow
+      - Example: GET /file?name=/var/www/html/../../etc/shadow  
+<br>
 
 ## 3. Preventing Directory Traversal
 ### a. Input Validation
@@ -101,7 +103,8 @@ def read_file(file_key):
 
 ### g. URL Decoding and Canonicalization
   - Decode and canonicalize the input to handle encoded traversal sequences:
-    - Example: Decode %2e%2e%2f into ../.
+    - Example: Decode %2e%2e%2f into ../.  
+<br>
 
 ## 4. Tools for Detection and Prevention
 
@@ -110,14 +113,16 @@ def read_file(file_key):
 | Static Analysis Tools | Identify traversal vulnerabilities in code. |
 | Web Application Firewalls (WAFs) | Block directory traversal patterns in requests. |
 | Fuzzers | Test applications for traversal vulnerabilities. |
-| Dynamic Analysis Tools | Detect runtime vulnerabilities. |
+| Dynamic Analysis Tools | Detect runtime vulnerabilities. |  
+<br>
 
 ## 5. Best Practices
   - **Input Validation**: Strictly validate all user inputs.
   - **Path Normalization**: Normalize paths to resolve traversal attempts.
   - **Access Controls**: Limit application file access to specific directories.
   - **Use Security Frameworks**: Rely on libraries and frameworks for secure file handling.
-  - **Regular Testing**: Test for directory traversal vulnerabilities using security tools.
+  - **Regular Testing**: Test for directory traversal vulnerabilities using security tools.  
+<br>
 
 ## 6. Summary
 

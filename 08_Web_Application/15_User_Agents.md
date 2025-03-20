@@ -18,8 +18,8 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 - Windows NT 10.0; Win64; x64: Operating system and architecture.
 - AppleWebKit/537.36: Browser engine.
 - Chrome/115.0.5790.171: Browser name and version.
-- Safari/537.36: Secondary engine for compatibility.
-
+- Safari/537.36: Secondary engine for compatibility.  
+<br>
 
 ## 2. How User Agents Are Used
   - **Identify Browsers**
@@ -29,8 +29,8 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
   - **Filter Malicious Requests**
     - User-Agent analysis helps identify botnets or malicious scripts.
   - **Logging and Analytics**
-    - Web logs rely on User-Agent strings to analyze traffic patterns.
-
+    - Web logs rely on User-Agent strings to analyze traffic patterns.  
+<br>
 
 ## 3. Legitimate Browser vs. Botnet
 
@@ -66,8 +66,8 @@ User-Agent: Mozilla/3.0 (compatible; Win95)
 4. Rapid Traffic
   - Bots generate large numbers of requests in short timeframes (automation).
 5. Missing Headers
-  - Bots often send minimal or missing HTTP headers (e.g., no cookies, referrers).
-
+  - Bots often send minimal or missing HTTP headers (e.g., no cookies, referrers).  
+<br>
 
 ## 4. Tools to Analyze User Agents
 1. Manual Analysis
@@ -87,8 +87,8 @@ curl -A "User-Agent: Mozilla/5.0" https://example.com
 4. Web Application Firewalls (WAF)
   - Tools like ModSecurity, Cloudflare, or AWS WAF inspect User-Agents and block malicious ones.
 5. Threat Intelligence Feeds
-  - Use updated botnet and crawler User-Agent blacklists.
-
+  - Use updated botnet and crawler User-Agent blacklists.  
+<br>
 
 ## 5. Detecting Botnets or Malicious Clients
 
@@ -114,8 +114,8 @@ User-Agent: Mozilla/5.0 (compatible; Bot/1.0)
 ### d. Behavior-Based Detection
 - Look beyond the User-Agent string and **analyze behavior**
 - Traffic patterns: High-frequency requests from the same IP.
-- Header consistency: Legitimate browsers typically include headers like Accept, Accept-Encoding, and Cookie.
-
+- Header consistency: Legitimate browsers typically include headers like Accept, Accept-Encoding, and Cookie.  
+<br>
 
 ## 6. Example of Legitimate vs. Malicious Traffic
 
@@ -125,8 +125,8 @@ User-Agent: Mozilla/5.0 (compatible; Bot/1.0)
 | Behavior | Human-like clicks and delays. | Rapid-fire requests with no delays. |
 | HTTP Headers | Includes cookies, referrer, and accept headers. | Minimal headers, no cookies or referrers. |
 | Traffic Volume | Low and varied. | High and repetitive. |
-| IP Range | Distributed, user-based IPs. | Concentrated, unusual IPs. |
-
+| IP Range | Distributed, user-based IPs. | Concentrated, unusual IPs. |  
+<br>
 
 ## 7. Best Practices to Mitigate Malicious Bots
 1. **Validate User-Agent Strings**
@@ -140,8 +140,8 @@ User-Agent: Mozilla/5.0 (compatible; Bot/1.0)
 5. **CAPTCHA Challenges**
   - Introduce CAPTCHAs for suspicious behavior to confirm human users.
 6. **Threat Intelligence**
-  - Update blacklists regularly to block known bad User-Agent strings.
-
+  - Update blacklists regularly to block known bad User-Agent strings.  
+<br>
 
 ## 8. Summary
 | Aspect | Details |

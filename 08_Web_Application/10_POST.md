@@ -11,7 +11,8 @@ The HTTP POST method is **used to send data to the server to create or update a 
   - Not Idempotent
     - Multiple POST requests may result in different outcomes (e.g., creating multiple resources).
   - Content-Type
-    - Specifies the format of the data being sent.
+    - Specifies the format of the data being sent.  
+<br>
 
 ## 2. Sending Form Data via POST
 When **submitting a form, the data is typically sent in the request body**, encoded based on the form’s enctype attribute.
@@ -75,7 +76,8 @@ fetch('/api/login', {
     "username": "john_doe",
     "password": "123456"
 }
-```
+```  
+<br>
 
 ## 3. Differences Between POST and GET
 
@@ -85,7 +87,8 @@ fetch('/api/login', {
 | Visibility | Not visible in the URL. | Visible in the URL. |
 | Length Limit | No limit on data size (theoretically). | Limited by URL length. |
 | Use Case | Submitting forms, file uploads, APIs. | Retrieving data, search queries. |
-| Security | More secure for sensitive data. | Less secure; data can be cached or logged. |
+| Security | More secure for sensitive data. | Less secure; data can be cached or logged. |  
+<br>
 
 ## 4. Security Considerations for POST Data
 1. **Sensitive Data**
@@ -99,7 +102,8 @@ fetch('/api/login', {
 4. **Content-Type Validation**
   - Ensure the Content-Type header matches the expected format (e.g., application/json or multipart/form-data).
 5. **Rate Limiting**
-  - Limit the number of POST requests to prevent abuse (e.g., brute-force attacks).
+  - Limit the number of POST requests to prevent abuse (e.g., brute-force attacks).  
+<br>
 
 ## 5. Example POST Request
 
@@ -123,8 +127,8 @@ Content-Type: text/html
 <html>
     <body>Form submitted successfully!</body>
 </html>
-```
-
+```  
+<br>
 
 ## 6. Use Cases for POST
 1. Form Submissions
@@ -134,7 +138,8 @@ Content-Type: text/html
 3. API Endpoints
   - RESTful APIs often use POST to create new resources (e.g., POST /api/users).
 4. Transactions
-  - Submitting payments, purchases, or updates to databases.
+  - Submitting payments, purchases, or updates to databases.  
+<br>
 
 ## 7. Summary
 

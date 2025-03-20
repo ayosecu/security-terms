@@ -86,8 +86,8 @@ POST /api/login
 
 ```
 DELETE /api/user/123
-```
-
+```  
+<br>
 
 ## 2. API Security Best Practices
 
@@ -148,8 +148,8 @@ HTTP/1.1 429 Too Many Requests
 - Always **use HTTPS** to encrypt API communication and protect data in transit.
 
 ### h. Version Your APIs
-- Use API versioning (e.g., /v1/users) to prevent breaking changes when updates occur.
-
+- Use API versioning (e.g., /v1/users) to prevent breaking changes when updates occur.  
+<br>
 
 ## 3. Tools to Test and Secure APIs
 1. **Burp Suite**
@@ -161,8 +161,8 @@ HTTP/1.1 429 Too Many Requests
 4. **Insomnia**
   - Lightweight tool for API testing.
 5. **Tools for Rate Limiting**
-  - Libraries like Express Rate Limit in Node.js or NGINX throttling.
-
+  - Libraries like Express Rate Limit in Node.js or NGINX throttling.  
+<br>
 
 ## 4. Example of a Secure API Request and Response
 
@@ -193,8 +193,8 @@ Content-Type: application/json
     "username": "john_doe"
   }
 }
-```
-
+```  
+<br>
 
 ## 5. Summary
 

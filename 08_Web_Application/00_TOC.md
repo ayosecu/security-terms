@@ -1,6 +1,6 @@
 # Web Application
 - [Same Origin Policy](./01_Same_Origin_Policy.md)
-    - Only accept requests from the same origin domain.  
+    - Only accept requests from the same origin domain.
 - [CORS](./02_CORS.md)
     - Cross-Origin Resource Sharing. Can specify allowed origins in HTTP headers. Sends a preflight request with options set asking if the server approves, and if the server approves, then the actual request is sent (eg. should client send auth cookies).
 - [HSTS](./03_HSTS.md)

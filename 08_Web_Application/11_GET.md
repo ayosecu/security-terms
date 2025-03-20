@@ -14,7 +14,8 @@ The HTTP GET method is **used to retrieve resources from a server**. It is the m
   - **Idempotent**
     - Multiple identical GET requests will produce the **same result**.
   - Bookmarkable
-    - URLs with query parameters can be saved and reused.
+    - URLs with query parameters can be saved and reused.  
+<br>
 
 ## 2. GET Request Format
 
@@ -34,7 +35,8 @@ Host: example.com
 
   - Query Parameters
     - query: books
-    - category: fiction
+    - category: fiction  
+<br>
 
 ## 3. Queries in GET Requests
 ### Structure
@@ -49,7 +51,8 @@ https://example.com/products?item=laptop&price=1000&sort=asc
 ### How Queries Are Used
   - Search: https://example.com/search?keyword=shoes
   - Filters: https://example.com/items?category=electronics&sort=price_low_to_high
-  - Pagination: https://example.com/page?page=2&limit=20
+  - Pagination: https://example.com/page?page=2&limit=20  
+<br>
 
 ## 4. GET vs. POST
 
@@ -60,7 +63,8 @@ https://example.com/products?item=laptop&price=1000&sort=asc
 | Length Limit | Limited by browser/server URL length. | No strict limit for data size. |
 | Use Case | Fetching or querying data. | Submitting data (e.g., form submission). |
 | Idempotent | Yes (safe and repeatable). | No (multiple requests may create changes). |
-| Caching | GET requests can be cached. | POST requests are generally not cached. |
+| Caching | GET requests can be cached. | POST requests are generally not cached. |  
+<br>
 
 ## 5. Security Concerns with GET
 1. **Data Exposure**
@@ -80,8 +84,8 @@ https://example.com/login?username=admin&password=1234
 3. **Length Limit**
   - Browsers and servers impose limits on URL length (usually around 2000–8000 characters).
 4. **Bookmarking**
-  - GET URLs can be bookmarked, potentially exposing sensitive information.
-
+  - GET URLs can be bookmarked, potentially exposing sensitive information.  
+<br>
 
 ## 6. Example of GET Request with Queries
 
@@ -106,7 +110,8 @@ Host: example.com
   "temperature": "15°C",
   "unit": "metric"
 }
-```
+```  
+<br>
 
 ## 7. Use Cases for GET
 1. **Fetching Data**
@@ -122,7 +127,8 @@ Host: example.com
   - Example: https://example.com/home?utm_source=google
 5. **Pagination**
   - Fetch specific pages of results.
-  - Example: https://example.com/products?page=2&limit=10
+  - Example: https://example.com/products?page=2&limit=10  
+<br>
 
 ## 8. Best Practices for GET Requests
 1. **Avoid Sensitive Data**
@@ -140,8 +146,8 @@ console.log(query); // hello%20world
 4. **Caching Awareness**
   - Understand that GET requests may be cached, and stale data could be served.
 5. **Use HTTPS**
-  - Encrypt URLs to protect query parameters during transmission.
-
+  - Encrypt URLs to protect query parameters during transmission.  
+<br>
 
 ## 9. Summary
 

@@ -4,7 +4,8 @@
 CORS (Cross-Origin Resource Sharing) is **a security mechanism that allows servers to specify which origins are permitted to access their resources**. It is implemented through HTTP headers and ensures that only authorized clients from allowed origins can interact with the server.
 
 ## 1. Why Is CORS Needed?
-By default, **the Same-Origin Policy (SOP) prevents web browsers from making requests across origins for security reasons**. However, **modern web applications often require legitimate cross-origin requests, such as calling APIs hosted on different domains**. CORS provides a secure way to enable such interactions while maintaining control over which origins are allowed.
+By default, **the Same-Origin Policy (SOP) prevents web browsers from making requests across origins for security reasons**. However, **modern web applications often require legitimate cross-origin requests, such as calling APIs hosted on different domains**. CORS provides a secure way to enable such interactions while maintaining control over which origins are allowed.  
+<br>
 
 ## 2. How CORS Works
 When a web browser initiates a cross-origin request, it follows this process:
@@ -31,7 +32,8 @@ When a web browser initiates a cross-origin request, it follows this process:
 
 ### d. Actual Request
   - If the preflight check succeeds, the browser sends the actual request.
-  - The server responds with data and, optionally, CORS headers to confirm the action.
+  - The server responds with data and, optionally, CORS headers to confirm the action.  
+<br>
 
 ## 3. Example Flow
 
@@ -70,7 +72,8 @@ Authorization: Bearer token123
 HTTP/1.1 200 OK
 Access-Control-Allow-Origin: https://example-client.com
 Content-Type: application/json
-```
+```  
+<br>
 
 ## 4. Key CORS HTTP Headers
 
@@ -81,7 +84,8 @@ Content-Type: application/json
 | Access-Control-Allow-Headers | Lists allowed custom headers (e.g., Authorization, Content-Type). |
 | Access-Control-Allow-Credentials | Indicates if credentials like cookies are allowed (true or not included). |
 | Access-Control-Expose-Headers | Specifies which headers are accessible to the client (e.g., X-Custom-Header). |
-| Access-Control-Max-Age | Specifies how long the results of a preflight request can be cached (in seconds). |
+| Access-Control-Max-Age | Specifies how long the results of a preflight request can be cached (in seconds). |  
+<br>
 
 ## 5. Use Cases
   - **Single-Page Applications (SPAs)**
@@ -89,7 +93,8 @@ Content-Type: application/json
   - **Third-Party APIs**
     - Provide public APIs while restricting access to specific trusted domains.
   - **Cross-Domain Authentication**
-    - Allow clients to send cookies or tokens to authenticate with a server on another origin.
+    - Allow clients to send cookies or tokens to authenticate with a server on another origin.  
+<br>
 
 ## 6. Common CORS Issues and Fixes
 
@@ -123,7 +128,8 @@ Access-Control-Allow-Origin: https://example.com
 ```
 
 3. Preflight Optimization
-  - Use Access-Control-Max-Age to reduce preflight request frequency.
+  - Use Access-Control-Max-Age to reduce preflight request frequency.  
+<br>
 
 ## 7. Security Considerations
   - **Misconfigured CORS Headers**
@@ -131,7 +137,8 @@ Access-Control-Allow-Origin: https://example.com
   - **Credential Leakage**
     - Be cautious when enabling Access-Control-Allow-Credentials, as it allows cookies or tokens to be sent.
   - **Content Security Policy (CSP)**
-    - Use CSP to mitigate risks by restricting the sources of scripts and resources.
+    - Use CSP to mitigate risks by restricting the sources of scripts and resources.  
+<br>
 
 ## 8. Summary
 

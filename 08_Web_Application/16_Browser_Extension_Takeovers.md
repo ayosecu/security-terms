@@ -26,8 +26,8 @@ Browser extension takeovers **occur when malicious actors exploit vulnerabilitie
 4. **Third-Party Libraries**
   - Extensions may rely on third-party libraries that contain vulnerabilities or backdoors.
 5. **Browser Updates**
-  - Attackers exploit outdated browsers or extensions not patched for security flaws.
-
+  - Attackers exploit outdated browsers or extensions not patched for security flaws.  
+<br>
 
 ## 2. Types of Attacks Using Browser Extensions
 
@@ -68,8 +68,8 @@ document.addEventListener('submit', (e) => {
 
 ```
 document.body.innerHTML = document.body.innerHTML.replace(/adnetwork\.com/g, 'attacker-ads.com');
-```
-
+```  
+<br>
 
 ## 3. Indicators of Compromised Extensions
 1. **High CPU Usage**
@@ -82,8 +82,8 @@ document.body.innerHTML = document.body.innerHTML.replace(/adnetwork\.com/g, 'at
 4. **Slow Browser Performance**
   - Compromised or malicious extensions may slow browsing activity due to mining or data exfiltration.
 5. **New Unknown Extensions**
-  - Extensions you didn’t install appearing in your browser.
-
+  - Extensions you didn’t install appearing in your browser.  
+<br>
 
 ## 4. Preventing Browser Extension Takeovers
 
@@ -115,8 +115,8 @@ document.body.innerHTML = document.body.innerHTML.replace(/adnetwork\.com/g, 'at
     - Prevent unauthorized script execution.
 
 ### g. Be Cautious of Developer Abandonment
-  - Extensions abandoned by developers may get hijacked and updated with malicious code.
-
+  - Extensions abandoned by developers may get hijacked and updated with malicious code.  
+<br>
 
 ## 5. Example Scenario: Malicious Extension Hijacking
 1. Original Scenario
@@ -126,8 +126,8 @@ document.body.innerHTML = document.body.innerHTML.replace(/adnetwork\.com/g, 'at
   - The update includes a script to mine cryptocurrency in the background.
 3. Result
   - Users experience high CPU usage and slower system performance.
-  - Their browser silently connects to an attacker-controlled mining pool.
-
+  - Their browser silently connects to an attacker-controlled mining pool.  
+<br>
 
 ## 6. Summary
 

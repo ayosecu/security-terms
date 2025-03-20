@@ -19,8 +19,8 @@ Web vulnerability scanners are **automated tools designed to identify security v
 4. **Authentication Support**
   - Scan behind login pages using credentials, session tokens, or SSO integrations.
 5. **API Testing**
-  - Test REST and SOAP APIs for vulnerabilities.
-
+  - Test REST and SOAP APIs for vulnerabilities.  
+<br>
 
 ## 2. Popular Web Vulnerability Scanners
 
@@ -125,8 +125,8 @@ Web vulnerability scanners are **automated tools designed to identify security v
 - Use Case
   - Developers and testers looking for a free yet robust scanning solution.
 - Website
-  - [Arachni](https://www.arachni-scanner.com/)
-
+  - [Arachni](https://www.arachni-scanner.com/)  
+<br>
 
 ## 3. Choosing the Right Tool
 
@@ -136,8 +136,8 @@ Web vulnerability scanners are **automated tools designed to identify security v
 | Complexity | Simple tools (Nikto) for quick scans vs. advanced tools (Burp Suite). |
 | Environment | Internal network vs. external-facing applications. |
 | Scalability | Enterprise needs (Netsparker, Qualys) vs. individual testing. |
-| Integration | CI/CD pipeline compatibility for automated testing. |
-
+| Integration | CI/CD pipeline compatibility for automated testing. |  
+<br>
 
 ## 4. Best Practices When Using Web Vulnerability Scanners
 1. Authenticate Scans
@@ -149,8 +149,8 @@ Web vulnerability scanners are **automated tools designed to identify security v
 4. Verify Results
   - Manually validate vulnerabilities to reduce false positives.
 5. **Integrate with CI/CD**
-  - Automate vulnerability scanning as part of the software development lifecycle.
-
+  - Automate vulnerability scanning as part of the software development lifecycle.  
+<br>
 
 ## 5. Summary
 

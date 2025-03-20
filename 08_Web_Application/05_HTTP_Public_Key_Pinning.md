@@ -1,3 +1,5 @@
+<br>
+
 # HTTP Public Key Pinning (HPKP)
 HTTP Public Key Pinning (HPKP) was **a web security mechanism that allowed website administrators to specify which public keys should be trusted for their domain**. It aimed to protect against attacks such as man-in-the-middle (MITM) or rogue certificate issuance by certificate authorities (CAs). However, HPKP has since been deprecated due to implementation challenges and potential risks.
 
@@ -25,7 +27,8 @@ Public-Key-Pins:
       - pin-sha256: Base64-encoded hash of the public key(s).
       - max-age: Specifies the duration (in seconds) the browser should enforce the policy (e.g., 5184000 = 60 days).
       - includeSubDomains: Extends the pinning policy to subdomains.
-      - report-uri: URL to which validation failures are reported.
+      - report-uri: URL to which validation failures are reported.  
+<br>
 
 ## 2. Benefits of HPKP
 1. **Prevent Rogue Certificates**
@@ -33,7 +36,8 @@ Public-Key-Pins:
 2. **Protection Against MITM Attacks**
   - MITM attackers cannot forge certificates unless they have access to the pinned private keys.
 3. **Enhanced Security for HTTPS**
-  - Provides an additional layer of trust beyond the CA system.
+  - Provides an additional layer of trust beyond the CA system.  
+<br>
 
 ## 3. Risks and Challenges of HPKP
 1. **Risk of Permanent Lockout**
@@ -45,7 +49,8 @@ Public-Key-Pins:
 3. **Abuse Potential**
   - Attackers who gained temporary control of a server could set malicious pins, effectively hijacking or bricking the domain for users.
 4. **Reporting Issues**
-  - The report-uri directive was often underutilized, making it difficult for site owners to detect and address pinning failures.
+  - The report-uri directive was often underutilized, making it difficult for site owners to detect and address pinning failures.  
+<br>
 
 ## 4. Deprecation of HPKP
   - Why HPKP Was Deprecated
@@ -58,7 +63,8 @@ Public-Key-Pins:
 
   - Timeline of Deprecation
     - Google Chrome deprecated HPKP in version 67 (May 2018).
-    - Other browsers followed suit, effectively making HPKP obsolete.
+    - Other browsers followed suit, effectively making HPKP obsolete.  
+<br>
 
 ## 5. Alternatives to HPKP
 1. **Certificate Transparency (CT)**
@@ -70,7 +76,8 @@ Public-Key-Pins:
 3. **DNS-Based Authentication of Named Entities (DANE)**
   - Relies on DNSSEC to bind certificates to domain names securely.
 4. **Expect-CT Header**
-  - Encourages the use of Certificate Transparency by requiring certificates to be logged.
+  - Encourages the use of Certificate Transparency by requiring certificates to be logged.  
+<br>
 
 ## 6. Example of Deprecated HPKP Implementation
 
@@ -93,7 +100,8 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 ```
 
   - Enable Certificate Transparency
-    - Ensure certificates are logged in CT during issuance.
+    - Ensure certificates are logged in CT during issuance.  
+<br>
 
 ## 7. Summary
 

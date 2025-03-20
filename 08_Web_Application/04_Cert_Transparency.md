@@ -9,7 +9,8 @@ Certificate Transparency (CT) is **an open framework and security standard desig
   - **Prevent Rogue Certificates**
     - Make it harder for attackers or malicious entities to exploit fake or fraudulent certificates.
   - **Enable Auditing**
-    - Allow anyone (e.g., website owners, security researchers) to monitor and audit certificate issuance in near real-time.
+    - Allow anyone (e.g., website owners, security researchers) to monitor and audit certificate issuance in near real-time.  
+<br>
 
 ## 2. How Certificate Transparency Works
 CT introduces three main components.
@@ -32,7 +33,8 @@ CT introduces three main components.
 
 ### c. Auditors
   - Tools or entities that verify the integrity and completeness of log entries.
-  - Ensure that logs are consistent and adhere to the CT framework.
+  - Ensure that logs are consistent and adhere to the CT framework.  
+<br>
 
 ## 3. Key Features of Certificate Transparency
   - **Append-Only Logs**
@@ -41,7 +43,8 @@ CT introduces three main components.
   - **Public Verification**
     - Anyone can query and verify certificates against CT logs.
   - **Near Real-Time Updates**
-    - Logs are updated continuously, providing quick visibility into new certificates.
+    - Logs are updated continuously, providing quick visibility into new certificates.  
+<br>
 
 ## 4. Benefits of Certificate Transparency
 1. **Improved Trust in PKI**
@@ -51,7 +54,8 @@ CT introduces three main components.
 3. **Enhanced Security**
   - Reduces risks of phishing, MITM attacks, and impersonation via rogue certificates.
 4. **Compliance**
-  - Many browsers require CT compliance for extended validation (EV) and domain validation (DV) certificates.
+  - Many browsers require CT compliance for extended validation (EV) and domain validation (DV) certificates.  
+<br>
 
 ## 5. Browser and CA Requirements
   - Browser Enforcement
@@ -59,7 +63,8 @@ CT introduces three main components.
       - Require certificates to be logged in CT to be trusted.
       - Display warnings for certificates not logged in CT.
     - CA Participation
-      - CAs must log certificates in public CT logs to remain trusted by browsers.
+      - CAs must log certificates in public CT logs to remain trusted by browsers.  
+<br>
 
 ## 6. Verifying Certificates Using CT Logs
 You can verify a certificate’s transparency by checking it against public CT logs.
@@ -79,7 +84,8 @@ You can verify a certificate’s transparency by checking it against public CT l
   - They are included in:
     - The certificate itself.
     - The TLS handshake.
-    - The OCSP response.
+    - The OCSP response.  
+<br>
 
 ## 7. Examples of Use Cases
 
@@ -90,7 +96,8 @@ You can verify a certificate’s transparency by checking it against public CT l
   - Log all issued certificates to comply with browser and industry standards.
 
 ### c. Security Researchers
-  - Audit CT logs to identify trends or anomalies in certificate issuance.
+  - Audit CT logs to identify trends or anomalies in certificate issuance.  
+<br>
 
 ## 8. Real-World Examples of Certificate Transparency Usage
 1. Preventing Misissued Certificates
@@ -98,7 +105,8 @@ You can verify a certificate’s transparency by checking it against public CT l
 2. Monitoring Domain Certificates
   - Organizations like Facebook and Cloudflare actively monitor CT logs for unauthorized certificates.
 3. Identifying Threats
-  - Researchers use CT to detect phishing campaigns using fraudulent certificates.
+  - Researchers use CT to detect phishing campaigns using fraudulent certificates.  
+<br>
 
 ## 9. Challenges and Limitations
 1. Log Trustworthiness
@@ -106,7 +114,8 @@ You can verify a certificate’s transparency by checking it against public CT l
 2. Incomplete Adoption
   - Not all CAs or certificates are logged, reducing visibility in some cases.
 3. Scalability
-  - Managing and auditing large-scale logs can be resource-intensive.
+  - Managing and auditing large-scale logs can be resource-intensive.  
+<br>
 
 ## 10. Summary
 

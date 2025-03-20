@@ -30,8 +30,8 @@ SQLmap is **an open-source penetration testing tool designed to automate the det
     - SQLite
     - MariaDB
 8. **Tor and Proxy Support**
-  - Routes traffic through Tor or proxies for anonymity.
-
+  - Routes traffic through Tor or proxies for anonymity.  
+<br>
 
 ## 2. How SQLmap Works
 SQLmap works by sending crafted SQL payloads to the target application and analyzing the responses to identify vulnerabilities and extract data.
@@ -40,8 +40,8 @@ SQLmap works by sending crafted SQL payloads to the target application and analy
 1. **Identify the target URL or form**.
 2. **Configure** SQLmap with the target.
 3. SQLmap **sends various payloads** to test for vulnerabilities.
-4. Upon finding a vulnerability, SQLmap **exploits it to extract data or perform additional actions**.
-
+4. Upon finding a vulnerability, SQLmap **exploits it to extract data or perform additional actions**.  
+<br>
 
 ## 3. Common SQLmap Commands
 
@@ -107,8 +107,8 @@ sqlmap -u "http://example.com/page?id=1" --tamper=charencode
 sqlmap -u "http://example.com/page?id=1" --tor
 ```
 
-- Routes traffic through the Tor network.
-
+- Routes traffic through the Tor network.  
+<br>
 
 ## 4. Example Scenarios
 
@@ -134,8 +134,8 @@ sqlmap -u "http://example.com/page?id=1" --privileges
 sqlmap -u "http://example.com/page?id=1" --os-shell
 ```
 
-- Spawns a shell to execute operating system commands (if supported).
-
+- Spawns a shell to execute operating system commands (if supported).  
+<br>
 
 ## 5. Risks and Responsible Use
 
@@ -143,8 +143,8 @@ sqlmap -u "http://example.com/page?id=1" --os-shell
 1. Only Test Systems **You Own or Have Permission** To Test
   - Unauthorized use can lead to legal consequences.
 2. **Do Not Use on Production** Systems Without Approval
-  - SQLmap can send high volumes of requests, potentially causing performance degradation.
-
+  - SQLmap can send high volumes of requests, potentially causing performance degradation.  
+<br>
 
 ## 6. Mitigation Against SQLmap Attacks
 1. **Input Validation and Sanitization**
@@ -156,7 +156,8 @@ sqlmap -u "http://example.com/page?id=1" --os-shell
 4. **Least Privilege Principle**
   - Restrict database user permissions to the minimum required.
 5. **Regular Security Audits**
-  - Use tools like SQLmap in authorized tests to identify and patch vulnerabilities.
+  - Use tools like SQLmap in authorized tests to identify and patch vulnerabilities.  
+<br>
 
 ## 7. Summary
 
