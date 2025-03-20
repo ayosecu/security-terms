@@ -5,25 +5,25 @@ In the persistence phase of an attack, **attackers establish methods to maintain
 
 ## 1. Additional Accounts/Credentials
   - Definition: Attackers may create new user accounts or add credentials to existing ones, ensuring they have authorized (but hidden) access to the system.
-  - How It Works:
+  - How It Works
     - **New Accounts**: Attackers with administrative access can create additional user accounts with high privileges, making it easier to regain access even if the primary entry point is discovered.
     - **Credential Dumping and Reuse**: Attackers may dump existing credentials from memory (e.g., through tools like Mimikatz) and store these for later use, or they may add new SSH keys or password hashes to retain access on Unix systems.
   - Security Implications: New accounts and added credentials often blend in with legitimate users, making them challenging to detect. **Privileged accounts pose a particularly high risk**, as they grant attackers greater control over the system.
 
 ## 2. Start-Up/Log-On/Boot Scripts, Modify Launch Agents, DLL Side-Loading, Webshells
-  - **Start-Up/Log-On/Boot Scripts**:
+  - **Start-Up/Log-On/Boot Scripts**
     - Definition: Attackers modify scripts or create new ones that execute automatically during system start-up, user log-on, or boot processes.
     - Purpose: These scripts allow attackers to reinstate malware, execute commands, or establish a connection back to their servers whenever the system reboots or a user logs in.
     - Security Implications: Start-up and log-on scripts are easy to overlook, especially on complex systems with multiple start-up programs, and allow attackers to restart malicious processes after every reboot.
-  - **Modify Launch Agents (macOS)**:
+  - **Modify Launch Agents (macOS)**
     - Definition: On macOS, attackers can add or modify Launch Agents and Launch Daemons, which are files that control processes that start automatically.
     - Purpose: Modifying these agents allows attackers to launch malware invisibly in the background upon start-up.
     - Security Implications: Launch Agents are difficult to monitor without specialized tools, making them an effective way to establish persistence on macOS systems.
-  - **DLL Side-Loading (Windows)**:
+  - **DLL Side-Loading (Windows)**
     - Definition: DLL side-loading is a technique where attackers place a malicious DLL with the same name as a legitimate one in the application’s directory, tricking the application into loading the malicious DLL instead.
     - Purpose: This technique enables malware to load automatically as part of a trusted application.
     - Security Implications: Since the malicious DLL is loaded as part of a legitimate process, it can evade detection by security tools that focus on standalone malware.
-  - **Webshells**:
+  - **Webshells**
     - Definition: A webshell is a script file (often PHP, ASP, or JSP) that allows attackers to control a compromised web server remotely via HTTP requests.
     - Purpose: **Webshells provide a persistent backdoor** into a server, allowing attackers to execute commands and upload/download files.
     - Security Implications: Webshells are often difficult to detect because they blend into the server’s existing codebase, and attackers can use them to access the server remotely without needing interactive shells.

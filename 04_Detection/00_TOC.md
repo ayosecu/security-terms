@@ -13,23 +13,25 @@
   
   - [Security Signals](./04_Security_Signals.md)
     - Things that create signals
-        - Honeypots, snort.
+      - Honeypots, snort.
     - Things that triage signals
-        - SIEM, eg splunk.
+      - SIEM, e.g. splunk.
     - Things that will alert a human 
-        - Automatic triage of collated logs, machine learning.
-        - Notifications and analyst fatigue.
-        - Systems that make it easy to decide if alert is actual hacks or not.
+      - Automatic triage of collated logs, machine learning.
+      - Notifications and analyst fatigue.
+      - Systems that make it easy to decide if alert is actual hacks or not.
   
   - [Signatures](./05_Signatures.md)
     - Host-based signatures
-        - Eg changes to the registry, files created or modified.
-        - Strings in found in malware samples appearing in binaries installed on hosts (/Antivirus).
+      - E.g. changes to the registry, files created or modified.
+      - Strings in found in malware samples appearing in binaries installed on hosts (/Antivirus).
     - Network signatures
-        - Eg checking DNS records for attempts to contact C2 (command and control) servers. 
+      - E.g. checking DNS records for attempts to contact C2 (command and control) servers. 
   
   - [Anomaly or Behavior Based Detection](./06_Anomaly_or_Behavior_Based_Detection.md)
-    - IDS learns model of “normal” behaviour, then can detect things that deviate too far from normal - eg unusual urls being accessed, user specific- login times / usual work hours, normal files accessed.  
+    - IDS learns model of “normal” behaviour, then can detect things that deviate too far from normal
+      - E.g. unusual urls being accessed, user specific
+      - login times / usual work hours, normal files accessed.  
     - Can also look for things that a hacker might specifically do (eg, HISTFILE commands, accessing /proc).
     - If someone is inside the network- If action could be suspicious, increase log verbosity for that user.
   

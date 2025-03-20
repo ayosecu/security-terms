@@ -7,7 +7,6 @@ Anomaly or behavior-based detection **focuses on identifying abnormal activities
 1. **Learning Normal Behavior**
   - In anomaly-based intrusion detection systems (IDS), the system **first learns a baseline of normal behavior by monitoring patterns such as typical network traffic, login times, accessed files, URLs, and user activity**.
   - Once the model of normal behavior is established, the system **can flag activities that deviate too far from this baseline**.
-
   - Examples
     - Unusual URLs: If a user or system starts accessing URLs that are highly unusual compared to their normal browsing behavior, this could indicate malicious intent (e.g., contacting command-and-control servers or downloading malware).
     - User-Specific Activity: If a user typically logs in during regular work hours and suddenly logs in during odd hours or accesses files they don’t usually handle, these deviations can trigger alerts. This could be a sign of a compromised account or insider threat.
@@ -24,7 +23,6 @@ Anomaly or behavior-based detection **focuses on identifying abnormal activities
 
 ## Response
   - **When a suspicious activity is detected, the system may increase log verbosity for that user or system to gather more detailed information about their actions**. This allows security analysts to conduct a more thorough investigation into whether the behavior indicates a breach.
-
   - Example Scenarios
     - Unusual Login Times: If an employee usually logs in between 9 AM and 5 PM but suddenly logs in at 3 AM, this deviation from normal behavior would trigger an alert.
     - Accessing Sensitive Files: A user who typically works in marketing suddenly starts accessing finance-related documents, which is out of the ordinary for their role. This behavior could indicate a compromised account or an insider threat.
@@ -34,7 +32,6 @@ Anomaly or behavior-based detection **focuses on identifying abnormal activities
   - **Detecting Unknown Threats**: Unlike signature-based detection, which relies on known patterns of malicious activity, anomaly-based detection **can detect new or previously unseen threats by identifying deviations from normal behavior**.
   - **Insider Threat Detection**: This method is particularly effective in identifying insider threats or attackers who have gained access to the network, as their actions may stand out from regular users’ activity.
   - **Adaptive Security**: As systems and users evolve, the model of “normal” behavior can be continuously updated, allowing the IDS to adapt to changes over time.
-
   - Challenges
     - **False Positives**: If the definition of “normal” is too strict, anomaly detection systems can generate a lot of false positives, flagging benign activities as suspicious. This can lead to alert fatigue for security teams.
     - **Learning Period**: These systems require a period of time to learn normal behavior before they can effectively detect anomalies. During this learning phase, they may not detect all threats.

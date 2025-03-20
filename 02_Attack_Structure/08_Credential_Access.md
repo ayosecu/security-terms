@@ -15,19 +15,19 @@ In the credential access phase of an attack, **attackers attempt to steal or obt
   - Forensic and Security Implications: Access to /etc/shadow significantly compromises system security, as **password hashes can be brute-forced or cracked using tools like John the Ripper or Hashcat**.
 
 ## 3. Windows DCSync, Kerberos Golden & Silver Tickets
-  - **DCSync Attack**:
+  - **DCSync Attack**
     - Definition: DCSync is a method where attackers use the replicate privilege to request password hashes from a domain controller by impersonating the behavior of a domain controller.
     - Purpose: It allows attackers to retrieve password hashes for any user in the Active Directory (AD), including sensitive accounts like krbtgt (Kerberos Ticket Granting Ticket) and domain administrators.
-  - **Kerberos Golden & Silver Tickets**:
+  - **Kerberos Golden & Silver Tickets**
     - Golden Ticket: A Golden Ticket is a forged Kerberos Ticket Granting Ticket (TGT) created using the hash of the krbtgt account, which is responsible for Kerberos authentication. With a Golden Ticket, attackers can authenticate as any user in the AD environment, effectively gaining unrestricted access.
     - Silver Ticket: A Silver Ticket is a forged Kerberos Ticket Granting Service (TGS) ticket, which allows attackers to authenticate to specific services within the AD domain rather than the entire domain.
   - Security Implications: DCSync, Golden Ticket, and Silver Ticket attacks give attackers the ability to control or impersonate high-privilege accounts **in AD environments**. This level of access enables them to bypass most security controls and maintain persistent, high-level access.
 
 ## 4. Clear-Text Credentials in Files, Pastebin, etc.
-  - **Clear-Text Credentials in Files**:
+  - **Clear-Text Credentials in Files**
     - Definition: Attackers may find credentials stored in plaintext within configuration files, scripts, or documentation, either on local machines or accessible shared drives.
     - Common Locations: Configuration files for web servers, database connections, or other services are often found in plaintext if proper security practices weren’t followed.
-  - **Credentials in Pastebin and Public Repositories**:
+  - **Credentials in Pastebin and Public Repositories**
     - Attackers may search for credentials accidentally exposed on public platforms like Pastebin or GitHub, where developers may unknowingly upload sensitive information.
   - Security Implications: Clear-text credentials are a major security risk, as they provide immediate access without requiring decryption or cracking. If attackers find these credentials in publicly accessible locations, they can gain access to systems with minimal effort.
 

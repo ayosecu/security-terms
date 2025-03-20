@@ -5,17 +5,17 @@ In the attack structure, resource development is **a preparatory phase where att
 
 ## 1. Get Infrastructure (via Compromise or Otherwise)
   - Definition: Attackers acquire the physical or virtual infrastructure needed to carry out their attack. This infrastructure **can include compromised servers, domain names, IP addresses, and cloud resources**.
-  - Methods:
+  - Methods
     - **Compromised Infrastructure**: Attackers may hack into servers or devices that are already online and repurpose them for command-and-control (C2), phishing, or hosting malicious files.
     - **Purchased Infrastructure**: Some attackers rent or buy infrastructure like VPS servers, domain names, or cloud services to set up an attack infrastructure that appears legitimate and is harder to track.
   - Security Implications: Attackers using compromised or rented infrastructure can blend in with legitimate services, making it harder for defenders to detect malicious activity or trace the infrastructure back to the attackers.
 
 ## 2. Build Malware
   - Definition: Attackers develop or modify malicious software to accomplish specific tasks, such as stealing data, encrypting files, or maintaining persistence on a network.
-  - Malware Types:
+  - Malware Types
     - Custom Malware: Skilled attackers or groups may build tailored malware with unique code to avoid detection by traditional antivirus solutions.
     - Modified Open-Source Malware: Some attackers use or modify publicly available malware to meet their needs, adding features or altering signatures to evade detection.
-  - **Common Malware Features**:
+  - **Common Malware Features**
     - **Persistence**: Ensures the malware remains active even after system reboots.
     - **Stealth**: Uses techniques to evade detection, such as encryption, packing, or code injection.
     - **Command-and-Control (C2)** Communication: Malware often includes C2 capabilities, allowing attackers to control infected systems remotely.
@@ -23,7 +23,7 @@ In the attack structure, resource development is **a preparatory phase where att
 
 ## 3. Compromise Accounts
   - Definition: **Attackers obtain access to user accounts, giving them legitimate credentials that they can use to avoid detection when accessing systems or data**.
-  - Methods:
+  - Methods
     - **Credential Theft**: Attackers may use techniques like **phishing, keylogging, or stealing cached credentials** to obtain usernames and passwords.
     - **Credential Stuffing**: Attackers **test large volumes of stolen credentials from data breaches**, hoping some will match accounts on the target’s systems.
     - **Brute Force**: Attackers repeatedly attempt to guess weak passwords, often targeting accounts with default credentials or simple passwords.

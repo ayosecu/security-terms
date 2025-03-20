@@ -7,14 +7,14 @@ Here are some common privilege escalation techniques, including **Sudo exploits,
 
 ## 1. Sudo Exploits
   - Definition: On Unix-based systems, sudo allows users to execute commands with elevated privileges (typically as the root user). Attackers may attempt to **exploit misconfigurations in sudo or vulnerabilities to gain root access**.
-  - Common Sudo Exploits:
+  - Common Sudo Exploits
     - **Misconfigured Sudoers File**: Sometimes, the sudoers file (which controls sudo permissions) grants more privileges than necessary. Attackers can exploit such configurations to execute commands as root.
     - **Unrestricted Sudo Permissions**: In cases where users are allowed to execute all commands via sudo without restrictions, attackers can quickly escalate their privileges.
   - Security Implications: If attackers can exploit sudo, they gain root privileges, allowing them to modify critical system files, install software, and control almost every aspect of the system.
 
 ## 2. Token/Key Theft
   - Definition: Many operating systems and cloud environments **use tokens, keys, and credentials to authenticate and authorize users and processes**. Attackers may steal these tokens or keys to gain elevated privileges.
-  - Methods of Token/Key Theft:
+  - Methods of Token/Key Theft
     - **Access Tokens (Windows)**: Attackers can steal tokens that represent user sessions, impersonating users with higher privileges.
     - **Cloud Access Keys**: In cloud environments (e.g., AWS, Azure), attackers may attempt to steal access keys or tokens tied to privileged accounts to control cloud resources.
     - **Session Cookies**: Attackers may steal session cookies from web browsers or applications to impersonate users without needing their passwords.
@@ -22,14 +22,14 @@ Here are some common privilege escalation techniques, including **Sudo exploits,
 
 ## 3. IAM/Group Policy Modifications
   - Definition: In enterprise and cloud environments, Identity and Access Management (IAM) systems and group policies control user permissions and access rights. Attackers may **modify IAM policies or group memberships to escalate their privileges**.
-  - Techniques:
+  - Techniques
     - **IAM Policy Modification**: Attackers with sufficient access may modify IAM policies to grant themselves broader permissions, such as administrator rights in cloud environments.
     - **Adding to Privileged Groups**: Attackers with local admin rights on Windows, for example, can add their account to higher-privilege groups (e.g., Domain Admins or Local Administrators).
   - Security Implications: By altering IAM policies or group memberships, attackers gain access to additional resources or permissions, making it easier for them to control the environment and access sensitive data.
 
 ## 4. Persistence Exploits as Privilege Escalation Methods
   - Definition: Many persistence techniques double as privilege escalation methods, as they help attackers gain or retain higher privileges.
-  - Examples:
+  - Examples
     - **Scheduled Tasks**: If attackers create scheduled tasks under system or administrator accounts, they gain elevated access upon task execution.
     - **DLL Side-Loading**: Attackers can plant malicious DLLs in directories used by privileged applications. When the application loads the DLL, it runs with elevated privileges, effectively escalating the attacker’s access.
     - **WMI Persistence**: Attackers who use WMI scripts for persistence can configure them to execute with system-level privileges, providing elevated access.

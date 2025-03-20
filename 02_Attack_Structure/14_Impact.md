@@ -4,11 +4,11 @@
 In the impact phase of an attack, **the attacker executes actions that disrupt, degrade, or manipulate systems and data, often to achieve specific goals such as financial gain, reputational harm, or operational disruption**. The impact phase includes techniques like deleting accounts or data, encrypting files (e.g., ransomware), defacing websites, and causing denial of service (DoS) or forced shutdowns.
 
 ## 1. Deleted Accounts or Data, Encrypt Data (like Ransomware)
-  - **Deleted Accounts or Data**:
+  - **Deleted Accounts or Data**
     - Definition: Attackers may delete user accounts or critical data to disrupt operations, cause financial damage, or erase traces of their presence.
     - Purpose: This tactic is often used to sabotage organizations, hinder recovery, or remove evidence.
     - Examples: Deleting system administrators’ accounts, removing database records, or erasing critical files.
-  - **Encrypt Data (Ransomware)**:
+  - **Encrypt Data (Ransomware)**
     - Definition: In a ransomware attack, attackers encrypt files and **demand payment in exchange for the decryption key**.
     - Purpose: Ransomware is typically financially motivated, though some attackers may use it for sabotage.
     - Examples: Encrypting data on file servers, databases, or workstations, rendering them unusable until the ransom is paid.
@@ -21,12 +21,12 @@ In the impact phase of an attack, **the attacker executes actions that disrupt, 
   - Security Implications: Defacement impacts public perception and credibility, especially if customers or stakeholders see the altered content before it’s corrected. It’s also an indicator that attackers had access to modify web server files, suggesting further vulnerabilities in the web application or server.
 
 ## 3. Denial of Service (DoS), Shutdown/Reboot Systems
-  - Denial of Service (DoS):
+  - Denial of Service (DoS)
     - Definition: Attackers overload a system or network with traffic, consuming resources and rendering the **service unavailable** to legitimate users.
-    - Types:
+    - Types
       - Application-Layer DoS: Targeting specific applications (e.g., web servers) with traffic to exhaust resources.
       - **Distributed Denial of Service (DDoS)**: **Using multiple systems (often a botnet) to amplify traffic** and overwhelm the target.
-    - Shutdown/Reboot Systems:
+    - Shutdown/Reboot Systems
       - Definition: Attackers force systems to shut down or reboot, disrupting ongoing operations and potentially causing data loss or damage.
       - Purpose: Shutdowns and reboots disrupt availability and can trigger a lengthy recovery process, especially for critical systems.
     - Security Implications: DoS attacks and forced shutdowns can cause significant operational downtime, impact customer experience, and lead to financial losses. Repeated forced shutdowns can also damage hardware or cause data corruption.

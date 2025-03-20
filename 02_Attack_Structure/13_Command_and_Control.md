@@ -5,9 +5,9 @@ In the command and control (C2) phase, **attackers establish and maintain commun
 
 ## 1. Web Service-Based C2
   - Definition: Attackers use web-based services or legitimate applications as C2 channels to issue commands and retrieve data from compromised systems.
-  - Methods:
+  - Methods
     - **Dead Drop Resolvers**: Attackers post commands or data to web pages, forums, or social media sites, where infected systems periodically check for instructions. This is a form of one-way communication where the **system retrieves commands without directly connecting to the attacker**.
-    - **One-Way/Bi-Directional Traffic**:
+    - **One-Way/Bi-Directional Traffic**
       - One-Way Traffic: In one-way C2, the compromised system only receives commands, reducing the chance of detection by limiting outbound traffic patterns.
       - Bi-Directional Traffic: With two-way C2 communication, the system can both receive commands and send data back, providing the attacker with interactive control.
     - Encrypted Channels: Attackers often use HTTPS, TLS, or other encryption protocols to conceal C2 traffic, blending in with legitimate encrypted web traffic to evade detection.
@@ -15,16 +15,16 @@ In the command and control (C2) phase, **attackers establish and maintain commun
 
 ## 2. Removable Media
   - Definition: Attackers may **use removable media (like USB drives) as a physical C2 method**, especially in environments with restricted network access or air-gapped systems (systems isolated from external networks).
-  - How It Works:
+  - How It Works
     - Attackers may plant malware on USB drives that execute commands once plugged into a target system. The infected system could then record data or execute tasks, saving the results back to the USB for the attacker to retrieve.
     - USBs can carry updated command files or scripts to be executed automatically when inserted into the compromised system.
   - Security Implications: Removable media-based C2 avoids network detection entirely, making it ideal for air-gapped networks or environments with strict network controls. However, physical access is often required, which can limit its practicality for large-scale attacks.
 
 ## 3. Steganography and Encoded Commands
-  - **Steganography**:
+  - **Steganography**
     - Definition: Attackers use steganography to **hide commands or data within seemingly innocent files, such as images, videos, or audio files, allowing them to avoid detection**.
     - How It Works: The attacker embeds commands within the pixel values of an image or the metadata of a media file. The compromised system decodes these hidden commands to understand and execute them.
-  - **Encoded Commands**:
+  - **Encoded Commands**
     - Definition: Attackers encode commands in formats that aren’t immediately readable, such as Base64, hexadecimal, or custom encoding schemes, making it harder for security tools to recognize malicious instructions.
     - How It Works: The compromised system decodes the commands after receiving them, executing the instructions as needed.
   - Security Implications: Steganography and encoding **can evade detection** by traditional security tools, which might not analyze image or audio files for hidden commands. These techniques allow attackers to mask malicious commands within benign-looking files, bypassing content inspection mechanisms.
