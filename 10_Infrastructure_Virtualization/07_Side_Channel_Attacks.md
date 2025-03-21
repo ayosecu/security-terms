@@ -1,4 +1,6 @@
-## Side Channel Attacks
+<br>
+
+# Side Channel Attacks
 Side-channel attacks **exploit indirect information leakage from a system, such as timing, power consumption, electromagnetic radiation, or cache behavior, to infer sensitive data**. Unlike direct attacks, these attacks do not exploit software vulnerabilities but rather **leverage hardware-level behavior**.
 
 ## 1. How Side-Channel Attacks Work
@@ -7,7 +9,8 @@ Side-channel attacks **exploit indirect information leakage from a system, such 
   - Exploited Metrics
     - **Timing**: Execution time differences may reveal cryptographic keys or passwords.
     - **Power Consumption**: Variations in power usage correlate with specific operations.
-    - **Cache Access Patterns**: Differences in cache hits/misses can disclose memory content.
+    - **Cache Access Patterns**: Differences in cache hits/misses can disclose memory content.  
+<br>
 
 ## 2. Spectre and Meltdown
 
@@ -33,7 +36,8 @@ Side-channel attacks **exploit indirect information leakage from a system, such 
     - Rogue Data Cache Load (CVE-2017-5754):
       - Exploits the ability to read kernel memory from user space.
   - Impact
-    - Directly exposes kernel memory to user processes, bypassing privilege boundaries.
+    - Directly exposes kernel memory to user processes, bypassing privilege boundaries.  
+<br>
 
 ## 3. Similarities Between Spectre and Meltdown
 
@@ -43,6 +47,8 @@ Side-channel attacks **exploit indirect information leakage from a system, such 
 | Exploited Feature | CPU optimizations for performance (speculative execution, out-of-order execution). |
 | Impact | Unauthorized access to sensitive data, including memory of other processes or the kernel. |
 | Detection | Difficult to detect as the attacks do not leave obvious traces in system logs. |
+  
+<br>
 
 ## 4. Differences Between Spectre and Meltdown
 
@@ -52,6 +58,9 @@ Side-channel attacks **exploit indirect information leakage from a system, such 
 | Exploitation | Uses speculative execution and branch prediction. | Exploits out-of-order execution. |
 | Mitigation Complexity | Requires application and system-wide fixes. | Requires OS-level patches. |
 | Impact Area | Broader impact across processes, VMs, and sandboxes. | Primarily impacts user-space/kernel memory separation. |
+
+  
+<br>
 
 ## 5. Mitigation Strategies
 
@@ -75,7 +84,8 @@ Side-channel attacks **exploit indirect information leakage from a system, such 
 ### c. General Recommendations
   - Regularly update operating systems, browsers, and firmware.
   - Monitor for vendor advisories and security updates.
-  - Use hardware with built-in mitigations (e.g., Intel’s newer Spectre/Meltdown-resistant processors).
+  - Use hardware with built-in mitigations (e.g., Intel’s newer Spectre/Meltdown-resistant processors).  
+<br>
 
 ## 6. Broader Implications of Side-Channel Attacks
 
@@ -91,7 +101,8 @@ Side-channel attacks **exploit indirect information leakage from a system, such 
   - Performance Overhead
     - Many mitigations reduce system performance (e.g., KPTI for Meltdown).
   - Universal Applicability
-    - Side-channel vulnerabilities vary across architectures, requiring vendor-specific solutions.
+    - Side-channel vulnerabilities vary across architectures, requiring vendor-specific solutions.  
+<br>
 
 ## 7. Tools for Testing and Detection
 
@@ -101,6 +112,8 @@ Side-channel attacks **exploit indirect information leakage from a system, such 
 | Meltdown Exploit Code | Demonstrates potential kernel memory leakage. |
 | Intel Diagnostic Tools | Checks for CPU microcode updates and vulnerability. |
 | Mitigations Checker | Verifies the implementation of Spectre/Meltdown patches. |
+  
+<br>
 
 ## 8. Summary
 
@@ -111,4 +124,5 @@ Side-channel attacks **exploit indirect information leakage from a system, such 
 | Common Mitigations | Apply microcode updates, OS patches, and use speculative execution barriers. |
 | Broader Risks | Affects cryptography, cloud environments, and multi-tenant systems. |
 
-**Side-channel attacks like Spectre and Meltdown exploit fundamental CPU behaviors designed for performance optimization**. While mitigations have been implemented, these attacks underscore the importance of balancing performance with security in hardware and software design. Continuous updates and vigilance are critical for protecting systems from these sophisticated threats.
+**Side-channel attacks like Spectre and Meltdown exploit fundamental CPU behaviors designed for performance optimization**. While mitigations have been implemented, these attacks underscore the importance of balancing performance with security in hardware and software design. Continuous updates and vigilance are critical for protecting systems from these sophisticated threats.  
+<br>

@@ -1,0 +1,16 @@
+# Infrastructure (Prod, Cloud) Virtualization
+- [Hypervisors](./01_Hypervisors.md)
+- [Hyperjacking](./02_Hyperjacking.md)
+- [Containers, VMs, Clusters](./03_Containers_VMs_Clusters.md)
+- [Escaping Techniques](./04_Escaping_Techniques.md)
+    - Network connections from VMs / containers.  
+- [Lateral Movement and Privilege Escalation Techniques](./05_Lateral_Movement_and_Privilege_Escalation_Techniques.md)
+    - Cloud Service Accounts can be used for lateral movement and privilege escalation in Cloud environments.
+    - GCPloit tool for Google Cloud Projects.
+- [Site Isolation](./06_Site_Isolation.md)
+- [Side Channel Attacks](./07_Side_Channel_Attacks.md)
+    - Spectre, Meltdown.
+- [Beyondcorp](./08_Beyondcorp.md) 
+    - Trusting the host but not the network.
+- [Log4j Vulnerability](./09_Log4j_Vulnerability.md)  
+<br>

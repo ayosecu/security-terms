@@ -1,4 +1,6 @@
-## Site Isolation
+<br>
+
+# Site Isolation
 Site Isolation is **a security mechanism implemented in modern web browsers to provide stronger isolation between different websites by running each site in its own process**. This prevents one site from accessing or interfering with the data of another site, even in the presence of browser vulnerabilities like speculative execution attacks (e.g., Spectre).
 
 ## 1. How Site Isolation Works
@@ -16,7 +18,8 @@ Site Isolation is **a security mechanism implemented in modern web browsers to p
 2. **Cross-Origin Data Protection**
   - Data from one origin (cookies, DOM objects, etc.) cannot be accessed by another origin.
 3. **Memory and Cache Isolation**
-  - Separate memory spaces for each process prevent leakage of sensitive data between tabs.
+  - Separate memory spaces for each process prevent leakage of sensitive data between tabs.  
+<br>
 
 ## 2. Benefits of Site Isolation
   - **Mitigates Speculative Execution Attacks**
@@ -26,7 +29,8 @@ Site Isolation is **a security mechanism implemented in modern web browsers to p
   - **Cross-Site Scripting (XSS) Containment**
     - Even if one site is compromised via XSS, the attack is confined to that process and cannot affect other sites.
   - **Enhanced Privacy**
-    - Prevents one site from snooping on another’s data or cookies.
+    - Prevents one site from snooping on another’s data or cookies.  
+<br>
 
 ## 3. Limitations of Site Isolation
   - Increased Resource Usage
@@ -34,7 +38,8 @@ Site Isolation is **a security mechanism implemented in modern web browsers to p
   - **Not a Complete Security Solution**
     - Does not protect against all types of web-based attacks (e.g., phishing or drive-by downloads).
   - Implementation Complexity
-    - Requires careful management of inter-process communication to ensure seamless user experience.
+    - Requires careful management of inter-process communication to ensure seamless user experience.  
+<br>
 
 ## 4. Site Isolation in Modern Browsers
 
@@ -43,7 +48,8 @@ Site Isolation is **a security mechanism implemented in modern web browsers to p
   - Fully enabled by default since Chrome 67 for desktop and Chrome 77 for Android.
 
 ### Command-Line Options
-  - Force-enable Site Isolation:
+  - Force-enable Site Isolation  
+
 ```
 chrome.exe --site-per-process
 ```
@@ -56,7 +62,8 @@ chrome.exe --site-per-process
   - Built on the Chromium engine, Edge inherits Site Isolation features from Chromium.
 
 ### d. Apple Safari
-  - **Uses a process-per-tab model** but does not implement full site isolation as in Chromium-based browsers.
+  - **Uses a process-per-tab model** but does not implement full site isolation as in Chromium-based browsers.  
+<br>
 
 ## 5. Attacks Mitigated by Site Isolation
   - **Spectre and Meltdown**
@@ -64,7 +71,8 @@ chrome.exe --site-per-process
   - **Cross-Origin Information Leakage**
     - Blocks unauthorized access to cookies, session tokens, and other sensitive data.
   - **Universal XSS (UXSS)**
-    - Confines XSS vulnerabilities to a single site, reducing their impact.
+    - Confines XSS vulnerabilities to a single site, reducing their impact.  
+<br>
 
 ## 6. Enabling and Testing Site Isolation
 
@@ -78,10 +86,13 @@ chrome.exe --site-per-process
     - Confirm that Site Isolation prevents speculative execution leaks.
 
 ### c. Debugging Site Isolation
-  - Chrome Debugging Command
+  - Chrome Debugging Command  
+
 ```
 chrome.exe --site-per-process --disable-features=IsolateOrigins
 ```
+  
+<br>
 
 ## 7. Best Practices for Developers
   - Avoid Relying on Same-Origin Policies Alone
@@ -89,7 +100,8 @@ chrome.exe --site-per-process --disable-features=IsolateOrigins
   - Reduce Shared Resources
     - Minimize shared objects between origins to benefit fully from isolation.
   - Test Compatibility
-    - Ensure applications are compatible with site isolation policies.
+    - Ensure applications are compatible with site isolation policies.  
+<br>
 
 ## 8. Summary
 
@@ -102,4 +114,5 @@ chrome.exe --site-per-process --disable-features=IsolateOrigins
 | Implementation | Supported by Chrome, Edge, Firefox (Fission), with varying levels in Safari. |
 
 
-**Site Isolation is a critical browser security feature that strengthens defenses against modern threats like speculative execution attacks and cross-origin data leakage**. By isolating each site into its own process, browsers achieve better data protection and containment. While it increases resource consumption, the trade-off is worthwhile for environments requiring strong security, especially in enterprise or cloud applications.
+**Site Isolation is a critical browser security feature that strengthens defenses against modern threats like speculative execution attacks and cross-origin data leakage**. By isolating each site into its own process, browsers achieve better data protection and containment. While it increases resource consumption, the trade-off is worthwhile for environments requiring strong security, especially in enterprise or cloud applications.  
+<br>

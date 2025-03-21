@@ -1,8 +1,10 @@
-## Hyperjacking
+<br>
+
+# Hyperjacking
 Hyperjacking is **a cyberattack where an attacker takes control of a hypervisor**, enabling them to manipulate or monitor all the virtual machines (VMs) hosted on it. Because hypervisors are critical components in virtualized environments, compromising them gives attackers immense control over the underlying systems.
 
 ## 1. How Hyperjacking Works
-**Hyperjacking exploits vulnerabilities in the hypervisor or leverages misconfigurations to gain unauthorized access or control**. Key steps include:
+**Hyperjacking exploits vulnerabilities in the hypervisor or leverages misconfigurations to gain unauthorized access or control**.
 
 ### a. Exploiting Hypervisor Vulnerabilities
   - Attackers exploit flaws in the hypervisor code or architecture.
@@ -16,7 +18,8 @@ Hyperjacking is **a cyberattack where an attacker takes control of a hypervisor*
   - Attackers may bypass hypervisor-level protections such as Secure Boot or Intel TXT (Trusted Execution Technology).
 
 ### d. Using Side-Channel Attacks
-  - Attackers gather information about VM activities through indirect means, such as analyzing resource usage or cache timing.
+  - Attackers gather information about VM activities through indirect means, such as analyzing resource usage or cache timing.  
+<br>
 
 ## 2. Consequences of Hyperjacking
   - **Full VM Control**
@@ -26,7 +29,8 @@ Hyperjacking is **a cyberattack where an attacker takes control of a hypervisor*
   - **Denial of Service (DoS)**
     - Attackers can disrupt all VMs by shutting down or overloading the hypervisor.
   - **Undetectable Malware**
-    - Malware running at the hypervisor level is extremely difficult to detect because it operates below the OS layer of the VMs.
+    - Malware running at the hypervisor level is extremely difficult to detect because it operates below the OS layer of the VMs.  
+<br>
 
 ## 3. Common Attack Techniques
 
@@ -42,7 +46,8 @@ Hyperjacking is **a cyberattack where an attacker takes control of a hypervisor*
   - Examples: **Spectre and Meltdown vulnerabilities**.
 
 ### d. Man-in-the-Middle on Management Tools
-  - Attacking hypervisor management tools (e.g., VMware vSphere) to gain control.
+  - Attacking hypervisor management tools (e.g., VMware vSphere) to gain control.  
+<br>
 
 ## 4. Hyperjacking Prevention
 
@@ -67,7 +72,8 @@ Hyperjacking is **a cyberattack where an attacker takes control of a hypervisor*
   - Apply security patches to the hypervisor and its management tools promptly to address vulnerabilities.
 
 ### f. Use Hardware-Assisted Virtualization Protections
-  - Ensure hardware-based protections like Intel VT-d are enabled to prevent unauthorized memory access.
+  - Ensure hardware-based protections like Intel VT-d are enabled to prevent unauthorized memory access.  
+<br>
 
 ## 5. Detection Challenges
   - **Limited Visibility**
@@ -75,7 +81,8 @@ Hyperjacking is **a cyberattack where an attacker takes control of a hypervisor*
   - **Sophisticated Attack Techniques**
     - Rogue hypervisors or subtle manipulations of VMs can evade detection.
   - **Dependency on Hypervisor Logs**
-    - Attackers may tamper with logs to erase evidence of the attack.
+    - Attackers may tamper with logs to erase evidence of the attack.  
+<br>
 
 ## 6. Notable Hyperjacking Scenarios
 
@@ -87,7 +94,8 @@ Hyperjacking is **a cyberattack where an attacker takes control of a hypervisor*
   - Hyperjacking is a powerful tool for nation-state actors seeking to monitor or disrupt critical systems.
 
 ### c. Advanced Persistent Threats (APTs)
-  - APT groups may use hyperjacking to maintain long-term, stealthy access to targets.
+  - APT groups may use hyperjacking to maintain long-term, stealthy access to targets.  
+<br>
 
 ## 7. Comparison to Related Attacks
 
@@ -96,6 +104,8 @@ Hyperjacking is **a cyberattack where an attacker takes control of a hypervisor*
 | Hyperjacking | Attacker compromises the hypervisor layer. | All VMs on host. |
 | VM Escape | Attacker escapes from a single VM to the host. | One VM or host. |
 | Side-Channel Attack | Attacker uses indirect methods to gather information. | Dependent on technique. |
+  
+<br>
 
 ## 8. Summary
 
@@ -107,4 +117,5 @@ Hyperjacking is **a cyberattack where an attacker takes control of a hypervisor*
 | Prevention | Secure configurations, hardware security features, patches, and monitoring. |
 | Detection Challenges | Hard to detect due to its low-level operation beneath VMs. |
 
-**Hyperjacking represents a critical threat in virtualized and cloud environments**, where hypervisors form the backbone of infrastructure. Organizations must prioritize hardening hypervisor security, isolating management interfaces, and leveraging hardware-assisted protections to prevent such attacks. Detection and prevention require a combination of strong architectural practices and advanced monitoring tools.
+**Hyperjacking represents a critical threat in virtualized and cloud environments**, where hypervisors form the backbone of infrastructure. Organizations must prioritize hardening hypervisor security, isolating management interfaces, and leveraging hardware-assisted protections to prevent such attacks. Detection and prevention require a combination of strong architectural practices and advanced monitoring tools.  
+<br>

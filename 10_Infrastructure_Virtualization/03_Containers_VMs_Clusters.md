@@ -1,4 +1,6 @@
-## Containers, VMs, Clusters
+<br>
+
+# Containers, VMs, Clusters
 Containers, VMs, and clusters are fundamental components of modern infrastructure, particularly in cloud computing and virtualization. While they have overlapping use cases, they differ in architecture, resource management, and scalability.
 
 ## 1. Containers
@@ -35,7 +37,8 @@ Containers, VMs, and clusters are fundamental components of modern infrastructur
 
 ### f. Challenges
   - **Limited Isolation**: Sharing the kernel can lead to **security risks**.
-  - **Complexity**: Managing large numbers of containers **requires orchestration tools**.
+  - **Complexity**: Managing large numbers of containers **requires orchestration tools**.  
+<br>
 
 ## 2. Virtual Machines (VMs)
 
@@ -71,7 +74,8 @@ Containers, VMs, and clusters are fundamental components of modern infrastructur
 
 ### f. Challenges
   - **Resource Intensive**: VMs consume more CPU, memory, and storage.
-  - **Slower Provisioning**: Booting and replicating VMs takes longer.
+  - **Slower Provisioning**: Booting and replicating VMs takes longer.  
+<br>
 
 ## 3. Clusters
 
@@ -109,7 +113,8 @@ Containers, VMs, and clusters are fundamental components of modern infrastructur
 
 ### f. Challenges
   - **Complexity**: Managing clusters requires expertise.
-  - **Resource Overhead**: Clusters consume additional resources for coordination.
+  - **Resource Overhead**: Clusters consume additional resources for coordination.  
+<br>
 
 ## 4. Comparison: Containers, VMs, and Clusters
 
@@ -121,6 +126,8 @@ Containers, VMs, and clusters are fundamental components of modern infrastructur
 | Use Cases | Microservices, CI/CD | Legacy apps, multi-OS environments | Distributed systems, scalable applications |
 | Security | Moderate (kernel shared) | High (OS isolated) | High (dependent on configuration) |
 | Management | Requires orchestration tools | Managed by hypervisors | Requires cluster orchestration platforms |
+  
+<br>
 
 ## 5. Integration in Infrastructure
 
@@ -136,7 +143,8 @@ Containers, VMs, and clusters are fundamental components of modern infrastructur
   - Containers in VMs
     - Common in cloud environments to enhance security and compatibility.
   - Clusters of Containers on VMs
-    - Kubernetes clusters deployed on VM infrastructure.
+    - Kubernetes clusters deployed on VM infrastructure.  
+<br>
 
 ## 6. Modern Trends
   - **Serverless Architectures**
@@ -144,7 +152,8 @@ Containers, VMs, and clusters are fundamental components of modern infrastructur
   - **Edge Computing**
     - **Deploying clusters closer to end users for reduced latency**.
   - **Container Security**
-    - Focus on securing containers, including **runtime security** and **vulnerability scanning**.
+    - Focus on securing containers, including **runtime security** and **vulnerability scanning**.  
+<br>
 
 ## 7. Summary
 
@@ -154,4 +163,5 @@ Containers, VMs, and clusters are fundamental components of modern infrastructur
 | VMs | Fully isolated virtualized systems running their own OS. |
 | Clusters | Groups of machines working together to provide scalability and redundancy. |
 
-Containers, VMs, and clusters each have their strengths and use cases, often complementing one another in modern infrastructure. Containers excel in portability and efficiency, VMs offer robust isolation, and clusters provide scalability and high availability. Understanding their differences and how they integrate helps in building optimized and resilient systems.
+Containers, VMs, and clusters each have their strengths and use cases, often complementing one another in modern infrastructure. Containers excel in portability and efficiency, VMs offer robust isolation, and clusters provide scalability and high availability. Understanding their differences and how they integrate helps in building optimized and resilient systems.  
+<br>

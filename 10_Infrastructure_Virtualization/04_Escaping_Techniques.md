@@ -1,4 +1,6 @@
-## Escaping Techniques
+<br>
+
+# Escaping Techniques
 Escaping techniques refer to **methods attackers use to break out of a constrained or restricted environment**, such as a virtual machine (VM), container, or sandbox. Escaping these environments can **allow attackers to access the host system, other workloads, or sensitive data**.
 
 ## 1. Types of Escaping Techniques
@@ -48,7 +50,8 @@ Escaping techniques refer to **methods attackers use to break out of a constrain
       - **Android rooting tools** that exploit device-specific vulnerabilities.
   - Mitigation
     - **Use mobile device management (MDM)** solutions to **detect jailbroken/rooted devices**.
-    - Keep **devices updated** with the latest patches.
+    - Keep **devices updated** with the latest patches.  
+<br>
 
 ## 2. Common Techniques Used in Escapes
 
@@ -76,7 +79,8 @@ Escaping techniques refer to **methods attackers use to break out of a constrain
 ### e. Kernel Exploits
   - Example: Exploiting kernel vulnerabilities to escape from a container or VM.
   - Mitigation
-    - Use hardened kernels and apply regular patches.
+    - Use hardened kernels and apply regular patches.  
+<br>
 
 ## 3. Detection and Prevention
 
@@ -86,6 +90,8 @@ Escaping techniques refer to **methods attackers use to break out of a constrain
 | Containers | Use runtime security tools like Aqua Security, Sysdig Secure, and enable SELinux/AppArmor. |
 | Sandboxes | Apply sandbox-specific patches, monitor behavior, and restrict system calls. |
 | Mobile Devices | Use MDM solutions, enforce strong app permissions, and monitor for jailbreaking indicators. |
+  
+<br>
 
 ## 4. Key Tools for Testing and Monitoring Escapes
 
@@ -96,6 +102,8 @@ Escaping techniques refer to **methods attackers use to break out of a constrain
 | Falco | Monitor runtime behavior in containers. |
 | AppArmor/SELinux | Restrict processes and enforce security policies. |
 | Auditd | Monitor system logs for unauthorized access attempts. |
+  
+<br>
 
 ## 5. Summary
 
@@ -107,4 +115,5 @@ Escaping techniques refer to **methods attackers use to break out of a constrain
 | Techniques | Shared resource exploits, privilege escalation, side-channel attacks. |
 | Mitigations | Regular updates, strict isolation, runtime security tools, and monitoring. |
 
-Escaping techniques like VM escape, container escape, and sandbox escape highlight the importance of strong isolation and robust security practices in virtualized and containerized environments. By implementing proper mitigations and using advanced monitoring tools, organizations can significantly reduce the risk of these attacks.
+Escaping techniques like VM escape, container escape, and sandbox escape highlight the importance of strong isolation and robust security practices in virtualized and containerized environments. By implementing proper mitigations and using advanced monitoring tools, organizations can significantly reduce the risk of these attacks.  
+<br>

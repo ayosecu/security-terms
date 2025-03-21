@@ -1,4 +1,6 @@
-## Lateral Movement and Privilege Escalation Techniques
+<br>
+
+# Lateral Movement and Privilege Escalation Techniques
 Lateral movement and privilege escalation are **common attack techniques where attackers navigate through a cloud environment to gain elevated permissions or access additional resources**. These techniques are especially critical in cloud environments due to the interconnected nature of services, identities, and APIs.
 
 ## 1. Lateral Movement Techniques
@@ -10,12 +12,13 @@ Lateral movement and privilege escalation are **common attack techniques where a
     - **Token Hijacking**: Stealing API keys or OAuth tokens to impersonate a service account.
     - **Instance Metadata Exploitation**
       -	Example (GCP): Extracting credentials from the metadata server via http://metadata.google.internal.
-      - Command:
+      - Command  
+
 ```
 curl "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token" \
 -H "Metadata-Flavor: Google"
 ```
-
+  
 ### b. IAM Role Switching
   - Definition: Using one compromised account to **assume another role with higher privileges**.
   - Example (AWS)
@@ -30,7 +33,8 @@ curl "http://metadata.google.internal/computeMetadata/v1/instance/service-accoun
 ### d. Exploiting Shared Storage
   - Definition: Accessing **sensitive data stored in shared buckets, file shares, or blob storage**.
   - Example
-    - Misconfigured Google Cloud Storage (GCS) buckets with public access.
+    - Misconfigured Google Cloud Storage (GCS) buckets with public access.  
+<br>
 
 ## 2. Privilege Escalation Techniques
 
@@ -48,7 +52,8 @@ curl "http://metadata.google.internal/computeMetadata/v1/instance/service-accoun
   - How It Happens
     - **Accessing sensitive credentials stored in instance metadata servers** (common in GCP, AWS, Azure).
   - Example (Azure)
-    - Extracting Azure Identity credentials via the metadata endpoint
+    - Extracting Azure Identity credentials via the metadata endpoint  
+
 ```
 curl "http://169.254.169.254/metadata/instance?api-version=2019-06-01" -H "Metadata:true"
 ```
@@ -56,7 +61,8 @@ curl "http://169.254.169.254/metadata/instance?api-version=2019-06-01" -H "Metad
 ### d. Code Injection in Functions/Serverless
   - Definition: Modifying or injecting code into serverless functions (e.g., AWS Lambda, GCP Cloud Functions).
   - Example
-    - Attacker injects code into a GCP Cloud Function to access higher-privileged resources.
+    - Attacker injects code into a GCP Cloud Function to access higher-privileged resources.  
+<br>
 
 ## 3. GCPloit Tool for Google Cloud Projects
 
@@ -71,26 +77,30 @@ curl "http://169.254.169.254/metadata/instance?api-version=2019-06-01" -H "Metad
 
 ### Example Usage
 1. Enumerate Permissions
-  - Lists IAM permissions of the current identity.
+  - Lists IAM permissions of the current identity.  
+
 ```
 gploit list-iam
 ```
 
 2. Privilege Escalation
-  - Attempts to escalate privileges using known techniques.
+  - Attempts to escalate privileges using known techniques.  
+
 ```
 gploit escalate-privileges
 ```
 
 3. Lateral Movement
-  - Identifies service accounts or APIs for moving across the environment.
+  - Identifies service accounts or APIs for moving across the environment.  
+
 ```
 gploit lateral-move
 ```
 
 ### Use Cases
   - Simulate attacks to test the security of GCP environments.
-  - Identify and mitigate misconfigurations.
+  - Identify and mitigate misconfigurations.  
+<br>
 
 ## 4. Defense Strategies
 
@@ -114,7 +124,8 @@ gploit lateral-move
   - **Enforce MFA** for all administrative accounts and access to sensitive resources.
 
 ### f. Containerized and Isolated Environments
-  - **Use containerized environments** like Kubernetes to isolate workloads and restrict lateral movement.
+  - **Use containerized environments** like Kubernetes to isolate workloads and restrict lateral movement.  
+<br>
 
 ## 5. Tools for Monitoring and Defense
 
@@ -125,6 +136,8 @@ gploit lateral-move
 | Falco | Detects anomalous container activity in Kubernetes or Docker. |
 | Azure Security Center | Provides recommendations for securing Azure environments. |
 | GCPloit | Simulates post-exploitation techniques in Google Cloud Projects. |
+  
+<br>
 
 ## 6. Summary
 
@@ -135,4 +148,5 @@ gploit lateral-move
 | Tool (GCPloit) | A post-exploitation tool to test GCP environments for lateral movement and privilege escalation paths. |
 | Defensive Measures |	Least privilege, secure API keys, metadata protection, and robust monitoring.
 
-**Lateral movement and privilege escalation are critical attack vectors in cloud environments**. Tools like GCPloit demonstrate how attackers can exploit cloud services to achieve these goals. To mitigate these risks, organizations must enforce strict access controls, monitor for anomalies, and regularly audit their cloud configurations. Proper defense strategies ensure that cloud environments remain resilient to advanced threats.
+**Lateral movement and privilege escalation are critical attack vectors in cloud environments**. Tools like GCPloit demonstrate how attackers can exploit cloud services to achieve these goals. To mitigate these risks, organizations must enforce strict access controls, monitor for anomalies, and regularly audit their cloud configurations. Proper defense strategies ensure that cloud environments remain resilient to advanced threats.  
+<br>
