@@ -6,7 +6,7 @@
     - **A hierarchical database storing low-level settings for the operating system, applications, and services**.
     - Common Forensic Uses
       - Track user activities: Timestamps, installed programs, USB connections.
-      - Configuration changes: Startup programs (HKLM\Software\Microsoft\Windows\CurrentVersion\Run).
+      - Configuration changes: Startup programs (HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run).
   - **Group Policy**
     - A centralized management system for configuring and enforcing policies across Windows systems.
     - Key Features
