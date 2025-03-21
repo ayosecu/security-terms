@@ -1,4 +1,6 @@
-## Integrity and Authenticity Primitives
+<br>
+
+# Integrity and Authenticity Primitives
 Integrity and authenticity are essential aspects of data security, ensuring that **data hasn’t been altered** and **verifying its origin**. Several cryptographic primitives serve this purpose, including **hashing functions, Message Authentication Codes (MACs), and Keyed-hash MACs (HMACs)**. Each has a distinct role in protecting data integrity and authenticity, and each has specific applications.
 
 ## 1. Hashing Functions
@@ -12,7 +14,8 @@ Integrity and authenticity are essential aspects of data security, ensuring that
     - **MD5**: A commonly used hash function, though it is **no longer considered secure** for cryptographic purposes **due to vulnerabilities to collision attacks**.
     - **SHA-1**: Also **deprecated** for cryptographic use, but **still used for certain non-sensitive purposes**.
     - **BLAKE**: A modern hash function designed for security and efficiency, often used in digital signatures and as an alternative to SHA-2.
-  - Security Implications: Hashing functions are crucial for ensuring data integrity but **do not provide authentication** by themselves. **Collisions** (where two inputs produce the same hash) are a weakness in hash functions like MD5 and SHA-1.
+  - Security Implications: Hashing functions are crucial for ensuring data integrity but **do not provide authentication** by themselves. **Collisions** (where two inputs produce the same hash) are a weakness in hash functions like MD5 and SHA-1.  
+<br>
 
 ## 2. Message Authentication Codes (MACs)
   - Definition: A Message Authentication Code (MAC) is **a small piece of information attached to a message to verify its integrity and authenticity**. MACs **use a secret key to generate the code**, which means only those with the key can verify or generate a valid MAC.
@@ -23,7 +26,8 @@ Integrity and authenticity are essential aspects of data security, ensuring that
   - Types of MACs
     - **CBC-MAC**: A MAC **based on block cipher encryption in Cipher Block Chaining (CBC) mode**, commonly **used for short, fixed-length messages**.
     - CMAC: A variant of CBC-MAC that is more secure and resistant to certain attacks.
-  - Security Implications: MACs **provide both integrity and authenticity**, as they rely on a **shared secret key**. However, they **do not offer non-repudiation** (i.e., proof of origin) without an additional authentication mechanism.
+  - Security Implications: MACs **provide both integrity and authenticity**, as they rely on a **shared secret key**. However, they **do not offer non-repudiation** (i.e., proof of origin) without an additional authentication mechanism.  
+<br>
 
 ## 3. Keyed-Hash Message Authentication Code (HMAC)
   - Definition: HMAC is a type of MAC that **combines a hash function with a secret key to generate a message authentication code**. It is designed to work securely with existing hash functions.
@@ -36,7 +40,8 @@ Integrity and authenticity are essential aspects of data security, ensuring that
     - HMAC-BLAKE2: Uses BLAKE2 as the underlying hash function, known for both security and efficiency.
   - How It Works
     - HMAC first combines the message and key using the hash function’s internal algorithm. This process is repeated with a second key, ensuring the result is strongly tied to both the data and key.
-  - Security Implications: HMACs provide high levels of security due to the cryptographic strength of the underlying hash function and the secret key. They are resistant to known attacks and widely used for both data integrity and authenticity.
+  - Security Implications: HMACs provide high levels of security due to the cryptographic strength of the underlying hash function and the secret key. They are resistant to known attacks and widely used for both data integrity and authenticity.  
+<br>
 
 ## Comparison Table
 
@@ -45,10 +50,13 @@ Integrity and authenticity are essential aspects of data security, ensuring that
 | Hashing | Yes | No | No | Integrity checks, malware fingerprinting, unique identifiers | MD5, SHA-1, BLAKE |
 | MAC | Yes | Yes | Yes (shared) | Secure data transmission, message authentication | CBC-MAC, CMAC |
 | HMAC | Yes | Yes | Yes (shared) | Securing protocols (TLS, SSL), sensitive data verification | HMAC-SHA256, HMAC-BLAKE |
+  
+<br>
 
 ## Summary
   - **Hashing Functions**: Provide a unique identifier for data, useful for integrity checking and fingerprinting but do not offer authenticity. Commonly used hashing algorithms include MD5, SHA-1, and BLAKE.
   - **Message Authentication Codes (MACs)**: Offer both integrity and authenticity using a shared secret key, ensuring the data’s origin and unaltered state. They’re commonly used in secure communications.
   - **Keyed-Hash MACs (HMACs)**: Provide strong integrity and authenticity through a combination of hashing and secret keys, enhancing security. HMACs are widely used in secure protocols for data integrity and verification.
 
-These primitives are fundamental to cryptography, each contributing to data security by ensuring integrity and authenticity. They are commonly applied in secure communications, data integrity checks, and protocol-level security, offering layered defenses against tampering and unauthorized access.
+These primitives are fundamental to cryptography, each contributing to data security by ensuring integrity and authenticity. They are commonly applied in secure communications, data integrity checks, and protocol-level security, offering layered defenses against tampering and unauthorized access.  
+<br>

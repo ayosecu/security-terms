@@ -1,4 +1,6 @@
-## Identity
+<br>
+
+# Identity
 Identity management is critical to securing access to resources in any organization. It **defines who can access what and under which conditions**, ensuring that only authorized users and services interact with sensitive data. Key concepts include **Access Control Lists (ACLs), service accounts vs. user accounts, impersonation, and federated identity**.
 
 ## 1. Access Control Lists (ACLs)
@@ -7,7 +9,8 @@ Identity management is critical to securing access to resources in any organizat
   - How It Works
     - Each entry in an ACL **specifies a subject (user, group, or service) and their permitted actions (read, write, execute, etc.) on a resource**.
     - ACLs can be implemented at various levels, such as file systems, databases, and network resources.
-  - Example: A file system ACL may allow a user to read a file but deny write access, ensuring data integrity by limiting modification rights to specific users.
+  - Example: A file system ACL may allow a user to read a file but deny write access, ensuring data integrity by limiting modification rights to specific users.  
+<br>
 
 ## 2. Service Accounts vs. User Accounts
   - **User Accounts**
@@ -21,7 +24,8 @@ Identity management is critical to securing access to resources in any organizat
     - Security Implications
       - Privileges: Over-permissioned service accounts are a common security risk, especially in cloud environments.
       - Attack Vector: Attackers may **target service accounts to gain access to resources or escalate privileges**, making it critical to enforce the principle of least privilege.
-    - Example: A service account used by a backup service might need read access to databases and storage but shouldn’t have administrative privileges.
+    - Example: A service account used by a backup service might need read access to databases and storage but shouldn’t have administrative privileges.  
+<br>
 
 ## 3. Impersonation
   - Definition: Impersonation is when an entity (user or service) **assumes the identity and privileges of another entity**. In cloud environments, this often involves **obtaining tokens or keys to act on behalf of a legitimate account**.
@@ -32,7 +36,8 @@ Identity management is critical to securing access to resources in any organizat
       - This is commonly done **using tokens, such as JWT (JSON Web Tokens)**, which include identity claims and can be used to authenticate and authorize actions on behalf of another identity.
   - Security Implications
     - **Token Compromise**: If JWTs or other tokens are stolen, attackers can perform actions as the impersonated identity.
-    - **Privilege Escalation**: Improper use or configuration of ActAs permissions can allow attackers to gain higher privileges by impersonating more privileged accounts.
+    - **Privilege Escalation**: Improper use or configuration of ActAs permissions can allow attackers to gain higher privileges by impersonating more privileged accounts.  
+<br>
 
 ## 4. Federated Identity
   - Definition: Federated identity **allows users to authenticate with multiple systems or organizations using a single identity from an external identity provider (IdP)**, rather than creating separate accounts for each system.
@@ -45,7 +50,8 @@ Identity management is critical to securing access to resources in any organizat
     - **Improved Security**: Centralized authentication with the IdP simplifies account management and enables consistent security policies.
   - Security Considerations
     - **Trust in the IdP**: Organizations must trust the security of the IdP since a compromise at the IdP level affects all federated services.
-    - **Access Control Consistency**: Proper configuration of permissions across federated systems is essential to prevent over-permissioned access.
+    - **Access Control Consistency**: Proper configuration of permissions across federated systems is essential to prevent over-permissioned access.  
+<br>
 
 ## Comparison Table
 
@@ -55,6 +61,8 @@ Identity management is critical to securing access to resources in any organizat
 | Privileges | Role-based | Minimal, task-specific | Defined by federated systems |
 | Security Requirements | MFA, role-based permissions | Limited privileges, monitoring | Trust in IdP, access control alignment |
 | Common Security Concerns | Account compromise, password reuse | Privilege escalation, token misuse | IdP compromise, misconfigured access |
+  
+<br>
 
 ## Summary
   - **ACLs**: Define permissions for users or services on resources, controlling access based on identity.
@@ -62,4 +70,5 @@ Identity management is critical to securing access to resources in any organizat
   - **Impersonation**: Allows entities to act on behalf of others, often using tokens or keys; it can be abused by attackers if tokens or impersonation permissions are improperly secured.
   - **Federated Identity**: Enables users to access multiple systems with a single set of credentials via an external IdP, improving usability but requiring robust trust and access control.
 
-Each of these identity management mechanisms plays a unique role in access control and security. Understanding their differences and best practices helps organizations protect resources by controlling access, reducing over-permissioned accounts, and ensuring secure authentication across services and platforms.
+Each of these identity management mechanisms plays a unique role in access control and security. Understanding their differences and best practices helps organizations protect resources by controlling access, reducing over-permissioned accounts, and ensuring secure authentication across services and platforms.  
+<br>
