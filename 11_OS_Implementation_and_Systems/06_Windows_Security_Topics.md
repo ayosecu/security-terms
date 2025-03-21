@@ -1,4 +1,6 @@
-## Windows Security Topics
+<br>
+
+# Windows Security Topics
 ## 1. Windows Registry and Group Policy
   - **Windows Registry**
     - **A hierarchical database storing low-level settings for the operating system, applications, and services**.
@@ -12,7 +14,8 @@
       - Control over security options (e.g., password policies, software restrictions).
     - Common Applications
       - Enforcing compliance standards.
-      - Locking down sensitive configurations (e.g., disabling USB ports).
+      - Locking down sensitive configurations (e.g., disabling USB ports).  
+<br>
 
 ## 2. Active Directory (AD)
   - What It Is
@@ -41,7 +44,8 @@
         - Silver Ticket
           - Forged service tickets to access specific resources.
         - Pass-the-Ticket
-          - Reusing stolen Kerberos tickets.
+          - Reusing stolen Kerberos tickets.  
+<br>
 
 ## 3. Windows SMB (Server Message Block)
   - What It Is
@@ -57,7 +61,8 @@
   - Best Practices
     - Disable SMBv1.
     - Enable SMB signing.
-    - Use firewalls to restrict SMB traffic.
+    - Use firewalls to restrict SMB traffic.  
+<br>
 
 ## 4. Samba (with SMB)
   - What It Is
@@ -67,7 +72,8 @@
       - Integrating Linux servers into Windows domains.
     - Security Considerations
       - Ensure Samba is properly configured to prevent unauthorized access.
-      - Use encryption for sensitive SMB traffic.
+      - Use encryption for sensitive SMB traffic.  
+<br>
 
 ## 5. Buffer Overflows
   - Overview
@@ -78,7 +84,8 @@
     - **DEP (Data Execution Prevention)**
       - Prevents execution of code in non-executable memory regions.
     - **ASLR (Address Space Layout Randomization)**
-      - Randomizes memory layout to make buffer overflow attacks more difficult.
+      - Randomizes memory layout to make buffer overflow attacks more difficult.  
+<br>
 
 ## 6. Return-Oriented Programming (ROP)
   - What It Is
@@ -94,7 +101,8 @@
     - **Control Flow Integrity (CFI)**
       - Ensures program execution follows legitimate control flow paths.
     - **Shadow Stack**
-      - Maintains a separate stack to verify return addresses.
+      - Maintains a separate stack to verify return addresses.  
+<br>
 
 ## Summary
 
@@ -110,4 +118,5 @@
 | Buffer Overflows | Exploits memory overflows to execute malicious code; mitigated with DEP and ASLR. |
 | ROP (Return-Oriented Programming) | Bypasses defenses like DEP by chaining existing memory instructions; mitigated with CFI and shadow stacks. |
 
-Understanding these core Windows topics, including Active Directory, SMB, and exploitation techniques like buffer overflows and ROP, is critical for securing systems and conducting effective forensic investigations. Leveraging tools like BloodHound and implementing robust defenses such as ASLR, DEP, and Control Flow Integrity can help mitigate risks and enhance system resilience.
+Understanding these core Windows topics, including Active Directory, SMB, and exploitation techniques like buffer overflows and ROP, is critical for securing systems and conducting effective forensic investigations. Leveraging tools like BloodHound and implementing robust defenses such as ASLR, DEP, and Control Flow Integrity can help mitigate risks and enhance system resilience.  
+<br>

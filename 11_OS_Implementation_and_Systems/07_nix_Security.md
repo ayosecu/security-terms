@@ -1,4 +1,6 @@
-## *nix Security
+<br>
+
+# *nix Security
 ## 1. SELinux (Security-Enhanced Linux)
   - What It Is
     - **A Linux kernel security module** that provides **Mandatory Access Control (MAC) to enforce strict security policies**.
@@ -13,7 +15,8 @@
       - Restricts processes to only the actions defined in the security policy.
   - Use Cases
     - Isolating services (e.g., confining web servers to specific files and ports).
-    - Preventing privilege escalation through misconfigured or vulnerable applications.
+    - Preventing privilege escalation through misconfigured or vulnerable applications.  
+<br>
 
 ## 2. Kernel, Userspace, and Permissions
   - **Kernel**
@@ -30,7 +33,8 @@
     - Modes
       - Read (r), Write (w), Execute (x).
       - Permissions are displayed as a 10-character string (e.g., -rw-r--r--).
-    - Command: chmod, chown, ls -l.
+    - Command: chmod, chown, ls -l.  
+<br>
 
 ## 3. MAC vs DAC
 
@@ -40,6 +44,8 @@
 | Flexibility | Less flexible; predefined policies. | More flexible but less secure. |
 | Example | SELinux, AppArmor | Standard Unix permissions (chmod, chown). |
 | Use Case | High-security environments (e.g., servers) | General-purpose systems. |
+  
+<br>
 
 ## 4. /proc
   - What It Is
@@ -53,7 +59,8 @@
     - /proc/net: Network statistics.
   - Forensic Uses
     - Monitoring running processes and their behavior.
-    - Identifying rogue processes by inspecting cmdline and fd.
+    - Identifying rogue processes by inspecting cmdline and fd.  
+<br>
 
 ## 5. /tmp
   - Purpose
@@ -65,17 +72,21 @@
       - Creating symbolic links in /tmp to sensitive files for privilege escalation.
   - Mitigations
     - **Mount /tmp with the noexec option** to prevent execution of binaries
-    - Regularly **clean /tmp** to remove potentially harmful files.
+    - Regularly **clean /tmp** to remove potentially harmful files.  
+
 ```
 mount -o remount,noexec /tmp
 ```
+  
+<br>
 
 ## 6. /shadow
   - What It Is
     - A file that **stores hashed passwords for user accounts**.
     - Located at /etc/shadow and **readable only by the root user**.
   - Structure
-    - Each line corresponds to a user:
+    - Each line corresponds to a user  
+
 ```
 username:hashed_password:last_change:min_days:max_days:warn_days:inactive_days:expire
 ```
@@ -88,7 +99,8 @@ username:hashed_password:last_change:min_days:max_days:warn_days:inactive_days:e
       - $1$: MD5.
   - Best Practices:
     - **Use strong password policies** and **hashing algorithms (e.g., SHA-512)**.
-    - Limit access to **/etc/shadow**.
+    - Limit access to **/etc/shadow**.  
+<br>
 
 ## 7. LDAP (Lightweight Directory Access Protocol)
   - What It Is
@@ -102,7 +114,8 @@ username:hashed_password:last_change:min_days:max_days:warn_days:inactive_days:e
     - LDAP is more lightweight and platform-agnostic, making it ideal for Unix systems.
   - Security Considerations
     - **Encrypt LDAP traffic using LDAPS or StartTLS**.
-    - Implement **access controls** to restrict unauthorized access.
+    - Implement **access controls** to restrict unauthorized access.  
+<br>
 
 ## Summary
 
@@ -116,4 +129,5 @@ username:hashed_password:last_change:min_days:max_days:warn_days:inactive_days:e
 | /shadow | Stores hashed passwords; critical for system security. |
 | LDAP | Centralized authentication protocol similar to AD for Unix systems. |
 
-**Unix/Linux systems rely on robust security mechanisms like SELinux, file permissions, and secure configuration of directories like /tmp and /shadow**. By understanding these components and implementing best practices, administrators can build resilient systems that resist common attacks while maintaining operational flexibility.
+**Unix/Linux systems rely on robust security mechanisms like SELinux, file permissions, and secure configuration of directories like /tmp and /shadow**. By understanding these components and implementing best practices, administrators can build resilient systems that resist common attacks while maintaining operational flexibility.  
+<br>

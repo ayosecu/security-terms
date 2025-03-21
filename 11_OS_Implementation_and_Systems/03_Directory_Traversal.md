@@ -1,4 +1,6 @@
-## Directory Traversal
+<br>
+
+# Directory Traversal
 Directory traversal, also known as path traversal, is **a type of security vulnerability where an attacker manipulates file paths to access files and directories outside the intended scope of the application**. If exploited, it can lead to unauthorized access to sensitive files, source code, or system configurations.
 
 ## 1. How Directory Traversal Works
@@ -6,8 +8,9 @@ Directory traversal, also known as path traversal, is **a type of security vulne
     - Applications that take user input to construct file paths without proper validation are vulnerable to directory traversal.
     - Attackers use special characters like ../ or ..\ to navigate up the directory structure.
   - Example
-    - Vulnerable code:
-      - An attacker supplies ../../etc/passwd as the filename, accessing sensitive system files.
+    - Vulnerable code
+      - An attacker supplies ../../etc/passwd as the filename, accessing sensitive system files.  
+
 ```
 def read_file(filename):
     with open(f"/app/data/{filename}", "r") as f:
@@ -16,7 +19,8 @@ def read_file(filename):
 
   - Impact
     - Exposure of sensitive files such as configuration files, password hashes (/etc/passwd), and source code.
-    - Gaining further access to execute or modify files.
+    - Gaining further access to execute or modify files.  
+<br>
 
 ## 2. Common Attack Patterns
   - **Relative Path**
@@ -27,7 +31,8 @@ def read_file(filename):
       - Example: GET /file?name=%2e%2e%2f%2e%2e%2fetc/passwd
   - **Mixed Path**
     - Combining traversal with valid paths:
-      - Example: GET /file?name=/var/www/html/../../etc/shadow
+      - Example: GET /file?name=/var/www/html/../../etc/shadow  
+<br>
 
 ## 3. Preventing Directory Traversal
 ### a. Input Validation
@@ -44,7 +49,8 @@ def read_file(filename):
     - **Normalize file paths to remove traversal characters** and resolve the final path.
   - How
     - **Use system APIs to normalize paths** and ensure they fall within allowed directories.
-    - Example in Python:
+    - Example in Python  
+
 ```
 import os
 
@@ -81,7 +87,8 @@ def secure_read_file(filename):
   - **Hardcoded Paths**
     - Avoid constructing file paths dynamically based on user input.
   - **Predefined Mapping**
-    - Use a mapping of user inputs to predefined file paths:
+    - Use a mapping of user inputs to predefined file paths  
+
 ```
 valid_files = {
     "file1": "/app/data/file1.txt",
@@ -96,7 +103,8 @@ def read_file(file_key):
 
 ### g. URL Decoding and Canonicalization
   - Decode and canonicalize the input to handle encoded traversal sequences
-    - Example: Decode %2e%2e%2f into ../.
+    - Example: Decode %2e%2e%2f into ../.  
+<br>
 
 ## 4. Tools for Detection and Prevention
 
@@ -106,13 +114,16 @@ def read_file(file_key):
 | Web Application Firewalls (WAFs) | Block directory traversal patterns in requests. |
 | Fuzzers | Test applications for traversal vulnerabilities. |
 | Dynamic Analysis Tools | Detect runtime vulnerabilities. |
+  
+<br>
 
 ## 5. Best Practices
   - Input Validation: Strictly validate all user inputs.
   - Path Normalization: Normalize paths to resolve traversal attempts.
   - Access Controls: Limit application file access to specific directories.
   - Use Security Frameworks: Rely on libraries and frameworks for secure file handling.
-  - Regular Testing: Test for directory traversal vulnerabilities using security tools.
+  - Regular Testing: Test for directory traversal vulnerabilities using security tools.  
+<br>
 
 ## 6. Summary
 
@@ -123,4 +134,5 @@ def read_file(file_key):
 | Prevention Techniques | Input validation, path normalization, access controls, and file API usage. |
 | Tools | Static analysis tools, WAFs, fuzzers, dynamic analysis tools. |
 
-Directory traversal vulnerabilities are **preventable with robust input validation, proper path handling, and secure configurations**. By adhering to best practices such as restricting file access, normalizing paths, and leveraging security frameworks, developers can protect applications from exploitation while ensuring a secure user experience.
+Directory traversal vulnerabilities are **preventable with robust input validation, proper path handling, and secure configurations**. By adhering to best practices such as restricting file access, normalizing paths, and leveraging security frameworks, developers can protect applications from exploitation while ensuring a secure user experience.  
+<br>

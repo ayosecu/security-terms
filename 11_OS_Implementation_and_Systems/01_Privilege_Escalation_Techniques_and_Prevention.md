@@ -1,4 +1,6 @@
-## Privilege Escalation Techniques and Prevention
+<br>
+
+# Privilege Escalation Techniques and Prevention
 Privilege escalation is **a process where an attacker gains elevated access or permissions on a system, typically moving from a lower privilege level (e.g., user) to a higher one (e.g., administrator or root)**. Privilege escalation exploits are a critical step in many attack chains and can lead to full system compromise.
 
 ## 1. Types of Privilege Escalation
@@ -8,7 +10,8 @@ Privilege escalation is **a process where an attacker gains elevated access or p
 
 ### b. Horizontal Privilege Escalation
   - Definition: An attacker **gains access to another account at the same privilege level**, such as another user’s account, to access restricted resources.
-  - Example: Stealing another user’s session cookie to impersonate them.
+  - Example: Stealing another user’s session cookie to impersonate them.  
+<br>
 
 ## 2. Techniques for Privilege Escalation
 ### a. Exploiting Misconfigurations
@@ -54,7 +57,8 @@ Privilege escalation is **a process where an attacker gains elevated access or p
 ### g. Exploiting Insecure APIs
   - Definition: **Calling privileged APIs** directly or bypassing access controls.
   - Example: Exploiting cloud APIs to elevate privileges in misconfigured IAM roles.
-  - Fix: Harden APIs, enforce access controls, and monitor API activity.
+  - Fix: Harden APIs, enforce access controls, and monitor API activity.  
+<br>
 
 ## 3. Prevention Techniques
 ### a. Principle of Least Privilege (PoLP)
@@ -87,7 +91,8 @@ Privilege escalation is **a process where an attacker gains elevated access or p
   - **Regularly audit** the use of elevated accounts and remove unnecessary privileges.
 
 ### i. Enforce Secure Coding Practices
-  - **Train developers to write secure code** and avoid common vulnerabilities like buffer overflows.
+  - **Train developers to write secure code** and avoid common vulnerabilities like buffer overflows.  
+<br>
 
 ## 4. Tools for Privilege Escalation Detection and Prevention
 
@@ -98,6 +103,8 @@ Privilege escalation is **a process where an attacker gains elevated access or p
 | OSQuery | Monitoring file and process changes. |
 | Auditd | Linux auditing for sensitive operations. |
 | Sysmon | Windows process and event monitoring. |
+ 
+<br>
 
 ## 5. Summary
 
@@ -108,4 +115,5 @@ Privilege escalation is **a process where an attacker gains elevated access or p
 | Prevention Strategies | PoLP, patching, secure configurations, MFA, monitoring, and SELinux/AppArmor. |
 | Detection Tools | Sysmon, Lynis, OSQuery, Auditd. |
 
-Privilege escalation is a critical threat in modern systems. By understanding common techniques attackers use, such as exploiting misconfigurations or vulnerabilities, and implementing robust preventive measures, organizations can significantly reduce the risk of privilege escalation and ensure better overall system security.
+Privilege escalation is a critical threat in modern systems. By understanding common techniques attackers use, such as exploiting misconfigurations or vulnerabilities, and implementing robust preventive measures, organizations can significantly reduce the risk of privilege escalation and ensure better overall system security.  
+<br>

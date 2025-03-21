@@ -1,4 +1,6 @@
-## Local Databases
+<br>
+
+# Local Databases
 Local databases are **lightweight databases stored on devices, such as phones or desktops, and are often used by applications for managing and storing structured data**. A common example is **SQLite**, a popular choice for storing user data in apps due to its simplicity and efficiency.
 
 ## 1. SQLite in Messaging Apps
@@ -12,7 +14,8 @@ Local databases are **lightweight databases stored on devices, such as phones or
       - Messages and chat history.
       - Contact information.
       - Attachments and media metadata.
-      - Timestamps and delivery statuses.
+      - Timestamps and delivery statuses.  
+<br>
 
 ## 2. Forensic Value of SQLite Databases
 
@@ -34,7 +37,8 @@ Local databases are **lightweight databases stored on devices, such as phones or
 ### d. Cross-App Correlation
   - **Combining Data**
     - Data from multiple SQLite databases (e.g., messaging apps and call logs) can provide a broader context.
-  - Example: Matching timestamps from call logs and message delivery records.
+  - Example: Matching timestamps from call logs and message delivery records.  
+<br>
 
 ## 3. Tools for Analyzing SQLite Databases
 
@@ -46,6 +50,8 @@ Local databases are **lightweight databases stored on devices, such as phones or
 | Forensic Toolkit (FTK) | Extracts and analyzes SQLite databases. |
 | Oxygen Forensic Suite | Specialized in analyzing SQLite databases from phones. |
 | Magnet AXIOM | Extracts and parses SQLite databases from devices. |
+  
+<br>
 
 ## 4. Challenges in Forensic Analysis
 
@@ -64,7 +70,8 @@ Local databases are **lightweight databases stored on devices, such as phones or
 ### c. Corruption
   - Improper shutdowns or device failures can corrupt SQLite databases.
   - Solution
-    - Use recovery tools to repair and extract as much data as possible.
+    - Use recovery tools to repair and extract as much data as possible.  
+<br>
 
 ## 5. Forensic Workflow
 **1. Extract the Database**
@@ -75,7 +82,8 @@ Local databases are **lightweight databases stored on devices, such as phones or
   - Tools: sqlite3 CLI or specialized forensic software.
 **3. Analyze Data**
   - Use SQL queries to extract relevant information.
-  - Example:
+  - Example
+
 ```
 SELECT sender, message, timestamp FROM messages WHERE sender="user1";
 ```
@@ -83,7 +91,8 @@ SELECT sender, message, timestamp FROM messages WHERE sender="user1";
 **4. Recover Deleted Data**
   - Analyze the rollback journal or WAL for traces of deleted entries.
 **5. Correlate with Other Data**
-  - Match SQLite data with logs, files, or network activity for a complete picture.
+  - Match SQLite data with logs, files, or network activity for a complete picture.  
+<br>
 
 ## 6. Legal and Ethical Considerations
   - Authorization
@@ -91,7 +100,8 @@ SELECT sender, message, timestamp FROM messages WHERE sender="user1";
   - Privacy
     - Handle recovered data sensitively, especially when dealing with personal communications.
   - Chain of Custody
-    - Document the extraction and analysis process to maintain evidence integrity.
+    - Document the extraction and analysis process to maintain evidence integrity.  
+<br>
 
 ## 7. Summary
 
@@ -103,4 +113,5 @@ SELECT sender, message, timestamp FROM messages WHERE sender="user1";
 | Key Tools | DB Browser for SQLite, Autopsy, Oxygen Forensic Suite, Magnet AXIOM. |
 | Best Practices | Verify database integrity, recover deleted data, and correlate with other sources. |
 
-**SQLite databases are a treasure trove for digital forensic investigators, especially when analyzing messaging apps on mobile devices**. Despite challenges such as encryption and fragmentation, robust tools and methodologies can extract valuable data, aiding in investigations and incident response. However, forensic practitioners must always operate within legal and ethical boundaries to protect privacy and ensure evidence admissibility.
+**SQLite databases are a treasure trove for digital forensic investigators, especially when analyzing messaging apps on mobile devices**. Despite challenges such as encryption and fragmentation, robust tools and methodologies can extract valuable data, aiding in investigations and incident response. However, forensic practitioners must always operate within legal and ethical boundaries to protect privacy and ensure evidence admissibility.  
+<br>

