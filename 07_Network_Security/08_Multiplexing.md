@@ -3,7 +3,7 @@
 # Multiplexing
 Multiplexing is **a technique used in telecommunications and computer networks to combine multiple signals or data streams into a single transmission medium or channel**. By using multiplexing, multiple users or data streams can share the same physical medium (e.g., a cable or a frequency band), improving the efficiency and capacity of communication systems.
 
-## Types of Multiplexing
+## 1. Types of Multiplexing
 1. **Time-Division Multiplexing (TDM)**
   - In TDM, multiple signals share the same channel, but **each signal is assigned a different time slot**. Only one signal transmits at a time, but they alternate so quickly that it appears they are transmitting simultaneously.
   - Example: In **telephone networks**, multiple phone calls can share a single line by being transmitted in alternating time slots.
@@ -15,18 +15,21 @@ Multiplexing is **a technique used in telecommunications and computer networks t
   - Example: **Fiber optic** networks use WDM to transmit multiple data streams (e.g., internet, TV, and phone) through the same fiber cable.
 4. **Code-Division Multiplexing (CDM)**
   - In CDM, multiple signals are transmitted simultaneously over the same frequency band, but **each signal is encoded with a unique code**. Receivers decode the signals using the corresponding code to separate them.
-  - Example: CDM is used in **cellular networks** (such as 3G) to allow multiple users to share the same frequency without interference.
+  - Example: CDM is used in **cellular networks** (such as 3G) to allow multiple users to share the same frequency without interference.  
+<br>
 
-## Advantages of Multiplexing
+## 2. Advantages of Multiplexing
   - **Efficient Resource Usage**: It allows the efficient use of a limited communication medium (e.g., bandwidth, fiber optic cables).
   - **Cost-Effective**: Sharing a single medium among multiple signals reduces the need for additional infrastructure.
-  - **Scalability**: Allows for more devices or users to be connected over the same medium without significant upgrades.
+  - **Scalability**: Allows for more devices or users to be connected over the same medium without significant upgrades.  
+<br>
 
-## Real-World Examples
+## 3. Real-World Examples
   - Internet Connections: **DSL and cable modems** use multiplexing to send and receive multiple streams of data over the same line.
   - TV Broadcasting: **Cable TV uses FDM** to send multiple channels over a single cable.
-  - Mobile Communication: **Cellular networks use CDM** to allow multiple users to share the same frequencies.
+  - Mobile Communication: **Cellular networks use CDM** to allow multiple users to share the same frequencies.  
+<br>
 
-## Summary
+## 4. Summary
 Multiplexing enables the efficient use of communication channels by allowing multiple signals to share the same medium, which increases capacity and reduces infrastructure costs.  
 <br>

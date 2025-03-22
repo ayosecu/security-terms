@@ -9,7 +9,8 @@ In the execution phase of an attack, the attacker **runs malicious code on a sys
     - **PowerShell**: A powerful shell and scripting language on Windows, PowerShell is frequently used in attacks because it allows deep access to system resources, file manipulation, and network communication. Attackers can execute commands stealthily, often avoiding detection.
     - **Python**: A cross-platform scripting language with numerous libraries, Python is used in both Windows and Unix environments to run code that performs tasks such as downloading payloads, controlling devices, or interacting with APIs.
     - **JavaScript**: While JavaScript runs primarily in web browsers, attackers may use it in specific attacks (e.g., cross-site scripting) or in environments where JavaScript engines are present. In some cases, JavaScript is used to execute payloads from malicious websites.
-  - Security Implications: Shells and interpreters allow attackers to execute arbitrary commands on a system, making it easy to download and run additional malware or to control the system remotely. Since tools like PowerShell are legitimate and often necessary, they can be challenging to block without impacting normal operations.
+  - Security Implications: Shells and interpreters allow attackers to execute arbitrary commands on a system, making it easy to download and run additional malware or to control the system remotely. Since tools like PowerShell are legitimate and often necessary, they can be challenging to block without impacting normal operations.  
+<br>
 
 ## 2. Scheduled Tasks and Windows Management Instrumentation (WMI)
   - **Scheduled Tasks**
@@ -22,9 +23,10 @@ In the execution phase of an attack, the attacker **runs malicious code on a sys
     - Usage in Attacks
       - **Remote Code Execution**: WMI can be used to execute scripts or commands on remote systems without requiring an interactive shell.
       -	**Process Creation**: Attackers use WMI to start processes or services, often to create persistence or run scripts.
-    - Security Implications: WMI is often used in legitimate Windows administration, making it challenging to detect malicious use. Attackers often use WMI to evade network detection tools, as it enables remote command execution without traditional remote access methods like SSH or RDP.
+    - Security Implications: WMI is often used in legitimate Windows administration, making it challenging to detect malicious use. Attackers often use WMI to evade network detection tools, as it enables remote command execution without traditional remote access methods like SSH or RDP.  
+<br>
 
-## Summary
+## 3. Summary
   - Shells and Interpreters (e.g., PowerShell, Python) allow attackers to **run flexible and powerful scripts**, often evading detection since these tools are legitimate and widely used.
   - Scheduled Tasks enable attackers to **automate malware execution, ensuring persistence across reboots and at designated times**.
   - WMI provides attackers with **remote code execution capabilities and control over system processes, offering stealth and flexibility in Windows environments**.

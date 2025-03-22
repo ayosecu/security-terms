@@ -117,7 +117,7 @@ username:hashed_password:last_change:min_days:max_days:warn_days:inactive_days:e
     - Implement **access controls** to restrict unauthorized access.  
 <br>
 
-## Summary
+## 8. Summary
 
 | Concept | Details |
 | ------- | ------- |

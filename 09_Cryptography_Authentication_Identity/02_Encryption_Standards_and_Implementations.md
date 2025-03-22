@@ -46,7 +46,7 @@ Encryption standards and their implementations vary based on their purpose (e.g.
   - Example of Use: Google adopted ChaCha20-Poly1305 (a ChaCha20 variant with message authentication) as a TLS cipher suite in Chrome to provide faster encryption on mobile devices compared to AES-GCM.  
 <br>
 
-## Comparison Table
+## 5. Comparison Table
 
 | Algorithm | Type | Key Sizes | Use Cases | Security Level |
 | --------- | ---- | --------- | --------- | -------------- |
@@ -57,7 +57,7 @@ Encryption standards and their implementations vary based on their purpose (e.g.
   
 <br>
 
-## Summary of Attack Models Related to Encryption
+## 6. Attack Models Related to Encryption
   - **Brute Force** Attack: Attempts all possible key combinations to decrypt encrypted data. Strong encryption uses long keys to make this computationally infeasible.
   - **Chosen-Plaintext** Attack (CPA): The attacker has access to the encryption of chosen plaintexts, enabling analysis of the encryption process. Modern encryption schemes are designed to withstand CPA.
   - **Chosen-Ciphertext** Attack (CCA): The attacker can decrypt chosen ciphertexts, potentially exposing vulnerabilities in the decryption process.
@@ -65,7 +65,7 @@ Encryption standards and their implementations vary based on their purpose (e.g.
   - **Quantum Threat**: Quantum computing poses a **theoretical risk to RSA and ECC**, but **symmetric algorithms like AES are generally more resistant to quantum attacks (with increased key sizes)**.  
 <br>
 
-## Summary
+## 7. Summary
   - RSA (Asymmetric): Good for secure data exchange and digital signatures; uses long keys and is resource-intensive.
   - AES (Symmetric): Strong, fast, and ideal for general data encryption; widely adopted and secure.
   - ECC (ed25519) (Asymmetric): Provides security with shorter keys; excellent for digital signatures in resource-constrained environments.

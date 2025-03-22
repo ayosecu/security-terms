@@ -4,7 +4,7 @@
 Trust boundaries are **conceptual lines within a system or network architecture that separate areas of different trust levels**. **Crossing a trust boundary generally requires authentication, authorization, or inspection to ensure that data and operations are permitted**. By defining trust boundaries, organizations **can identify where sensitive operations or data interactions occur and apply appropriate security controls to protect against unauthorized access or abuse**.  
 <br>
 
-## Key Concepts of Trust Boundaries
+## 1. Key Concepts of Trust Boundaries
 1. **Different Levels of Trust**
   - Trust boundaries **separate areas with different security requirements**. For example, a public-facing web server is typically less trusted than an internal database containing sensitive data, so a trust boundary would exist between them.
   - Examples of trust boundaries include
@@ -30,13 +30,13 @@ Trust boundaries are **conceptual lines within a system or network architecture 
   - Microservices and Containers: In microservices architectures, **each service might have a trust boundary to isolate sensitive services and prevent unauthorized data access between them**.  
 <br>
   
-## Why Trust Boundaries Matter in Threat Modeling
+## 2. Why Trust Boundaries Matter in Threat Modeling
 In threat modeling, **defining trust boundaries helps identify where security risks are the greatest**. By understanding where untrusted or partially trusted entities interact with sensitive data or services, security teams can:
   - **Map Attack Surfaces**: Understand which parts of the system are exposed to potential attacks and focus on protecting these boundaries.
   - **Apply Appropriate Controls**: Decide on the right level of security controls based on the sensitivity of data or services crossing each boundary.
   - **Prevent Privilege Escalation**: Prevent attackers from moving laterally across boundaries and gaining unauthorized access to restricted areas.  
 <br>
 
-## Summary
+## 3. Summary
 Trust boundaries define the separation of areas with different trust levels within a system or network. They highlight sensitive areas where security controls are essential to prevent unauthorized access, data leakage, or privilege escalation. Properly managing trust boundaries is crucial for securing interactions in systems and networks, helping to prevent attackers from exploiting boundaries to gain unauthorized access to sensitive information or systems.  
 <br>

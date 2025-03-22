@@ -3,7 +3,7 @@
 # Nmap (Network Mapper) 
 Nmap (Network Mapper) is **a powerful open-source tool used for network discovery and security auditing**. It is widely used by network administrators, penetration testers, and security professionals to **scan and map networks, identify active hosts, discover services, detect vulnerabilities, and assess network security**.
 
-## Key Functions of Nmap
+## 1. Key Functions of Nmap
 1. **Host Discovery**
   - Nmap can detect live hosts on a network. This is useful for identifying which devices are currently active and reachable on a network, often referred to as ping scanning.
 2. **Port Scanning**
@@ -17,9 +17,10 @@ Nmap (Network Mapper) is **a powerful open-source tool used for network discover
   - With the **Nmap Scripting Engine (NSE)**, Nmap can be extended to run custom scripts for tasks such as vulnerability detection, malware detection, and even performing brute-force password guessing attacks.
   - NSE includes scripts that detect specific vulnerabilities (e.g., Heartbleed or SMB vulnerabilities).
 6. **Network Mapping**
-  - Nmap can create a detailed network topology by discovering all devices on a network and the connections between them. This is often used for creating an overview of the network infrastructure.
+  - Nmap can create a detailed network topology by discovering all devices on a network and the connections between them. This is often used for creating an overview of the network infrastructure.  
+<br>
 
-## How Nmap Works
+## 2. How Nmap Works
 Nmap sends specially crafted packets to the target systems and analyzes their responses to gather information.
 
 1. **TCP SYN Scan (also called half-open scan)**
@@ -30,9 +31,10 @@ Nmap sends specially crafted packets to the target systems and analyzes their re
 3. **TCP Connect Scan**
   - This method completes the **full TCP handshake**, establishing a connection with the target host. While accurate, it is slower and more easily detected by security systems like intrusion detection systems (IDS).
 4. **ACK Scan**
-  - Used to **determine the firewall rules on a network**, Nmap sends TCP ACK packets to the target to identify whether the port is filtered or unfiltered.
+  - Used to **determine the firewall rules on a network**, Nmap sends TCP ACK packets to the target to identify whether the port is filtered or unfiltered.  
+<br>
 
-## Common Nmap Commands
+## 3. Common Nmap Commands
   - Basic Host Discovery:  
 
 ```
@@ -87,18 +89,21 @@ This command scans only ports 80 (HTTP) and 443 (HTTPS) on the target host.
 nmap --script vuln 192.168.1.1
 ```
 
-This command runs the vulnerability detection script against the target host.
+This command runs the vulnerability detection script against the target host.  
+<br>
 
-## Benefits of Nmap
+## 4. Benefits of Nmap
   - **Comprehensive Scanning**: Nmap can perform a wide range of scans, from simple port checks to complex service and OS detection.
   - **Customizable with Scripts**: The **NSE(Nmap Scripting Engine)** allows users to extend Nmap’s functionality for specific tasks, such as detecting vulnerabilities or running custom scripts.
-  - **Free and Open Source**: Nmap is freely available and continuously updated by a large community of users and developers.
+  - **Free and Open Source**: Nmap is freely available and continuously updated by a large community of users and developers.  
+<br>
 
-## Limitations of Nmap
+## 5. Limitations of Nmap
   - Active **Detection**: Nmap is an active scanner, meaning it sends packets to the target, which may trigger security alerts or logs in IDS/IPS systems.
   - **False Positives/Negatives**: **Firewalls, IDS, and load balancers can affect Nmap’s results**, causing ports or services to appear open, closed, or filtered incorrectly.
-  - **Time-Consuming**: Scanning large networks with many hosts can be time-consuming, especially when using slower scan techniques like UDP scanning.
+  - **Time-Consuming**: Scanning large networks with many hosts can be time-consuming, especially when using slower scan techniques like UDP scanning.  
+<br>
 
-## Summary
+## 6. Summary
 Nmap is a versatile and powerful tool for network discovery, scanning, and security auditing. It is essential for tasks like identifying open ports, discovering network services, detecting vulnerabilities, and mapping network infrastructures.  
 <br>

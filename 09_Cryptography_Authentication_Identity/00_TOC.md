@@ -1,3 +1,5 @@
+<br>
+
 # Cryptography, Authentication, Identity
 - [Encryption vs Encoding vs Hashing vs Obfuscation vs Signing](./01_Encryption_Encoding_Hashing_Obfuscation_Signing.md)
     - Be able to explain the differences between these things. 

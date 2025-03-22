@@ -14,7 +14,8 @@ These signatures **focus on detecting suspicious activity or changes within a pa
     - **Malware Strings**: Signatures can detect known strings or code fragments commonly found in malware samples. These signatures match certain sequences of bytes or text that are characteristic of a specific malware strain.
       - Example: An antivirus solution might search for strings in binaries that are known to belong to a particular piece of malware, such as ransomware or a keylogger.
 
-Host-Based Signatures are commonly used by antivirus programs, host-based intrusion detection systems (HIDS), and other endpoint security solutions. These signatures work by matching known patterns of malicious behavior to detect threats at the device level.
+Host-Based Signatures are commonly used by antivirus programs, host-based intrusion detection systems (HIDS), and other endpoint security solutions. These signatures work by matching known patterns of malicious behavior to detect threats at the device level.  
+<br>
 
 ## 2. Network-Based Signatures
 Network signatures **detect malicious or abnormal activity in network traffic**. They are **typically used by network-based intrusion detection systems (NIDS), firewalls, or other network security tools to monitor for known attack patterns**.
@@ -27,9 +28,10 @@ Network signatures **detect malicious or abnormal activity in network traffic**.
     - **Protocol Misuse**: Network signatures can identify anomalies in how network protocols are used, such as deviations in packet structure or unexpected sequences, which could indicate an attack.
       - Example: Detection of malformed HTTP requests designed to exploit vulnerabilities in web servers.
 
-Network-Based Signatures are utilized in systems like NIDS (Network Intrusion Detection Systems) or firewalls to monitor traffic between devices and across network boundaries, identifying threats based on known patterns of malicious network behavior.
+Network-Based Signatures are utilized in systems like NIDS (Network Intrusion Detection Systems) or firewalls to monitor traffic between devices and across network boundaries, identifying threats based on known patterns of malicious network behavior.  
+<br>
 
-## Summary
+## 3. Summary
   - Host-Based Signatures detect malicious activity directly on the host, such as registry changes, file creation/modification, or known malware strings in binaries. Tools like antivirus software and HIDS typically use these signatures.
   - Network-Based Signatures detect suspicious activity at the network level, such as checking DNS records for communications with C2 servers or detecting unusual network traffic. These signatures are used by NIDS, firewalls, and other network security tools.
 

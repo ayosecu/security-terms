@@ -3,12 +3,13 @@
 # IRC (Internet Relay Chat)
 IRC (Internet Relay Chat) is **a text-based communication protocol** that allows users to join channels (chat rooms) and communicate in real-time. It was originally developed for group communication but can also support private messaging, file sharing, and multi-channel chats. IRC operates over the internet, typically **using TCP on port 6667**, but can also use **encrypted connections through SSL/TLS (usually on port 6697)**.
 
-## How IRC Works
+## 1. How IRC Works
   - **Channels**: Users join specific chat rooms called channels (e.g., #channelname), where they can communicate with others in real time.
   - **Servers and Clients**: IRC operates using a **client-server model**, where users connect to an IRC server via an IRC client. Multiple servers can be interconnected in networks, allowing for a broad, distributed communication system.
-  - **Commands**: Users interact with the system using commands such as /join #channel to enter a channel or /msg user to send a private message.
+  - **Commands**: Users interact with the system using commands such as /join #channel to enter a channel or /msg user to send a private message.  
+<br>
 
-## Use by Hackers (Botnets)
+## 2. Use by Hackers (Botnets)
 IRC has **historically been exploited by hackers for nefarious activities, including the management of botnets**.  
 
 1. **Botnets**
@@ -23,14 +24,16 @@ IRC has **historically been exploited by hackers for nefarious activities, inclu
 3. Example of IRC Botnet Control
   - A hacker creates a malware strain that infects devices, turning them into bots.
   - These bots are programmed to automatically connect to an IRC server, join a secret channel, and await commands.
-  - The hacker, from the IRC server, can issue commands to all connected bots to perform attacks or retrieve stolen data.
+  - The hacker, from the IRC server, can issue commands to all connected bots to perform attacks or retrieve stolen data.  
+<br>
 
-## Why Hackers Use IRC
+## 3. Why Hackers Use IRC
   - **Real-time Control**: IRC allows for real-time communication, making it efficient for coordinating fast-moving attacks like DDoS.
   - **Simple and Lightweight**: The protocol is simple and lightweight, allowing it to operate even on low-resource devices or compromised systems.
-  - **Widely Available and Easy to Set Up**: IRC servers are easy to deploy, and there are many publicly available IRC networks, providing flexibility for attackers.
+  - **Widely Available and Easy to Set Up**: IRC servers are easy to deploy, and there are many publicly available IRC networks, providing flexibility for attackers.  
+<br>
 
-## Summary
+## 4. Summary
   - **IRC is a real-time communication protocol**, originally used for group chats and file sharing.
   - Hackers **leverage IRC to manage botnets**, using it as a **command-and-control channel** to coordinate compromised devices for attacks.
   - The anonymous nature of IRC, especially when used with tools like Tor, makes it a favored platform for cybercriminal activities.  

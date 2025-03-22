@@ -9,7 +9,8 @@ In the discovery phase of an attack, attackers **gather information about the co
     - **Ping Sweeps**: Attackers use ping sweeps to find live hosts on a network.
     - **Port Scanning**: Tools like **Nmap** allow attackers to scan for open ports on discovered hosts, revealing which services are running.
     - **Service Identification**: By analyzing responses, attackers can determine specific versions of services, which can help them identify known vulnerabilities.
-  - Security Implications: Network scanning is often a prelude to lateral movement and privilege escalation. **Detecting unauthorized scans can be an early indicator of compromise**, as attackers try to gather information on internal resources.
+  - Security Implications: Network scanning is often a prelude to lateral movement and privilege escalation. **Detecting unauthorized scans can be an early indicator of compromise**, as attackers try to gather information on internal resources.  
+<br>
 
 ## 2. Find Accounts by Listing Policies
   - Definition: Attackers enumerate user accounts, permissions, and policies within the environment to understand access control structures and identify privileged accounts.
@@ -17,7 +18,8 @@ In the discovery phase of an attack, attackers **gather information about the co
     - **Enumerating Group Policies**: Attackers may check for existing group policies in Active Directory (AD) to see which accounts have elevated privileges or access to sensitive systems.
     - **Listing Accounts and Permissions**: By listing user accounts and groups, attackers can identify high-value accounts, such as administrators or service accounts with broad access rights.
     - **Policy Details**: Attackers may look at password policies, account lockout thresholds, and auditing settings to plan their attack without triggering alerts.
-  - Security Implications: By gathering information on accounts and policies, attackers can target specific users for credential access or privilege escalation. It also helps them tailor their approach based on the environment’s access control policies.
+  - Security Implications: By gathering information on accounts and policies, attackers can target specific users for credential access or privilege escalation. It also helps them tailor their approach based on the environment’s access control policies.  
+<br>
 
 ## 3. Find Remote Systems, Software, and System Information
   - **Find Remote Systems**
@@ -30,9 +32,10 @@ In the discovery phase of an attack, attackers **gather information about the co
   - Detect Virtual Machines and Sandboxes
     - Purpose: Attackers check if they’re operating within a virtual environment or sandbox, as many security solutions use VMs or sandboxes to analyze malware behavior.
     - Techniques: Attackers look for VM-specific artifacts like Hyper-V processes or VMware directories, which could indicate a sandbox or security monitoring environment.
-  - Security Implications: Discovering information about remote systems, software, and system environments gives attackers insight into potential weaknesses. Additionally, detecting a sandbox environment may prompt attackers to delay their payload execution or adjust their methods to avoid detection.
+  - Security Implications: Discovering information about remote systems, software, and system environments gives attackers insight into potential weaknesses. Additionally, detecting a sandbox environment may prompt attackers to delay their payload execution or adjust their methods to avoid detection.  
+<br>
 
-## Summary
+## 4. Summary
   - Network Scanning helps attackers map out the network, locate active hosts, and identify services and ports that may be vulnerable.
   - Finding Accounts by Listing Policies enables attackers to identify privileged accounts and understand the environment’s access control structure, aiding in privilege escalation.
   - Finding Remote Systems, Software, and System Information provides attackers with details on potential lateral movement targets, vulnerable software, and OS versions, as well as the ability to detect VM or sandbox environments to avoid security monitoring.

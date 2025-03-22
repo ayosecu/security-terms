@@ -4,7 +4,7 @@
 [The MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) Framework](https://attack.mitre.org/) is **a comprehensive knowledge base that categorizes the tactics, techniques, and procedures (TTPs) used by attackers throughout the lifecycle of a cyberattack**. Developed by MITRE Corporation, ATT&CK helps cybersecurity professionals **understand and defend against adversarial behavior by mapping real-world attack techniques to the different phases of an attack**. The framework is widely used in threat modeling, detection, and incident response.  
 <br>
 
-## Key Components of the MITRE ATT&CK Framework
+## 1. Key Components of the MITRE ATT&CK Framework
 1. **Tactics**
   - Tactics represent the goals or objectives an attacker aims to achieve at each **stage of an attack**. Each tactic aligns with a specific phase in the attack lifecycle, providing a high-level view of the attacker’s goals.
   - Examples of Tactics
@@ -29,7 +29,7 @@
   - Example: APT28 (a known threat group) using spear-phishing emails with malicious attachments to gain initial access to a target organization.  
 <br>
 
-## MITRE ATT&CK Matrices
+## 2. MITRE ATT&CK Matrices
 The MITRE ATT&CK framework provides multiple matrices that organize tactics and techniques according to different environments, such as:
   - Enterprise: Focused on attacks against enterprise networks and systems, including Windows, macOS, Linux, and cloud environments.
   - Mobile: Contains tactics and techniques specific to mobile platforms, including both Android and iOS.
@@ -37,7 +37,7 @@ The MITRE ATT&CK framework provides multiple matrices that organize tactics and 
 Each matrix is a structured table where the rows represent techniques and the columns represent tactics. This structure allows analysts to see how each technique aligns with a specific tactic in the attack lifecycle.  
 <br>
 
-## Common Use Cases for the MITRE ATT&CK Framework
+## 3. Common Use Cases for the MITRE ATT&CK Framework
 1. **Threat Detection and Response**
   - Security teams use ATT&CK to map observed attacker behavior to known techniques and tactics. By comparing suspicious activity to the framework, they can better understand the attack’s progression and prioritize responses based on the attack’s lifecycle stage.
 2. **Threat Intelligence**
@@ -50,7 +50,7 @@ Each matrix is a structured table where the rows represent techniques and the co
   - Organizations can use ATT&CK to evaluate their current security controls and see if they are adequately covering known techniques. This helps in identifying potential gaps and implementing additional security measures to cover them.  
 <br>
 
-## Example of an ATT&CK Matrix Row
+## 4. Example of an ATT&CK Matrix Row
 Here’s a simplified example of a row in the MITRE ATT&CK Enterprise Matrix, focused on the “Initial Access” tactic.
 
 | Tactic | Technique | Sub-Technique | Procedure (Example) |
@@ -62,6 +62,6 @@ Here’s a simplified example of a row in the MITRE ATT&CK Enterprise Matrix, fo
 This row shows how techniques and sub-techniques are mapped to the “Initial Access” tactic, along with real-world examples of threat actors using these methods.  
 <br>
 
-## Summary
+## 5. Summary
 The MITRE ATT&CK Framework is a widely used threat intelligence and defense framework that categorizes the tactics, techniques, and procedures (TTPs) used by attackers. The framework is structured into matrices that map tactics (the goals attackers aim to achieve) to techniques (the specific methods they use). It is used by cybersecurity professionals for threat detection, threat intelligence, incident response, and gap analysis, providing a common language and structured approach for understanding and defending against cyber threats.  
 <br>

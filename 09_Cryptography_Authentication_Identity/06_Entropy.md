@@ -42,7 +42,7 @@ Entropy in cryptography refers to **the measure of randomness or unpredictabilit
     - These sources are often slow but useful as supplementary sources in entropy-starved environments.  
 <br>
 
-## Summary
+## 5. Summary
   - **Entropy**: The measure of randomness in a system, crucial for cryptographic security. Low entropy makes systems more vulnerable to attacks.
   - **PRNGs**: Generate sequences of pseudo-random numbers based on a seed, which ideally comes from a high-entropy source. Secure PRNGs (CSPRNGs) are designed to be unpredictable.
   - **Entropy Buffer Draining**: Occurs when cryptographic operations deplete available entropy, which can lead to slower operations and potentially less secure random data.

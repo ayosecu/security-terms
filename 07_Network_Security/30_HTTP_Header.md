@@ -3,7 +3,7 @@
 # HTTP Headers 
 HTTP headers are **an essential part of the communication between a client (like a web browser) and a server when making HTTP requests and receiving responses**. They provide additional metadata about the request or response, helping the server understand how to process the request or return the appropriate response. These headers include information such as the method being used, the format of data that can be accepted, details about the connection, and more.
 
-## Request Line
+## 1. Request Line
 The first line of an HTTP request typically includes three important elements:
 
 1. Verb (or **Method**): This defines the action the client wants to perform. Common HTTP verbs include:  
@@ -14,9 +14,10 @@ The first line of an HTTP request typically includes three important elements:
 
 2. Path: This is the path to the resource on the server the client wants to access. For example, /index.html could refer to the homepage of the website.
 
-3. HTTP Version: This specifies the version of the HTTP protocol the client is using (e.g., HTTP/1.1 or HTTP/2). The version affects how the request and response are structured and processed.
+3. HTTP Version: This specifies the version of the HTTP protocol the client is using (e.g., HTTP/1.1 or HTTP/2). The version affects how the request and response are structured and processed.  
+<br>
 
-## Key HTTP Headers
+## 2. Key HTTP Headers
 1. **Domain**
   - Specifies the domain (or host) where the request is being made, such as www.example.com. This tells the server which website the client wants to communicate with, especially important when multiple websites are hosted on the same server.
   - Example:  
@@ -88,8 +89,10 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 ```
 Content-Length: 348
 ```
+   
+<br>
 
-## Example of an HTTP Request  
+## 3. Example of an HTTP Request  
 
 ```
 GET /index.html HTTP/1.1
@@ -107,9 +110,10 @@ In this example:
   - The verb is GET, which means the client is requesting data from the server.
   - The path is /index.html, indicating the specific file being requested.
   - The HTTP version is HTTP/1.1.
-  - Various headers specify details like accepted content types, preferred language, compression types, and information about the client’s setup.
+  - Various headers specify details like accepted content types, preferred language, compression types, and information about the client’s setup.  
+<br>
 
-## Summary
+## 4. Summary
   - HTTP headers provide metadata about requests and responses, helping clients and servers communicate efficiently.
   - Headers like Accept, Connection, and User-Agent define how data should be formatted, handled, and which types of content are preferred by the client.
   - Verb, path, and HTTP version form the backbone of the HTTP request, specifying the action, the resource, and the protocol version to use.  

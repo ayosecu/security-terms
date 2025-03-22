@@ -43,7 +43,7 @@ Integrity and authenticity are essential aspects of data security, ensuring that
   - Security Implications: HMACs provide high levels of security due to the cryptographic strength of the underlying hash function and the secret key. They are resistant to known attacks and widely used for both data integrity and authenticity.  
 <br>
 
-## Comparison Table
+## 4. Comparison Table
 
 | Primitive | Integrity | Authenticity | Key Requirement | Use Case Examples | Common Algorithms |
 | --------- | --------- | ------------ | --------------- | ----------------- | ----------------- |
@@ -53,7 +53,7 @@ Integrity and authenticity are essential aspects of data security, ensuring that
   
 <br>
 
-## Summary
+## 5. Summary
   - **Hashing Functions**: Provide a unique identifier for data, useful for integrity checking and fingerprinting but do not offer authenticity. Commonly used hashing algorithms include MD5, SHA-1, and BLAKE.
   - **Message Authentication Codes (MACs)**: Offer both integrity and authenticity using a shared secret key, ensuring the data’s origin and unaltered state. They’re commonly used in secure communications.
   - **Keyed-Hash MACs (HMACs)**: Provide strong integrity and authenticity through a combination of hashing and secret keys, enhancing security. HMACs are widely used in secure protocols for data integrity and verification.

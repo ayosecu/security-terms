@@ -90,7 +90,7 @@ Authentication is **a crucial security process that verifies a user’s identity
   
 <br>
 
-## Summary
+## 11. Summary
   - **Certificates**: Used for verifying identity, with trust anchored in Certificate Authorities (CAs).
   - **TPM**: Hardware-based secure storage for sensitive data, enhancing local security.
   - **OAuth**: Access delegation standard with bearer tokens for short-lived access, but vulnerable to token theft.

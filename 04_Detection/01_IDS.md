@@ -13,7 +13,7 @@ An IDS is designed to monitor a network or system for **abnormal activities and 
     - Advantages: It can **detect new types of attacks** by recognizing abnormal behavior patterns. It’s also useful for **detecting zero-day attacks**.
     - Disadvantages: It may generate **many false positives** since not all abnormal behavior is malicious.
 
-## Snort/Suricata/YARA Rule Writing
+## 1. Snort/Suricata/YARA Rule Writing
 For IDS tools like Snort and Suricata, creating detection rules is essential for defining specific patterns of behavior or signatures to identify threats.
 
   - Snort/Suricata Rule Writing
@@ -43,9 +43,10 @@ rule MyMalware
 }
 ```  
 
-This rule detects a file or memory pattern containing the defined string or byte sequence, identifying potential malware.
+This rule detects a file or memory pattern containing the defined string or byte sequence, identifying potential malware.  
+<br>
 
-## Host-based Intrusion Detection System (HIDS)
+## 2. Host-based Intrusion Detection System (HIDS)
 A HIDS focuses on monitoring and analyzing the activities **on individual hosts** (like servers or PCs), unlike network-based IDS that monitors network traffic. HIDS typically **examines log files, checks file integrity, and monitors system calls** to detect intrusions.
 
   - OSSEC

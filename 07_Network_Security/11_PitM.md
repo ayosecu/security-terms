@@ -3,7 +3,7 @@
 # Person-in-the-Middle (PitM)
 Person-in-the-Middle (PitM), also known as. **Man-in-the-Middle (MitM), is a type of cyberattack where an attacker secretly intercepts and potentially alters communication between two parties who believe they are directly communicating with each other**. In a PitM attack, the attacker is positioned **between the sender and receiver** and can intercept, modify, or manipulate the data being exchanged without either party realizing it.
 
-## How PitM Attacks Work
+## 1. How PitM Attacks Work
 1. **Intercepting Communication**
   - The attacker intercepts the communication channel between two parties (e.g., client and server, or two individuals). This can be achieved in various ways, such as:
     - **Wi-Fi eavesdropping**: Intercepting traffic on an unencrypted or poorly secured Wi-Fi network.
@@ -14,9 +14,10 @@ Person-in-the-Middle (PitM), also known as. **Man-in-the-Middle (MitM), is a typ
     - **Eavesdropping**: The attacker silently monitors the data, gaining access to sensitive information like passwords, personal messages, or banking information.
     - **Modifying Data**: The attacker can modify the contents of messages, transactions, or other communications, leading to fraud or miscommunication between the parties.
 3. **Impersonation**
-  - In some cases, the attacker impersonates one of the parties in the communication. For example, in an HTTPS MitM attack, the attacker may present a fake certificate to make the victim believe they are securely communicating with the real website, while all data is routed through the attacker’s server.
+  - In some cases, the attacker impersonates one of the parties in the communication. For example, in an HTTPS MitM attack, the attacker may present a fake certificate to make the victim believe they are securely communicating with the real website, while all data is routed through the attacker’s server.  
+<br>
 
-## Types of PitM Attacks
+## 2. Types of PitM Attacks
 1. **Wi-Fi Eavesdropping**
   - Attackers can intercept unencrypted traffic over unsecured public Wi-Fi networks. Victims connected to the same network can have their communications intercepted, including login credentials and sensitive data.
 2. **SSL Stripping**
@@ -28,15 +29,17 @@ Person-in-the-Middle (PitM), also known as. **Man-in-the-Middle (MitM), is a typ
 5. **Session Hijacking**
   - The attacker **intercepts session tokens** (used to maintain authenticated sessions between a client and a server) and uses them to impersonate the victim, effectively taking over their session.
 6. **Email Hijacking**
-  - Attackers gain access to email communications between parties, such as during financial transactions. The attacker can modify invoice details or payment instructions to divert funds to their own account.
+  - Attackers gain access to email communications between parties, such as during financial transactions. The attacker can modify invoice details or payment instructions to divert funds to their own account.  
+<br>
 
-## Impacts of PitM Attacks
+## 3. Impacts of PitM Attacks
   - **Data Theft**: Attackers can steal sensitive information, such as login credentials, credit card numbers, or personal messages.
   - **Financial Fraud**: PitM attacks can result in the interception or redirection of financial transactions, leading to fraud and theft.
   - **Unauthorized Access**: The attacker can gain unauthorized access to accounts or systems by intercepting and using credentials or session tokens.
-  - **Reputation Damage**: PitM attacks can compromise trust between communicating parties, particularly if sensitive business or financial data is involved.
+  - **Reputation Damage**: PitM attacks can compromise trust between communicating parties, particularly if sensitive business or financial data is involved.  
+<br>
 
-## Prevention of PitM Attacks
+## 4. Prevention of PitM Attacks
 1. **Encryption**
   - Use strong encryption protocols (such as HTTPS and SSL/TLS) to secure communication channels and ensure that data transmitted between parties is encrypted, preventing interception.
   - Avoid using public Wi-Fi networks for sensitive transactions unless the connection is protected by a VPN (Virtual Private Network).
@@ -50,8 +53,9 @@ Person-in-the-Middle (PitM), also known as. **Man-in-the-Middle (MitM), is a typ
   - Implement firewalls and intrusion detection systems (IDS) to monitor traffic for suspicious behavior or patterns indicative of PitM attacks.
 5. **User Vigilance**
   - **Educate** users to avoid clicking on suspicious links or accessing sensitive accounts on public networks.
-  - Regularly verify website certificates and look for “HTTPS” in the URL bar to ensure secure connections.
+  - Regularly verify website certificates and look for “HTTPS” in the URL bar to ensure secure connections.  
+<br>
 
-## Summary
+## 5. Summary
 Person-in-the-Middle (PitM) attacks involve **intercepting and manipulating communications between two parties**. These attacks can result in data theft, financial fraud, or unauthorized access to sensitive systems. Encryption, strong authentication methods, and secure network practices are essential defenses against such attacks.  
 <br>

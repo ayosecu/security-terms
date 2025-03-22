@@ -104,7 +104,7 @@
       - Maintains a separate stack to verify return addresses.  
 <br>
 
-## Summary
+## 7. Summary
 
 | Topic | Key Details |
 | ----- | ----------- |

@@ -1,3 +1,5 @@
+<br>
+
 # Web Application
 - [Same Origin Policy](./01_Same_Origin_Policy.md)
     - Only accept requests from the same origin domain.

@@ -4,7 +4,7 @@
 A Threat Matrix is **a structured framework or table used to systematically assess, prioritize, and map various security threats to an organization, system, or specific asset**. It helps security teams categorize and understand potential risks based on different threat actors, attack vectors, and the potential impact on the organization. **The Threat Matrix is a valuable tool in threat modeling, which is the process of identifying and evaluating threats to systems and developing strategies to mitigate or respond to them**.  
 <br>
 
-## Key Features of a Threat Matrix
+## 1. Key Features of a Threat Matrix
 1. Structured **Threat Categorization**
   - A threat matrix organizes different threats into categories, allowing security teams to systematically evaluate how different types of attacks may occur and what their potential impact might be. Categories often include:
     - **Threat Actors**: The individuals or entities that may carry out the attack (e.g., nation-states, cybercriminals, insiders).
@@ -19,7 +19,7 @@ A Threat Matrix is **a structured framework or table used to systematically asse
   - One well-known example of a threat matrix is **the MITRE ATT&CK Matrix, which organizes various techniques and tactics that attackers use during different stages of an attack**. It is widely used by security professionals to model adversary behavior and map defensive measures.
 <br>
 
-## Example: MITRE ATT&CK Matrix
+## 2. Example: MITRE ATT&CK Matrix
 The MITRE ATT&CK Matrix is a specific and widely adopted threat matrix framework that categorizes techniques and tactics based on real-world observations of cyberattacks. It **breaks down attacks into stages (called tactics)** such as initial access, execution, privilege escalation, lateral movement, and more. Within each tactic, the matrix **lists different techniques** that adversaries can use.
 
  - Key Components of MITRE ATT&CK
@@ -28,12 +28,12 @@ The MITRE ATT&CK Matrix is a specific and widely adopted threat matrix framework
     - **Procedures**: The **steps** attackers take to execute the techniques in real-world scenarios.  
 <br>
 
-## Why a Threat Matrix Is Important in Threat Modeling
+## 3. Why a Threat Matrix Is Important in Threat Modeling
   - **Risk Prioritization**: A Threat Matrix helps identify which threats are the most relevant to an organization, allowing security teams to prioritize mitigation efforts accordingly.
   - **Understanding Attack Paths**: By mapping out potential attack paths in a structured way, a threat matrix helps security teams see how different vulnerabilities might be exploited and which defenses are most effective.
   - **Facilitates Communication**: **The structured approach of a threat matrix makes it easier for security teams to communicate risks and threats to other stakeholders**, such as management or IT teams, helping guide security planning and resource allocation.  
 <br>
 
-## Summary
+## 4. Summary
 A Threat Matrix is a vital tool in threat modeling that organizes and prioritizes potential security threats based on factors like attack vectors, threat actors, and the impact of successful attacks. It helps security teams understand, categorize, and mitigate risks systematically. Frameworks like the MITRE ATT&CK Matrix offer real-world examples of how threat matrices are used to map adversary techniques and tactics, providing valuable insights for defense and detection strategies.  
 <br>

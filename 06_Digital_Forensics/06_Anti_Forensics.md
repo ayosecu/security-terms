@@ -10,7 +10,8 @@ Malware employs several methods to evade detection and avoid forensic scrutiny, 
   - **Rootkits**: Rootkits **modify the operating system’s kernel or drivers, hiding processes, files, and network connections from the system itself**. They allow malware to operate invisibly by tampering with the system’s view of active files and processes.
   - **Code Obfuscation and Packing**: Malware frequently encrypts or “packs” its payload to obscure its code, making it challenging for signature-based antivirus tools to detect it. The code only decrypts or unpacks itself in memory, leaving minimal trace on disk.
   - **Registry Manipulation (on Windows)**: Malware may hide configuration settings or autostart entries in obscure registry locations, making detection harder. By doing this, it ensures it can persist across reboots without creating obvious startup files.
-  - **Network Traffic Hiding**: Malware may use stealth techniques such as tunneling through common protocols (e.g., HTTPS) or using popular cloud services to avoid detection by security monitoring.
+  - **Network Traffic Hiding**: Malware may use stealth techniques such as tunneling through common protocols (e.g., HTTPS) or using popular cloud services to avoid detection by security monitoring.  
+<br>
 
 ## 2. Timestomping
   - Definition: Timestomping is **the manipulation of file timestamps—creation, last modification, and last access—to disguise when files were created or altered**.
@@ -21,8 +22,9 @@ Malware employs several methods to evade detection and avoid forensic scrutiny, 
   - Forensic Countermeasures
     - Forensic tools can sometimes identify inconsistencies in metadata or logs that reveal timestomping.
     - **File System Journals** (where available) record original timestamps and changes, helping investigators detect manipulation.
-    - Analyzing related artifacts, such as log files or other time-stamped data, can also reveal unusual gaps or mismatches in the timeline.
+    - Analyzing related artifacts, such as log files or other time-stamped data, can also reveal unusual gaps or mismatches in the timeline.  
+<br>
 
-## Summary
+## 3. Summary
 Malware employs hiding techniques such as **file renaming, rootkits, and process injection to evade detection**. **Timestomping is a common anti-forensics tactic**, altering file timestamps to conceal malicious activity within a system’s timeline. To counter these techniques, forensic investigators use specialized tools and methods, including **metadata verification, log analysis, and tracking inconsistencies, to detect and mitigate the effects of these anti-forensics tactics**.  
 <br>

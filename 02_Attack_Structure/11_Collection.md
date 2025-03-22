@@ -8,7 +8,8 @@ In the collection phase, **attackers gather data of interest from within the com
   - Methods
     - SQL Queries: Attackers with database access may use SQL queries to export data from key tables or perform full database dumps.
     - Automated Tools: Tools like **mysqldump for MySQL**, **pg_dump for PostgreSQL**, or custom scripts can facilitate large-scale data extraction.
-  - Security Implications: Database dumps can provide attackers with high-value, structured data that can be used for credential stuffing, identity theft, or extortion. Detecting unusual queries or large data exports can be a sign of unauthorized data collection.
+  - Security Implications: Database dumps can provide attackers with high-value, structured data that can be used for credential stuffing, identity theft, or extortion. Detecting unusual queries or large data exports can be a sign of unauthorized data collection.  
+<br>
 
 ## 2. Audio/Video/Screen Capture and Keylogging
   - Audio/Video/Screen Capture
@@ -17,7 +18,8 @@ In the collection phase, **attackers gather data of interest from within the com
   - Keylogging
     - Definition: Keyloggers record keystrokes on a compromised device, capturing usernames, passwords, messages, and other typed information.
     - Types: Keyloggers can be hardware-based (plugged into a keyboard) or software-based (installed malware).
-  - Security Implications: Audio, video, and screen captures can reveal sensitive conversations and activities, while keyloggers expose credentials and personal information. These techniques often **operate in the background, making them difficult to detect without dedicated security measures**.
+  - Security Implications: Audio, video, and screen captures can reveal sensitive conversations and activities, while keyloggers expose credentials and personal information. These techniques often **operate in the background, making them difficult to detect without dedicated security measures**.  
+<br>
 
 ## 3. Internal Documentation, Network Shared Drives, and Internal Traffic Interception
   - **Internal Documentation**
@@ -29,9 +31,10 @@ In the collection phase, **attackers gather data of interest from within the com
   - **Internal Traffic Interception**
     - Definition: Attackers intercept and analyze internal network traffic to gather credentials, communications, and other transmitted data. This may involve capturing data packets or setting up a man-in-the-middle (MitM) attack.
     - Methods: Tools like **Wireshark** or **TCPDump** can capture and analyze network traffic, revealing sensitive data like login credentials and internal communications.
-  - Security Implications: Intercepted traffic can expose unencrypted data, allowing attackers to gather information without directly interacting with user accounts. Internal traffic interception often goes undetected, especially if attackers have compromised internal network points.
+  - Security Implications: Intercepted traffic can expose unencrypted data, allowing attackers to gather information without directly interacting with user accounts. Internal traffic interception often goes undetected, especially if attackers have compromised internal network points.  
+<br>
 
-## Summary
+## 4. Summary
   - Database Dumps allow attackers to quickly obtain structured and high-value data, including PII and credentials, from database servers.
   - Audio/Video/Screen Capture and Keylogging give attackers insight into live communications, activities, and credentials, helping them gather sensitive information discreetly.
   - Internal Documentation, Network Shared Drives, and Internal Traffic Interception provide attackers with access to valuable organizational information, shared resources, and communications, which can be used for further exploitation or data exfiltration.

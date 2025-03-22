@@ -102,6 +102,6 @@ MacOS, despite its robust security architecture, is not immune to vulnerabilitie
     - Teach users to identify phishing attempts and avoid installing unnecessary software.  
 <br>
 
-## Summary
+## 6. Summary
 MacOS is a secure platform, but vulnerabilities like Gotofail and threats such as MacSweeper demonstrate that **no system is invulnerable**. By staying informed about current vulnerabilities, using the latest defenses, and applying best practices, users and administrators can maintain a robust security posture for their Mac systems.  
 <br>

@@ -4,7 +4,7 @@
 The STRIDE framework is **a threat modeling approach developed by Microsoft that helps identify potential security threats in a system**. It categorizes threats based on the types of attacks or vulnerabilities that could be exploited, providing a structured way to assess and mitigate risks. STRIDE stands for **Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege**. Each category represents a specific type of threat.  
 <br>
 
-## Components of STRIDE
+## 1. Components of STRIDE
 1. **Spoofing**
   - Definition: Spoofing occurs when an **attacker impersonates another user or device**, usually by falsifying identity credentials, such as usernames, passwords, or IP addresses.
   - Example: An attacker uses stolen credentials to log in to a system as an authorized user, gaining access to restricted resources.
@@ -31,11 +31,11 @@ The STRIDE framework is **a threat modeling approach developed by Microsoft that
   - Mitigation: Use the principle of **least privilege**, regularly **patch** systems to fix vulnerabilities, and implement **strict access control** policies.  
 <br>
 
-## Purpose of STRIDE in Threat Modeling
+## 2. Purpose of STRIDE in Threat Modeling
 The STRIDE framework helps security teams systematically identify potential threats and vulnerabilities, enabling them to develop countermeasures for each specific threat type. It is often used during system design to assess security risks and ensure that appropriate protections are in place to defend against different types of attacks.  
 <br>
 
-## Summary
+## 3. Summary
 
 | Threat Type | Definition | Example | Mitigation |
 | ----------- | ---------- | ------- | ---------- |

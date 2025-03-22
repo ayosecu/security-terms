@@ -8,7 +8,8 @@ In the persistence phase of an attack, **attackers establish methods to maintain
   - How It Works
     - **New Accounts**: Attackers with administrative access can create additional user accounts with high privileges, making it easier to regain access even if the primary entry point is discovered.
     - **Credential Dumping and Reuse**: Attackers may dump existing credentials from memory (e.g., through tools like Mimikatz) and store these for later use, or they may add new SSH keys or password hashes to retain access on Unix systems.
-  - Security Implications: New accounts and added credentials often blend in with legitimate users, making them challenging to detect. **Privileged accounts pose a particularly high risk**, as they grant attackers greater control over the system.
+  - Security Implications: New accounts and added credentials often blend in with legitimate users, making them challenging to detect. **Privileged accounts pose a particularly high risk**, as they grant attackers greater control over the system.  
+<br>
 
 ## 2. Start-Up/Log-On/Boot Scripts, Modify Launch Agents, DLL Side-Loading, Webshells
   - **Start-Up/Log-On/Boot Scripts**
@@ -26,14 +27,16 @@ In the persistence phase of an attack, **attackers establish methods to maintain
   - **Webshells**
     - Definition: A webshell is a script file (often PHP, ASP, or JSP) that allows attackers to control a compromised web server remotely via HTTP requests.
     - Purpose: **Webshells provide a persistent backdoor** into a server, allowing attackers to execute commands and upload/download files.
-    - Security Implications: Webshells are often difficult to detect because they blend into the server’s existing codebase, and attackers can use them to access the server remotely without needing interactive shells.
+    - Security Implications: Webshells are often difficult to detect because they blend into the server’s existing codebase, and attackers can use them to access the server remotely without needing interactive shells.  
+<br>
 
 ## 3. Scheduled Tasks
   - Definition: Similar to the execution phase, attackers can set up or modify scheduled tasks to ensure their malicious code runs at specific intervals, during system events, or upon login.
   - Purpose: Scheduled tasks give attackers a way to automate their scripts or malware to maintain presence, often running scripts regularly to reestablish backdoors or check for updates.
-  - Security Implications: Scheduled tasks are harder to detect once established, as they blend in with legitimate administrative tasks. If attackers schedule tasks under system or administrator privileges, it also helps them retain higher access levels.
+  - Security Implications: Scheduled tasks are harder to detect once established, as they blend in with legitimate administrative tasks. If attackers schedule tasks under system or administrator privileges, it also helps them retain higher access levels.  
+<br>
 
-## Summary
+## 4. Summary
   - Additional Accounts/Credentials allow attackers to create backdoor accounts or manipulate existing ones, giving them easy re-entry points with legitimate credentials.
   - Start-Up/Log-On Scripts, Launch Agents, DLL Side-Loading, and Webshells are powerful tools for executing code automatically during start-up, often allowing attackers to maintain access even after reboots.
   - Scheduled Tasks enable attackers to automate malware execution, reinforcing persistence and allowing for regular or event-driven execution of malicious processes.

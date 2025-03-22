@@ -3,7 +3,7 @@
 # HTTP Response Headers 
 HTTP Response Headers are **key elements sent by the server to the client after receiving an HTTP request**. These headers provide crucial information about the status of the request, the content being returned, and how the client should handle it. They help the client understand the nature of the server’s response, whether it was successful, and how to display or process the returned data.
 
-## Key Components of an HTTP Response Header
+## 1. Key Components of an HTTP Response Header
 1. **HTTP Version**
   - The response header includes the HTTP version that the server is using to communicate. This is important because different HTTP versions (e.g., HTTP/1.1 or HTTP/2) support different features and optimizations.
   - Example:  
@@ -73,9 +73,10 @@ Content-Language: en-US
 Content-Type: text/html; charset=UTF-8
 ```
 
-  - This indicates that the response is HTML, and the text should be interpreted using the UTF-8 character encoding.
+  - This indicates that the response is HTML, and the text should be interpreted using the UTF-8 character encoding.  
+<br>
 
-## Example of an HTTP Response Header  
+## 2. Example of an HTTP Response Header  
 
 ```
 HTTP/1.1 200 OK
@@ -90,9 +91,10 @@ In this example:
   - Status Code: The status is 200 OK, meaning the request was successful.
   - Content-Type: The server is returning HTML content, and it should be displayed using the UTF-8 character set.
   - Content-Encoding: The content is compressed using gzip.
-  - Content-Language: The content is written in U.S. English.
+  - Content-Language: The content is written in U.S. English.  
+<br>
 
-## Summary
+## 3. Summary
   - **HTTP Version**: Specifies the version of the protocol.
   - **Status Codes**: Indicate the outcome of the request (1xx for informational, 2xx for success, 3xx for redirection, 4xx for client errors, and 5xx for server errors).
   - **Content-Type**: Specifies the format of the response data (e.g., text/html).

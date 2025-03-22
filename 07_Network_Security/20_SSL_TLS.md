@@ -3,13 +3,14 @@
 # SSL/TLS
 SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are **cryptographic protocols designed to provide secure communication over a computer network**. SSL was the original version, developed by Netscape, but has since been replaced by TLS due to several vulnerabilities. TLS is widely used today to secure communications for protocols like HTTPS, SMTP, FTPS, and others.
 
-## How SSL/TLS Works
+## 1. How SSL/TLS Works
   - **Handshake**: SSL/TLS begins with a handshake between a client (e.g., a web browser) and a server to **agree on encryption parameters**. This process includes **authenticating the server’s identity using digital certificates, establishing encryption algorithms, and sharing keys securely**.
   - **Encryption**: After the handshake, all data transmitted between the client and server is **encrypted using symmetric encryption, ensuring confidentiality**.
   - **Integrity**: SSL/TLS also ensures that the data hasn’t been altered during transit **by using message authentication codes (MACs)**.
-  - **Authentication**: **The server is authenticated using digital certificates**, typically issued by a **Certificate Authority (CA)**. Optionally, the client may also be authenticated.
+  - **Authentication**: **The server is authenticated using digital certificates**, typically issued by a **Certificate Authority (CA)**. Optionally, the client may also be authenticated.  
+<br>
 
-## SSL/TLS Vulnerabilities
+## 2. SSL/TLS Vulnerabilities
 Over the years, several attacks have exploited weaknesses in SSL/TLS implementations.  
 
 1. **POODLE (Padding Oracle On Downgraded Legacy Encryption)**
@@ -35,8 +36,9 @@ Over the years, several attacks have exploited weaknesses in SSL/TLS implementat
 5. **HEARTBLEED**
   - Issue: HEARTBLEED is a **vulnerability in the OpenSSL implementation of the TLS heartbeat extension**. An attacker can send a specially crafted request that tricks the server into **returning more data than intended**, potentially exposing sensitive data stored in memory (such as private keys or session tokens).
   - Impact: Private information, including SSL certificates and encryption keys, could be leaked.
-  - Solution: Upgrade to a patched version of OpenSSL that addresses this vulnerability and regenerate any potentially compromised keys or certificates.
+  - Solution: Upgrade to a patched version of OpenSSL that addresses this vulnerability and regenerate any potentially compromised keys or certificates.  
+<br>
 
-## Summary
+## 3. Summary
 SSL/TLS is crucial for secure communication, but as older versions and configurations become outdated, vulnerabilities like **POODLE, BEAST, CRIME, BREACH, and HEARTBLEED** have emerged, threatening security. The solution involves consistently **updating protocols, disabling vulnerable configurations, and applying security patches** to ensure that data transmission remains secure.  
 <br>

@@ -1,3 +1,5 @@
+<br>
+
 # Attack Structure
 Practice describing security concepts in the context of an attack. These categories are a rough guide on attack structure for a targeted attack. Non-targeted attacks tend to be a bit more "all-in-one".
 
@@ -54,4 +56,5 @@ Practice describing security concepts in the context of an attack. These categor
 - [Impact](./14_Impact.md)
 	- Deleted accounts or data, encrypt data (like ransomware).
 	- Defacement.
-	- Denial of service, shutdown/reboot systems.
+	- Denial of service, shutdown/reboot systems.  
+<br>

@@ -53,7 +53,7 @@ Identity management is critical to securing access to resources in any organizat
     - **Access Control Consistency**: Proper configuration of permissions across federated systems is essential to prevent over-permissioned access.  
 <br>
 
-## Comparison Table
+## 5. Comparison Table
 
 | Aspect | User Accounts | Service Accounts | Federated Identity |
 | ------ | ------------- | ---------------- | ------------------ |
@@ -64,7 +64,7 @@ Identity management is critical to securing access to resources in any organizat
   
 <br>
 
-## Summary
+## 6. Summary
   - **ACLs**: Define permissions for users or services on resources, controlling access based on identity.
   - **Service Accounts vs. User Accounts**: Service accounts facilitate automation and should have limited permissions, while user accounts are for individuals with role-based privileges.
   - **Impersonation**: Allows entities to act on behalf of others, often using tokens or keys; it can be abused by attackers if tokens or impersonation permissions are improperly secured.

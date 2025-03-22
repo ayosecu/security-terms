@@ -3,7 +3,7 @@
 # BGP (Border Gateway Protocol) 
 BGP (Border Gateway Protocol) is **a core protocol used to exchange routing information between Autonomous Systems (AS) on the internet**. **BGP functions as the backbone of the internet**, enabling various networks—such as Internet Service Providers (ISPs), data centers, and corporate networks—to connect and communicate by sharing routing information. It helps **determine the most efficient path for transmitting data across networks**.
 
-## Key Features of BGP
+## 1. Key Features of BGP
 1. **Inter-AS Routing**
   - BGP is an **EGP (Exterior Gateway Protocol)** that determines routing between networks. **An Autonomous System (AS) refers to a single network or group of networks**, each identified by a unique **AS number (ASN)**. BGP facilitates the exchange of routing information between different ASs.
 2. **Path Vector Protocol**
@@ -19,26 +19,30 @@ BGP (Border Gateway Protocol) is **a core protocol used to exchange routing info
     3. **AS Path**: The route with the fewest AS hops is preferred.
     4. **Origin Type**: The protocol through which the route was learned (IGP, EGP, or unknown).
     5. **MED (Multi-Exit Discriminator)**: A value that helps determine the best exit point when multiple paths to the same destination exist.
-    6. **Next-Hop**: Evaluates the availability of the next-hop router.
+    6. **Next-Hop**: Evaluates the availability of the next-hop router.  
+<br>
 
-## How BGP Works
+## 2. How BGP Works
 1. **BGP Peering**
   - BGP operates through **peering between Autonomous Systems**. Each AS’s routers establish connections, known as BGP peers, to exchange routing information. These peers use TCP (port 179) to ensure reliable transmission of routing updates.
 2. **BGP Updates**
   - BGP peers exchange **BGP update messages whenever a new route is added or an existing route is withdrawn**. These updates allow routers to maintain an up-to-date routing table.
 3. **iBGP and eBGP**
   - **iBGP (Internal BGP)**: Used **within an AS** to share routing information among routers.
-  - **eBGP (External BGP)**: Facilitates routing information exchange **between different ASs**. iBGP handles internal routing, while eBGP manages external routing.
+  - **eBGP (External BGP)**: Facilitates routing information exchange **between different ASs**. iBGP handles internal routing, while eBGP manages external routing.  
+<br>
 
-## BGP and the Internet
-BGP is essential for the functioning of the internet. The internet comprises thousands of interconnected Autonomous Systems, and BGP allows these systems to exchange routing information efficiently. If BGP encounters an issue, it can disrupt large parts of the internet.
+## 3. BGP and the Internet
+BGP is essential for the functioning of the internet. The internet comprises thousands of interconnected Autonomous Systems, and BGP allows these systems to exchange routing information efficiently. If BGP encounters an issue, it can disrupt large parts of the internet.  
+<br>
 
-## BGP Security Issues
+## 4. BGP Security Issues
 1. **BGP Hijacking**
   - One of the major security issues with BGP is BGP hijacking. In this scenario, an attacker propagates incorrect routing information, redirecting traffic to their own AS. This can lead to data interception or service disruptions.
 2. **Enhancing BGP Security**
-  - Technologies such as **RPKI (Resource Public Key Infrastructure)** have been introduced to improve the security of BGP by authenticating and validating the routes exchanged between Autonomous Systems, helping to mitigate BGP hijacking.
+  - Technologies such as **RPKI (Resource Public Key Infrastructure)** have been introduced to improve the security of BGP by authenticating and validating the routes exchanged between Autonomous Systems, helping to mitigate BGP hijacking.  
+<br>
 
-## Summary
+## 5. Summary
 BGP is the protocol that **facilitates routing information exchange between Autonomous Systems**, enabling proper data transmission across the internet. While BGP is flexible and scalable, it also has security vulnerabilities that need to be addressed through continuous improvements in routing security technologies.  
 <br>

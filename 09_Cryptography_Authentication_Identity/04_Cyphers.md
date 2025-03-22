@@ -56,7 +56,7 @@ Block cipher modes of operation define how block ciphers handle data that exceed
   - Use Cases: AES-GCM is widely used in secure communication protocols, including **TLS, IPsec, and secure file transfer**, due to its speed and combined security features.  
 <br>
 
-## Comparison Table
+## 4. Comparison Table
 
 | Feature | Block Cipher | Stream Cipher |
 | ------- | ------------ | ------------- |
@@ -67,7 +67,7 @@ Block cipher modes of operation define how block ciphers handle data that exceed
   
 <br>
 
-## Summary
+## 5. Summary
   - **Block Ciphers** encrypt data in **chunks** and use different modes of operation (ECB, CBC, CFB, OFB, CTR, and GCM) to handle larger data and add security features.
   - **Stream Ciphers** encrypt data **one bit or byte** at a time and are efficient for real-time encryption needs.
   - **AES-GCM** is a mode of AES that combines **encryption with authentication**, ensuring both **confidentiality and integrity**. It’s widely used in secure communication due to its efficiency and security.

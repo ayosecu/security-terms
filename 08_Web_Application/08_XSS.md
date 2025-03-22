@@ -156,7 +156,7 @@ Set-Cookie: sessionId=abc123; HttpOnly; Secure
 
 <br>
 
-## 6. Summary of XSS Types
+## 6. XSS Types
 
 | Type | Description | Example |
 | ---- | ----------- | ------- |
@@ -179,6 +179,6 @@ Set-Cookie: sessionId=abc123; HttpOnly; Secure
   - Educate developers about XSS risks and secure coding practices.  
 <br>
 
-## Summary
+## 8. Summary
 **XSS attacks exploit web applications to execute malicious scripts in a user’s browser, leading to data theft, session hijacking, or worse**. Understanding the different types of XSS (Reflected, Persistent, DOM-Based) and employing robust mitigation strategies—such as input validation, CSP, and output encoding—are essential for securing modern web applications against this pervasive threat.  
 <br>

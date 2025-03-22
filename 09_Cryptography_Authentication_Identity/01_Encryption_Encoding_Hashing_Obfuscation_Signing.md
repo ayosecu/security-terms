@@ -53,7 +53,7 @@ Understanding the differences between encryption, encoding, hashing, obfuscation
   - Security Implications: **Digital signatures provide strong assurance of authenticity and integrity**. However, they rely on the secure management of private keys.  
 <br>
 
-## Summary
+## 6. Summary
 
 | Technique | Purpose | Reversible | Common Use Cases |
 | --------- | ------- | ---------- | ---------------- |

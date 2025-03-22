@@ -4,7 +4,7 @@
 Security controls are **measures implemented to reduce risk, protect assets, and ensure the integrity, confidentiality, and availability of information systems**. They are **used to prevent, detect, mitigate, and respond to threats and vulnerabilities** in a system or network. Security controls can be **technical, physical, or administrative in nature, and they work together to create a layered defense** that safeguards an organization’s data and resources.  
 <br>
 
-## Types of Security Controls
+## 1. Types of Security Controls
 1. **Preventive** Controls
   - Purpose: Prevent security incidents by stopping unauthorized access or actions before they occur.
   - Examples
@@ -52,10 +52,10 @@ Security controls are **measures implemented to reduce risk, protect assets, and
     - **Employee Training and Awareness**: Educates staff on security protocols and how to recognize potential threats.  
 <br>
 
-## Importance of Layered Security Controls
+## 2. Importance of Layered Security Controls
 **A strong security posture relies on a combination of these security controls**. Using multiple types of controls in a layered or **defense-in-depth** approach creates redundancies, so if one control fails, others are still in place to protect assets. For instance, even if a firewall (preventive) is bypassed, an intrusion detection system (detective) can still alert security teams of suspicious activity, and backup systems (corrective) can recover lost data.  
 <br>
 
-## Summary
+## 3. Summary
 Security Controls are critical measures to protect information and systems from security threats. They can be **preventive, detective, corrective, deterrent, compensating, physical, or administrative**. Each type serves a unique role in securing an organization, and **together they provide a robust defense strategy to detect, prevent, and respond to potential security incidents**.  
 <br>

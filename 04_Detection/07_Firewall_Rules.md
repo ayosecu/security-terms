@@ -13,6 +13,8 @@ Firewall rules are critical components in network security, **used to control in
 ```
 Block traffic from IP 10.0.0.5 after 5 failed SSH login attempts within 2 minutes.
 ```  
+  
+<br>
 
 ## 2. Detecting Port Scanning (Identifying TCP SYN Floods or Half-Open Connections)
   - Port scanning is a common reconnaissance technique used by attackers to discover open ports and services on a target system. One common method of port scanning is SYN scanning, where attackers send TCP SYN packets without completing the handshake (no SYN-ACK response).
@@ -24,6 +26,8 @@ Block traffic from IP 10.0.0.5 after 5 failed SSH login attempts within 2 minute
 ```
 Block traffic from IP 192.168.1.20 if 50 SYN packets without SYN-ACK responses are detected within 30 seconds.
 ```  
+   
+<br>
 
 ## 3. Antivirus Software Notifications
   - Firewalls can also interact with antivirus software and block traffic from infected machines or devices that trigger malware alerts.
@@ -35,6 +39,8 @@ Block traffic from IP 192.168.1.20 if 50 SYN packets without SYN-ACK responses a
 ```
 Block all outbound traffic from 192.168.1.10 after a malware detection alert from the antivirus system.
 ```  
+  
+<br>
 
 ## 4. Large Amounts of Upload Traffic
   - Unusually large upload traffic from a single device could be a sign of data exfiltration, malware activity (e.g., botnets), or a compromised device attempting to send stolen information.
@@ -46,8 +52,10 @@ Block all outbound traffic from 192.168.1.10 after a malware detection alert fro
 ```
 Limit upload traffic to 500 MB per minute. Block traffic from any IP that exceeds this limit.
 ```  
+  
+<br>
 
-## Summary
+## 5. Summary
 1. **Brute Force**: Detect excessive failed login attempts and block the attacker’s IP after a threshold is reached to prevent further attempts.
 2. **Port Scanning**: Monitor for half-open TCP connections (SYN packets without SYN-ACK) to detect port scanning, and block the offending IP if suspicious scanning is detected.
 3. **Antivirus Notifications**: Automatically block traffic from a device that has triggered an antivirus alert to prevent the spread of malware.

@@ -3,11 +3,12 @@
 # Run a scenario from A to Z
 Let’s walk through a cybersecurity incident scenario, covering each stage and explaining when to engage each stakeholder and take critical actions.
 
-## Scenario
+## 1. Scenario
 Phishing Attack with Data Exposure
-An employee unknowingly clicks on a phishing email link, which leads to unauthorized access to a database containing personal customer information.
+An employee unknowingly clicks on a phishing email link, which leads to unauthorized access to a database containing personal customer information.  
+<br>
 
-## Step-by-Step Incident Response
+## 2. Step-by-Step Incident Response
 1. **Detection and Initial Assessment**
   - Action: SOC (Security Operations Center) or security detection system flags unusual access patterns on the database.
   - Assess: Determine the scope — **confirm if it’s an actual incident**, and **identify what systems and data are impacted**.
@@ -34,9 +35,10 @@ An employee unknowingly clicks on a phishing email link, which leads to unauthor
   - Action: **Conduct a root cause analysis, review the response process, and improve controls**.
   - **Management Debrief**: Report findings and lessons learned to managers and directors.
   - Legal Follow-Up: Legal may support final reporting or **address compliance concerns** that arose.
-  - Users Communication: For significant incidents, **inform users** of corrective actions taken to improve security.
+  - Users Communication: For significant incidents, **inform users** of corrective actions taken to improve security.  
+<br>
 
-## Summary
+## 3. Summary
 This A-to-Z scenario demonstrates a structured approach.
   - **Early containment** and **collaboration with legal for compliance**.
   - **Timely updates to managers and directors** to ensure alignment on resources and response strategy.

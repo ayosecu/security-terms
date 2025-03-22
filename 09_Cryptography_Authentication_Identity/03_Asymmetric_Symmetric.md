@@ -25,7 +25,7 @@ Asymmetric and symmetric encryption are two distinct approaches to encryption, e
   - Example Algorithms: **AES, ChaCha20**.  
 <br>
 
-## How They Work Together in Protocols
+## 3. How They Work Together in Protocols
 
 ### Protocols often combine asymmetric and symmetric encryption to balance security with performance
   - **Handshake (Asymmetric)**: Initially, asymmetric encryption is used in the handshake phase to exchange a symmetric session key. This allows two parties to establish a shared key securely without pre-sharing it.
@@ -36,7 +36,7 @@ Asymmetric and symmetric encryption are two distinct approaches to encryption, e
   - Once the key exchange is complete, **the symmetric key is used to encrypt the rest of the communication**.  
 <br>
 
-## Perfect Forward Secrecy (PFS)
+## 4. Perfect Forward Secrecy (PFS)
   - Definition: **Perfect Forward Secrecy (PFS) is a security property that ensures even if the private key is compromised, past session keys remain secure**. In PFS, **each session generates a unique, temporary session key that is not linked to the long-term keys used in other sessions**.
   - How It Works
     - PFS uses ephemeral keys, which are **generated for each session and discarded afterward**. Common algorithms used in PFS include **Ephemeral Diffie-Hellman (DHE) and Elliptic Curve Diffie-Hellman Ephemeral (ECDHE)**.
@@ -45,7 +45,7 @@ Asymmetric and symmetric encryption are two distinct approaches to encryption, e
   - Security Implications: PFS is crucial in protecting data from retrospective decryption, meaning that even if an attacker later obtains a device’s private key, they cannot decrypt previously recorded sessions.  
 <br>
 
-## Comparison Table
+## 5. Comparison Table
 
 | Property | Asymmetric Encryption | Symmetric Encryption |
 | -------- | --------------------- | -------------------- |
@@ -58,7 +58,7 @@ Asymmetric and symmetric encryption are two distinct approaches to encryption, e
   
 <br>
 
-## Summary
+## 6. Summary
   - Asymmetric Encryption: Provides secure key exchange and authentication but is slower, making it suitable for establishing connections. Commonly used in handshakes to transfer symmetric keys.
   - Symmetric Encryption: Fast and efficient, ideal for encrypting large amounts of data after a secure key has been exchanged via asymmetric encryption.
   - Perfect Forward Secrecy: Ensures that each session has a unique key, preventing past communications from being compromised even if a private key is exposed.

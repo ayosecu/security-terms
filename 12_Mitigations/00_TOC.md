@@ -1,3 +1,5 @@
+<br>
+
 # Mitigations
 - [Patching](./01_Patching.md)
 - [Data Execution Prevention](./02_Data_Execution_Prevention.md)

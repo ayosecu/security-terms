@@ -10,7 +10,8 @@ In cybersecurity, **detection tools are used to monitor, analyze, and alert on p
     - Centralized log management and aggregation.
     - Real-time search and analysis.
     - Dashboards for visualizing security metrics and alerts.
-    - Integrates with various data sources, making it versatile for detecting security incidents.
+    - Integrates with various data sources, making it versatile for detecting security incidents.  
+<br>
 
 ## 2. ArcSight
   - Type: **SIEM**
@@ -19,7 +20,8 @@ In cybersecurity, **detection tools are used to monitor, analyze, and alert on p
     - Advanced correlation engine for detecting security incidents.
     - Centralized event management and real-time alerting.
     - Scalable architecture for large organizations.
-    - Used to perform forensic analysis and compliance reporting.
+    - Used to perform forensic analysis and compliance reporting.  
+<br>
 
 ## 3. QRadar
   - Type: **SIEM**
@@ -28,7 +30,8 @@ In cybersecurity, **detection tools are used to monitor, analyze, and alert on p
     - Collects data from logs, network flows, and user activities.
     - Uses machine learning and behavioral analytics for threat detection.
     - Automatically correlates events to provide actionable insights.
-    - Supports incident investigation and forensics by correlating events across different data sources.
+    - Supports incident investigation and forensics by correlating events across different data sources.  
+<br>
 
 ## 4. Darktrace
   - Type: AI-based **Network Detection and Response (NDR)**
@@ -37,7 +40,8 @@ In cybersecurity, **detection tools are used to monitor, analyze, and alert on p
     - Uses unsupervised machine learning for detecting unknown threats.
     - Monitors network traffic to detect internal and external threats.
     - Capable of detecting insider threats, malware, and zero-day attacks.
-    - Provides autonomous responses to threats through its Antigena module, automatically containing threats.
+    - Provides autonomous responses to threats through its Antigena module, automatically containing threats.  
+<br>
 
 ## 5. Tcpdump
   - Type: **Packet Sniffer / Network Traffic Analysis**
@@ -46,7 +50,8 @@ In cybersecurity, **detection tools are used to monitor, analyze, and alert on p
     - Captures network packets in real-time and allows deep inspection of network traffic.
     - Supports **filtering by protocol, IP addresses, ports, etc.**
     - Useful for detecting traffic anomalies, unauthorized communications, and potential attacks.
-    - Often used in conjunction with other tools like Wireshark for deeper analysis.
+    - Often used in conjunction with other tools like Wireshark for deeper analysis.  
+<br>
 
 ## 6. Wireshark
   - Type: **Packet Analyzer**
@@ -55,7 +60,8 @@ In cybersecurity, **detection tools are used to monitor, analyze, and alert on p
     - Captures packets from live network traffic and provides deep inspection capabilities.
     - Supports a wide variety of network protocols, allowing detailed traffic analysis.
     - Provides filtering, searching, and visualization features to detect anomalies and investigate suspicious activities.
-    - Useful for detecting attacks like man-in-the-middle, DNS poisoning, and traffic injection.
+    - Useful for detecting attacks like man-in-the-middle, DNS poisoning, and traffic injection.  
+<br>
 
 ## 7. Zeek (formerly known as Bro)
   - Type: **Network Security Monitor**
@@ -64,9 +70,10 @@ In cybersecurity, **detection tools are used to monitor, analyze, and alert on p
     - Monitors network traffic and generates logs with detailed metadata about network activities.
     - Detects network intrusions by analyzing patterns of traffic behavior.
     - Provides event-based logs, which are easier to correlate and analyze than raw packet captures.
-    - Useful for detecting threats like scanning, DDoS, lateral movement, and command-and-control (C2) traffic.
+    - Useful for detecting threats like scanning, DDoS, lateral movement, and command-and-control (C2) traffic.  
+<br>
 
-## Summary
+## 8. Summary
   - Splunk, ArcSight, and QRadar: SIEM tools that aggregate and correlate logs from multiple sources, providing real-time threat detection and incident response capabilities.
   - Darktrace: AI-driven platform that detects network anomalies and threats by modeling normal behavior and identifying deviations.
   - Tcpdump and Wireshark: Packet capture and analysis tools used to inspect network traffic at a granular level, identifying suspicious or malicious network activity.

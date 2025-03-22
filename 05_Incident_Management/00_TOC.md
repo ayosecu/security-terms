@@ -1,3 +1,5 @@
+<br>
+
 # Incident Management
 - [Privacy Incidents vs Information Security Incidents](./01_Privacy_Incidents_vs_Information_Security_Incidents.md)
 - [Know when to talk to legal, users, managers, directors](./02_Know_When_to_Talk.md)
