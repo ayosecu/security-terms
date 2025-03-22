@@ -29,6 +29,8 @@ jobs:
               pandoc "$dir/combined.md" -o "$folder_name.pdf" --pdf-engine=xelatex -V geometry:margin=1in
             fi
           done
+          cat **/combined.md > all_combined.md
+          pandoc "all_combined.md" -o "security-terms.pdf" --pdf-engine=xelatex -V geometry:margin=1in
 
       - name: Upload PDF Artifacts
         uses: actions/upload-artifact@v4
