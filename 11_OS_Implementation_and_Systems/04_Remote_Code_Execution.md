@@ -4,7 +4,8 @@
 Remote Code Execution (RCE) is **a critical security vulnerability that allows an attacker to execute arbitrary code on a remote machine, typically with the privileges of the exploited application or service**. Once RCE is achieved, attackers often escalate their privileges or establish persistent access by getting a shell on the target system.
 
 ## 1. How RCE Works
-RCE exploits vulnerabilities in applications, services, or protocols to execute code provided by the attacker.
+RCE exploits vulnerabilities in applications, services, or protocols to execute code provided by the attacker.  
+
   - **Input Validation Issues**
     - Unvalidated or unsanitized user input is directly processed as executable code.
     - Example: Command injection or deserialization vulnerabilities.

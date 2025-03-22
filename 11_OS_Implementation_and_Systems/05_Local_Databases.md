@@ -74,24 +74,24 @@ Local databases are **lightweight databases stored on devices, such as phones or
 <br>
 
 ## 5. Forensic Workflow
-**1. Extract the Database**
-  - Locate the database file on the device.
-  - Use tools like ADB (for Android) or iTunes backup extraction (for iOS) to retrieve the file.
-**2. Verify Integrity**
-  - Check for database corruption and repair if necessary.
-  - Tools: sqlite3 CLI or specialized forensic software.
-**3. Analyze Data**
-  - Use SQL queries to extract relevant information.
-  - Example
+  - **Extract the Database**
+    - Locate the database file on the device.
+    - Use tools like ADB (for Android) or iTunes backup extraction (for iOS) to retrieve the file.
+  - **Verify Integrity**
+    - Check for database corruption and repair if necessary.
+    - Tools: sqlite3 CLI or specialized forensic software.
+  - **Analyze Data**
+    - Use SQL queries to extract relevant information.
+    - Example
 
 ```
 SELECT sender, message, timestamp FROM messages WHERE sender="user1";
 ```
 
-**4. Recover Deleted Data**
-  - Analyze the rollback journal or WAL for traces of deleted entries.
-**5. Correlate with Other Data**
-  - Match SQLite data with logs, files, or network activity for a complete picture.  
+  - **Recover Deleted Data**
+    - Analyze the rollback journal or WAL for traces of deleted entries.
+  - **Correlate with Other Data**
+    - Match SQLite data with logs, files, or network activity for a complete picture.  
 <br>
 
 ## 6. Legal and Ethical Considerations

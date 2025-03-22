@@ -90,16 +90,16 @@ MacOS, despite its robust security architecture, is not immune to vulnerabilitie
 <br>
 
 ## 5. Best Practices for MacOS Security
-**1. Keep MacOS Updated**
-  - Install the latest security patches and updates.
-**2. Enable Built-in Protections**
-  - Ensure Gatekeeper, FileVault, and SIP are enabled.
-**3. Avoid Untrusted Downloads**
-  - Use the Mac App Store or trusted developers’ websites.
-**4. Use Security Tools**
-  - Tools like Objective-See’s suite, Malwarebytes for Mac, or ClamXAV for additional protection.
-**5. Educate Users**
-  - Teach users to identify phishing attempts and avoid installing unnecessary software.  
+  - **Keep MacOS Updated**
+    - Install the latest security patches and updates.
+  - **Enable Built-in Protections**
+    - Ensure Gatekeeper, FileVault, and SIP are enabled.
+  - **Avoid Untrusted Downloads**
+    - Use the Mac App Store or trusted developers’ websites.
+  - **Use Security Tools**
+    - Tools like Objective-See’s suite, Malwarebytes for Mac, or ClamXAV for additional protection.
+  - **Educate Users**
+    - Teach users to identify phishing attempts and avoid installing unnecessary software.  
 <br>
 
 ## Summary
