@@ -1,4 +1,6 @@
-## Patching
+<br>
+
+# Patching
 Patching refers to **the process of applying updates to software, firmware, or systems to fix known vulnerabilities, improve functionality, or enhance security**. Patches are crucial for maintaining a secure and stable IT environment, as they address weaknesses that attackers could exploit.
 
 ## 1. What is a Patch?
@@ -6,13 +8,15 @@ Patching refers to **the process of applying updates to software, firmware, or s
   - Types of Patches
     - **Security Patches**: Address specific vulnerabilities that could be exploited by attackers.
     - **Bug Fixes**: Resolve functional issues in the software.
-    - **Feature Updates**: Introduce new capabilities or improve existing ones.
+    - **Feature Updates**: Introduce new capabilities or improve existing ones.  
+<br>
 
 ## 2. Importance of Patching
   - **Vulnerability Mitigation**: Patches close security gaps that could be exploited in attacks, such as remote code execution, privilege escalation, or denial-of-service (DoS) vulnerabilities.
   - **Compliance**: Organizations are often required by industry standards (e.g., PCI DSS, HIPAA) to apply patches in a timely manner.
   - **System Stability**: Bug fixes provided by patches ensure systems run reliably, reducing downtime.
-  - **Risk Reduction**: Regular patching minimizes the attack surface by addressing publicly disclosed vulnerabilities (e.g., CVEs).
+  - **Risk Reduction**: Regular patching minimizes the attack surface by addressing publicly disclosed vulnerabilities (e.g., CVEs).  
+<br>
 
 ## 3. The Patching Process
   - Assessment
@@ -26,14 +30,16 @@ Patching refers to **the process of applying updates to software, firmware, or s
     - Confirm that the patches have been successfully applied and that the issues are resolved.
     - Monitor for any unexpected issues post-deployment.
   - Documentation
-    - Record patching activities to maintain an audit trail and support compliance requirements.
+    - Record patching activities to maintain an audit trail and support compliance requirements.  
+<br>
 
 ## 4. Challenges in Patching
   - **Downtime**: Patching often requires system reboots or temporary downtime, which can disrupt operations.
   - **Compatibility Issues**: Some patches may introduce new bugs or compatibility issues with existing software or hardware.
   - **Resource Constraints**: Limited IT staff or infrastructure may delay patching, especially in large organizations.
   - **Complex Environments**: Distributed systems, legacy systems, and third-party software can complicate the patching process.
-  - **Zero-Day Vulnerabilities**: Immediate patching may be required to address actively exploited vulnerabilities before an official patch is available.
+  - **Zero-Day Vulnerabilities**: Immediate patching may be required to address actively exploited vulnerabilities before an official patch is available.  
+<br>
 
 ## 5. Best Practices for Patching
   - Automated Patching: Use tools like Microsoft WSUS, Red Hat Satellite, or third-party patch management software to streamline the process and reduce human error.
@@ -43,7 +49,8 @@ Patching refers to **the process of applying updates to software, firmware, or s
   - Regular Patching Cycles: Implement a consistent schedule for patching (e.g., monthly or quarterly).
   - Backup Before Patching: Always back up critical systems and data to recover quickly if a patch causes issues.
   - Patch Validation: Test patches in a sandbox environment before applying them to production systems.
-  - Communication: Inform stakeholders about upcoming patching activities and potential downtime.
+  - Communication: Inform stakeholders about upcoming patching activities and potential downtime.  
+<br>
 
 ## 6. Real-World Examples of Unpatched Vulnerabilities
   - Equifax Breach (2017)
@@ -51,7 +58,8 @@ Patching refers to **the process of applying updates to software, firmware, or s
   - WannaCry Ransomware (2017)
     - Exploited a vulnerability in SMBv1 (EternalBlue) for which Microsoft had released a patch (MS17-010). Many organizations that failed to patch were severely affected.
   - Log4Shell Vulnerability (2021)
-    - A critical flaw in Apache Log4j (CVE-2021-44228) was exploited globally. Organizations that patched quickly mitigated the impact of the attack.
+    - A critical flaw in Apache Log4j (CVE-2021-44228) was exploited globally. Organizations that patched quickly mitigated the impact of the attack.  
+<br>
 
 ## 7. Tools for Patching
   - Operating System Patching
@@ -59,7 +67,8 @@ Patching refers to **the process of applying updates to software, firmware, or s
   - Third-Party Patching
     - WSUS, SCCM, Ivanti, ManageEngine Patch Manager Plus.
   - Vulnerability Scanning
-    - Tools like Nessus, Qualys, and OpenVAS identify unpatched systems and prioritize vulnerabilities.
+    - Tools like Nessus, Qualys, and OpenVAS identify unpatched systems and prioritize vulnerabilities.  
+<br>
 
 ## 8. Summary
   - Patching: A critical defense mechanism that addresses vulnerabilities, improves system stability, and ensures compliance.
@@ -70,4 +79,5 @@ Patching refers to **the process of applying updates to software, firmware, or s
     - Test patches before deploying them.
     - Maintain an updated inventory of systems and software.
 
-Regular and effective patching is one of the most reliable ways to protect systems against attacks, minimizing the risk of exploitation and ensuring a secure and stable IT environment.
+Regular and effective patching is one of the most reliable ways to protect systems against attacks, minimizing the risk of exploitation and ensuring a secure and stable IT environment.  
+<br>

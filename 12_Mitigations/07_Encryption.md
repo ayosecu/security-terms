@@ -1,4 +1,6 @@
-## Encryption
+<br>
+
+# Encryption
 Encrypting software and firmware components is a security practice **used to protect these critical assets from unauthorized access, reverse engineering, tampering, and malicious exploitation**. This ensures confidentiality, integrity, and authenticity throughout the software or firmware lifecycle.
 
 ## 1. Why Encrypt Software and Firmware?
@@ -8,7 +10,8 @@ Encrypting software and firmware components is a security practice **used to pro
   - **Compliance**: Many regulatory frameworks (e.g., PCI DSS, HIPAA) mandate encryption for sensitive software components.
   - Mitigate Attacks
     - Protect against firmware attacks such as supply chain compromises.
-    - Prevent attackers from modifying system components to introduce rootkits or backdoors.
+    - Prevent attackers from modifying system components to introduce rootkits or backdoors.  
+<br>
 
 ## 2. How Encryption Works for Software and Firmware
 Encryption transforms software or firmware into an unreadable format, requiring decryption keys for legitimate use. This can be applied at various stages.
@@ -23,7 +26,8 @@ Encryption transforms software or firmware into an unreadable format, requiring 
 
 ### c. During Execution
   - Description: Decrypting software or firmware only at runtime ensures it is not exposed in plain text during storage or distribution.
-  - Example: **Secure enclaves or Trusted Execution Environments (TEEs) like Intel SGX decrypt and execute code in isolated memory**.
+  - Example: **Secure enclaves or Trusted Execution Environments (TEEs) like Intel SGX decrypt and execute code in isolated memory**.  
+<br>
 
 ## 3. Encryption Methods for Software and Firmware
   - **Symmetric Encryption**
@@ -34,7 +38,8 @@ Encryption transforms software or firmware into an unreadable format, requiring 
     - Use Case: Used in firmware delivery systems where the **private key resides securely on the device**.
   - **Hybrid Encryption**
     - Combines symmetric and asymmetric encryption for secure distribution and efficient decryption.
-    - Example: The firmware is encrypted with AES, and the AES key is encrypted with RSA.
+    - Example: The firmware is encrypted with AES, and the AES key is encrypted with RSA.  
+<br>
 
 ## 4. Applications in Software and Firmware Encryption
 
@@ -48,7 +53,8 @@ Encryption transforms software or firmware into an unreadable format, requiring 
   - Purpose: Protects embedded systems, IoT devices, and hardware components.
   - Examples
     - BIOS or UEFI firmware encryption to prevent unauthorized modifications.
-    - IoT device firmware encryption to protect against firmware hijacking or injection attacks.
+    - IoT device firmware encryption to protect against firmware hijacking or injection attacks.  
+<br>
 
 ## 5. Challenges in Encrypting Software and Firmware
   - **Key Management**
@@ -58,7 +64,8 @@ Encryption transforms software or firmware into an unreadable format, requiring 
   - **Reverse Engineering Risks**
     - Attackers may attempt to extract decryption keys through side-channel attacks or debug tools.
   - **Compatibility**
-    - Encrypted firmware or software must remain compatible with the device or operating system.
+    - Encrypted firmware or software must remain compatible with the device or operating system.  
+<br>
 
 ## 6. Real-World Examples
   - **Microsoft BitLocker**
@@ -68,7 +75,8 @@ Encryption transforms software or firmware into an unreadable format, requiring 
   - **TPM-Based Encryption**
     - **Trusted Platform Module (TPM) hardware stores decryption keys securely, enabling encrypted firmware execution**.
   - **Secure IoT Firmware Updates**
-    - Devices like Nest or Ring **use encrypted OTA (Over-The-Air) updates to securely distribute firmware**.
+    - Devices like Nest or Ring **use encrypted OTA (Over-The-Air) updates to securely distribute firmware**.  
+<br>
 
 ## 7. Best Practices for Software and Firmware Encryption
   - **Encrypt at Rest and In Transit**
@@ -80,7 +88,8 @@ Encryption transforms software or firmware into an unreadable format, requiring 
   - **Regularly Update Encryption Methods**
     - Use strong, modern encryption algorithms (e.g., AES-256) and update them as standards evolve.
   - **Implement Secure Boot**
-    - Combine encryption with secure boot to verify the authenticity of software or firmware before execution.
+    - Combine encryption with secure boot to verify the authenticity of software or firmware before execution.  
+<br>
 
 ## 8. Summary
 
@@ -92,4 +101,5 @@ Encryption transforms software or firmware into an unreadable format, requiring 
 | Challenges | Key management, performance, reverse engineering risks. |
 | Best Practices | Use strong algorithms, secure boot, and hardware-based key storage. |
 
-**Encrypting software and firmware components is a crucial security practice to safeguard critical systems from tampering, reverse engineering, and unauthorized access**. While encryption provides robust protection, its effectiveness depends on proper implementation, key management, and integration with additional security measures like code signing and secure boot.
+**Encrypting software and firmware components is a crucial security practice to safeguard critical systems from tampering, reverse engineering, and unauthorized access**. While encryption provides robust protection, its effectiveness depends on proper implementation, key management, and integration with additional security measures like code signing and secure boot.  
+<br>

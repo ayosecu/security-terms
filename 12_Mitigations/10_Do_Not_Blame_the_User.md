@@ -1,4 +1,6 @@
-## Do not Blame the User
+<br>
+
+# Do not Blame the User
 The principle of “Do not blame the user” emphasizes that **the responsibility for maintaining security lies with the system and its designers, not with the end users**. Security should empower and protect users by creating systems that are intuitive, resilient, and trustworthy, instead of punishing or blaming individuals for mistakes or failures in security practices.
 
 ## 1. Why Blaming Users Is Counterproductive
@@ -11,7 +13,8 @@ The principle of “Do not blame the user” emphasizes that **the responsibilit
   - **Systemic Failures**
     - Many security incidents are caused by system design flaws, inadequate training, or ineffective policies—not user negligence.
   - **Trust Erosion**
-    - Users who feel blamed may lose trust in the organization or system, reducing cooperation and compliance with future security measures.
+    - Users who feel blamed may lose trust in the organization or system, reducing cooperation and compliance with future security measures.  
+<br>
 
 ## 2. Shifting the Focus: Protecting People, Not Blaming Them
 
@@ -29,7 +32,8 @@ The principle of “Do not blame the user” emphasizes that **the responsibilit
 
 ### c. Provide Clear, Non-Judgmental Communication
   - Avoid technical jargon or condescending language when educating users about security.
-  - Example: **Use friendly and simple prompts like, “We noticed unusual activity on your account. Please verify these recent actions.”**
+  - Example: **Use friendly and simple prompts like, “We noticed unusual activity on your account. Please verify these recent actions.”**  
+<br>
 
 ## 3. How to Build User-Centric Security
 
@@ -43,7 +47,8 @@ The principle of “Do not blame the user” emphasizes that **the responsibilit
 
 ### c. Educate Without Blame
   - Provide continuous, accessible security education that emphasizes empowerment over blame.
-  - Example: Use phishing simulation exercises to teach users how to identify threats in a supportive, blame-free environment.
+  - Example: Use phishing simulation exercises to teach users how to identify threats in a supportive, blame-free environment.  
+<br>
 
 ## 4. Real-World Example: Email Security
   - Traditional Approach: Expect users to identify phishing emails based on training alone and blame them if they fail.
@@ -51,7 +56,8 @@ The principle of “Do not blame the user” emphasizes that **the responsibilit
     1. Use advanced email filtering to reduce exposure to phishing attempts.
     2. Provide clear warning labels (e.g., “This email originated outside your organization”).
     3. Offer a one-click option for users to report suspicious emails.
-    4. Educate users on identifying threats but emphasize that the system’s design—not the user—is the primary line of defense.
+    4. Educate users on identifying threats but emphasize that the system’s design—not the user—is the primary line of defense.  
+<br>
 
 ## 5. Security Is a Shared Responsibility
 
@@ -60,6 +66,8 @@ The principle of “Do not blame the user” emphasizes that **the responsibilit
 | System Designers | Build intuitive, resilient systems that minimize reliance on user actions. |
 | Security Teams | Provide tools and training to support users without judgment or blame. |
 | Users | Engage with the tools and follow guidelines provided by the organization. |
+  
+<br>
 
 ## 6. Summary
 
@@ -70,4 +78,5 @@ The principle of “Do not blame the user” emphasizes that **the responsibilit
 | Empower Users | Educate and support users in a non-judgmental way. |
 | Key Practices | Simplify workflows, provide automation, and focus on resilience. |
 
-**Security should protect people, not make them feel responsible for every failure**. **By designing systems that are resilient, intuitive, and trustworthy, and by supporting users with non-judgmental education and tools, organizations can build a security culture that prioritizes empowerment over blame**. This approach not only enhances security but also fosters trust and collaboration between users and security teams.
+**Security should protect people, not make them feel responsible for every failure**. **By designing systems that are resilient, intuitive, and trustworthy, and by supporting users with non-judgmental education and tools, organizations can build a security culture that prioritizes empowerment over blame**. This approach not only enhances security but also fosters trust and collaboration between users and security teams.  
+<br>
