@@ -1,7 +1,7 @@
 # security-terms
 ## Thanks to
 - These terms are originated from [nolang's github](https://github.com/gracenolan/Notes/blob/master/interview-study-notes-for-security-engineering.md#learning-tips)
-- I searched meanings and explanations from the chatGPT
+- I researched security terms and compiled explanations with the help of ChatGPT.
 
 ## ToC
 - [01. Threat Modeling](./01_Threat_Modeling/README.mdown)
