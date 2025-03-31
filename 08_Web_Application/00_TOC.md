@@ -48,5 +48,6 @@
     - Server Side Request Forgery.
 - [Web Vuln Scanners](./20_Web_Vuln_Scanners.md)
 - [SQLmap](./21_SQLmap.md)
-- [Malicious Redirects](./22_Malicious_Redirects.md)  
+- [Malicious Redirects](./22_Malicious_Redirects.md)
+- [OWASP TOP10](./23_OWASP_TOP10.md)  
 <br>
