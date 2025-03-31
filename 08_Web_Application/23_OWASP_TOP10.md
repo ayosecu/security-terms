@@ -1,3 +1,5 @@
+<br>
+
 # OWASP Top 10 (2021) – Web Application Security Risks
 The OWASP Top 10 is **a standard awareness document for developers and security professionals**. It **represents the most critical web application security risks**, updated periodically by the OWASP (Open Worldwide Application Security Project).
 
