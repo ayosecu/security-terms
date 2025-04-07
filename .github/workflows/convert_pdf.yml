@@ -30,7 +30,7 @@ jobs:
             fi
           done
           cat **/combined.md > all_combined.md
-          pandoc "all_combined.md" -o "SECURITY-TERMS.pdf" --pdf-engine=xelatex -V geometry:margin=1in
+          pandoc "all_combined.md" -o "SECURITY-TERMS.pdf" --pdf-engine=xelatex -V geometry:margin=1in -H watermark.tex
 
       - name: Upload PDF Artifacts
         uses: actions/upload-artifact@v4
